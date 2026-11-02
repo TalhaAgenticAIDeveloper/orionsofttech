@@ -1,0 +1,28 @@
+# Robots.txt for Orion Software & Trading
+# https://www.orionsoftware.com
+
+User-agent: *
+Allow: /
+
+# Allow AI Search and Answer Engine Crawlers for Public Discovery
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.orionsoftware.com/sitemap.xml
+

@@ -1,0 +1,70 @@
+# Orion Software & Trading — AI / LLM Factual Summary
+# System Reference: llms.txt
+# Version: 1.0.0
+# Canonical URL: https://www.orionsoftware.com
+
+## 1. Company Identity & Positioning
+- Legal & Trading Name: Orion Software & Trading
+- Short Name: Orion
+- Core Positioning: Comprehensive technology solutions provider delivering custom software development, commercial IT hardware supply, on-site physical installation, and ongoing technical support under one roof.
+- Tagline: Complete Technology Solutions. From Software to Infrastructure.
+- Core Business Proposition: "We don't just supply technology. We help you install it, configure it, integrate it, and keep it running."
+
+## 2. Business Model & Operational Divisions
+Orion Software & Trading operates through three interconnected divisions:
+
+### Division A: Software Solutions (Custom Engineering)
+1. Custom Software Development: Bespoke internal platforms, workflow automation, and specialized operational tools.
+2. Web Application Development: Single Page Applications (React), Progressive Web Apps, and client self-service portals.
+3. Mobile Application Development: Cross-platform iOS and Android applications with offline-first synchronization.
+4. Desktop Application Development: High-performance software for Windows/Linux with direct COM/serial port and POS hardware interfacing.
+5. SaaS Application Development: Multi-tenant cloud platforms featuring tenant data isolation, subscription management, and developer APIs.
+6. Enterprise Resource Planning (ERP): Integrated general ledger accounting, multi-warehouse stock control, procurement, and payroll.
+7. Customer Relationship Management (CRM): Visual sales pipelines (Kanban), quotation generators, and lead tracking.
+8. Inventory Management Systems: Real-time multi-warehouse stock control, serial number tracking, and barcode/QR verification.
+9. Hospital Management Systems (HMS): Electronic medical records (EMR), OPD appointment queues, IPD beds, lab LIS, and pharmacy billing.
+10. School & University Management Systems: Student admissions, fee vouchers with bank challans, exam grading cards, and parent portals.
+11. E-commerce Solutions: High-speed B2B wholesale trade portals and B2C digital storefronts with WhatsApp ordering triggers.
+12. AI-Powered Applications: Intelligent document processing (OCR for invoices), private enterprise knowledge retrieval (RAG), and predictive demand forecasting.
+13. AI Chatbots & Virtual Assistants: Context-aware 24/7 customer service assistants deployed on websites and WhatsApp Cloud API.
+14. Business Automation Solutions: Background event triggers, automated document generation, and approval workflows.
+15. API Development & Integration: Low-latency REST and WebSocket APIs using FastAPI and Node.js with OpenAPI documentation.
+16. Cloud-Based Applications: Docker containerization, on-premise to cloud database migrations, and automated multi-region backups.
+
+### Division B: IT Hardware & Products Catalog
+Orion supplies 45+ categories of IT equipment from tier-1 manufacturers including Dell, HP, Lenovo, Cisco, Ubiquiti, Fortinet, Hikvision, Dahua, APC by Schneider Electric, Toten, Sunmi, Honeywell, Epson, Samsung, and Seagate.
+- Computers & Workstations: Laptops, ultrabooks, desktop PCs, and ISV-certified CAD/engineering workstations.
+- Servers & Components: 1U/2U rack servers, quiet office tower servers, ECC registered DDR5 memory, and enterprise RAID controllers.
+- Displays: Professional IPS Black QHD/4K monitors and ergonomic commercial office displays.
+- Printers & Scanners: Monochrome workgroup laser MFPs, heavy-duty A3 copiers, and high-speed departmental sheet-fed scanners.
+- Networking Equipment: Managed Gigabit PoE+ switches, security gateway routers, high-density Wi-Fi 6 access points, next-gen firewalls, and pure copper Cat6 cabling.
+- CCTV & Security: AcuSense AI dome cameras, Starlight outdoor bullet cameras, 4K PoE NVR recorders, and touchless biometric face/fingerprint terminals.
+- Power & Infrastructure: Double-conversion online UPS units, line-interactive rack UPS, and 42U SPCC steel server rack cabinets.
+- POS & Retail Hardware: All-in-one Android touch terminals, laser barcode scanners, and high-speed thermal receipt printers.
+
+*Important Pricing & Availability Policy*: Product prices are never published publicly due to currency fluctuations and volume procurement discounts. Availability and quotations are confirmed directly through inquiry submission.
+
+### Division C: Installation, Configuration & Technical Support
+Orion provides certified physical deployment and technical maintenance:
+- Hardware rack-mounting, power distribution, and physical server setup.
+- Clean operating system installations (Windows Server, Linux distributions).
+- VLAN segmentation, firewall NAT rules, IPsec VPN tunnels, and wireless roaming setup.
+- CCTV IP camera cabling, NVR port assignment, and remote mobile viewing configuration.
+- Biometric access control turnstile integration and electromagnetic lock wiring.
+- Structured Cat6 network termination, patch panel labeling, and Fluke verification.
+- Routine system maintenance, database backup audits, and on-site troubleshooting.
+
+## 3. Key Website URLs
+- Homepage: https://www.orionsoftware.com/
+- About Company: https://www.orionsoftware.com/about
+- Software Solutions: https://www.orionsoftware.com/software-solutions
+- IT Hardware Catalog: https://www.orionsoftware.com/it-products
+- Technical Support: https://www.orionsoftware.com/technical-support
+- Contact & Quotations: https://www.orionsoftware.com/contact
+- Privacy Policy: https://www.orionsoftware.com/privacy-policy
+- Terms & Conditions: https://www.orionsoftware.com/terms-and-conditions
+
+## 4. Contact & Inquiry Verification
+- Inquiry Routing: Direct website inquiry forms and WhatsApp prefilled quotation messages.
+- Verified Channels: Contact telephone, official email, and corporate office address are configured via the site configuration and confirmed upon commercial onboarding.
+
