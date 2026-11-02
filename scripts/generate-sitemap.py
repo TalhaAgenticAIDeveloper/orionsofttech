@@ -2,7 +2,7 @@ import re
 from datetime import date
 
 today = date.today().isoformat()
-domain = 'https://orionswtrading.com'
+domain = 'https://orionsofttech.com'
 
 # 1. Core Pages
 core_pages = [

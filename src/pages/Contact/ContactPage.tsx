@@ -150,6 +150,9 @@ export const ContactPage: React.FC = () => {
               <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed mt-3">
                 Need an immediate response regarding product availability, hardware quotes, or quick technical questions? Connect directly with our team on WhatsApp.
               </p>
+              <p className="text-xs font-semibold text-emerald-300 mt-2">
+                WhatsApp: {siteConfig.contact.whatsapp}
+              </p>
 
               <div className="mt-5">
                 <Button
@@ -181,10 +184,15 @@ export const ContactPage: React.FC = () => {
                   </span>
                   {siteConfig.contact.phone ? (
                     <a
-                      href={`tel:${siteConfig.contact.phone}`}
+                      href={`tel:${(siteConfig.contact.phoneIntl || siteConfig.contact.phone).replace(/\s+/g, '')}`}
                       className="font-medium text-slate-900 dark:text-white hover:text-emerald-600 transition-colors mt-0.5 block"
                     >
-                      {siteConfig.contact.phone}
+                      {siteConfig.contact.phone}{' '}
+                      {siteConfig.contact.phoneIntl && (
+                        <span className="text-xs text-slate-500 dark:text-slate-400 font-normal">
+                          ({siteConfig.contact.phoneIntl})
+                        </span>
+                      )}
                     </a>
                   ) : (
                     <span className="text-xs text-slate-500 italic mt-0.5 block">
@@ -193,6 +201,28 @@ export const ContactPage: React.FC = () => {
                   )}
                 </div>
               </div>
+
+              {/* Direct WhatsApp Channel */}
+              {siteConfig.contact.whatsapp && (
+                <div className="flex items-start gap-3.5">
+                  <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-[#25D366] shrink-0">
+                    <MessageSquare className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
+                      WhatsApp Business
+                    </span>
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium text-slate-900 dark:text-white hover:text-[#25D366] transition-colors mt-0.5 block"
+                    >
+                      {siteConfig.contact.whatsapp}
+                    </a>
+                  </div>
+                </div>
+              )}
 
               {/* Email */}
               <div className="flex items-start gap-3.5">
@@ -212,7 +242,7 @@ export const ContactPage: React.FC = () => {
                     </a>
                   ) : (
                     <span className="text-xs text-slate-500 italic mt-0.5 block">
-                      info@orionswtrading.com
+                      info@orionsofttech.com
                     </span>
                   )}
                 </div>
@@ -228,8 +258,8 @@ export const ContactPage: React.FC = () => {
                     Office Location
                   </span>
                   {siteConfig.contact.address ? (
-                    <p className="font-medium text-slate-900 dark:text-white mt-0.5">
-                      {siteConfig.contact.address}
+                    <p className="font-medium text-slate-900 dark:text-white mt-0.5 leading-snug">
+                      {siteConfig.contact.address}, {siteConfig.contact.city}, {siteConfig.contact.country}
                     </p>
                   ) : (
                     <span className="text-xs text-slate-500 italic mt-0.5 block">

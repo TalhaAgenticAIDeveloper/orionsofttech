@@ -111,7 +111,10 @@ export const Footer: React.FC = () => {
               {siteConfig.contact.phone ? (
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <a href={`tel:${siteConfig.contact.phone}`} className="hover:text-white transition-colors">
+                  <a
+                    href={`tel:${(siteConfig.contact.phoneIntl || siteConfig.contact.phone).replace(/\s+/g, '')}`}
+                    className="hover:text-white transition-colors"
+                  >
                     {siteConfig.contact.phone}
                   </a>
                 </div>
@@ -132,7 +135,7 @@ export const Footer: React.FC = () => {
               ) : (
                 <div className="flex items-center gap-2 text-slate-500">
                   <Mail className="w-4 h-4 shrink-0" />
-                  <span>info@orionswtrading.com</span>
+                  <span>info@orionsofttech.com</span>
                 </div>
               )}
 
@@ -145,7 +148,7 @@ export const Footer: React.FC = () => {
                     rel="noopener noreferrer"
                     className="hover:text-[#25D366] transition-colors"
                   >
-                    Direct WhatsApp Quotation Support
+                    WhatsApp: {siteConfig.contact.whatsapp}
                   </a>
                 </div>
               )}
@@ -153,7 +156,7 @@ export const Footer: React.FC = () => {
               {siteConfig.contact.address && (
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span>{siteConfig.contact.address}</span>
+                  <span>{siteConfig.contact.address}, {siteConfig.contact.city}, {siteConfig.contact.country}</span>
                 </div>
               )}
             </div>

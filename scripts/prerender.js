@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 const distDir = path.join(rootDir, 'dist');
 const ssrBundlePath = path.join(rootDir, 'dist-ssr/entry-server.js');
-const domain = 'https://orionswtrading.com';
+const domain = 'https://orionsofttech.com';
 
 async function runPrerender() {
   console.log('[Prerender] Starting Route Pre-Rendering (SSG)...');

@@ -15,7 +15,7 @@ import {
 
 describe('Technical & On-Page SEO Verification', () => {
   it('has verified primary production domain configured', () => {
-    expect(siteConfig.url).toBe('https://orionswtrading.com');
+    expect(siteConfig.url).toBe('https://orionsofttech.com');
     expect(siteConfig.url.startsWith('https://')).toBe(true);
     expect(siteConfig.url.includes('placeholder')).toBe(false);
   });
@@ -36,7 +36,7 @@ describe('Technical & On-Page SEO Verification', () => {
     expect(org['@type']).toBe('Organization');
     expect(org.name).toBe(siteConfig.companyName);
     expect(org.email).toBe(siteConfig.contact.email);
-    expect(org.telephone).toBe(siteConfig.contact.phone);
+    expect(org.telephone).toBe(siteConfig.contact.phoneIntl || siteConfig.contact.phone);
     expect(org.address['@type']).toBe('PostalAddress');
     expect(org.address.streetAddress).toBe(siteConfig.contact.address);
     expect(org.address.addressLocality).toBe(siteConfig.contact.city);

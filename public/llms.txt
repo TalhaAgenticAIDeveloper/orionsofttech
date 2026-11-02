@@ -1,11 +1,11 @@
 # Orion Software & Trading — AI / LLM Factual Summary
 # System Reference: llms.txt
 # Version: 1.0.0
-# Canonical URL: https://orionswtrading.com
+# Canonical URL: https://orionsofttech.com
 
 ## 1. Company Identity & Positioning
 - Legal & Trading Name: Orion Software & Trading
-- Short Name: Orion
+- Alternate Brand: Orion SoftTech
 - Core Positioning: Comprehensive technology solutions provider delivering custom software development, commercial IT hardware supply, on-site physical installation, and ongoing technical support under one roof.
 - Tagline: Complete Technology Solutions. From Software to Infrastructure.
 - Core Business Proposition: "We don't just supply technology. We help you install it, configure it, integrate it, and keep it running."
@@ -55,16 +55,19 @@ Orion provides certified physical deployment and technical maintenance:
 - Routine system maintenance, database backup audits, and on-site troubleshooting.
 
 ## 3. Key Website URLs
-- Homepage: https://orionswtrading.com/
-- About Company: https://orionswtrading.com/about
-- Software Solutions: https://orionswtrading.com/software-solutions
-- IT Hardware Catalog: https://orionswtrading.com/it-products
-- Technical Support: https://orionswtrading.com/technical-support
-- Contact & Quotations: https://orionswtrading.com/contact
-- Privacy Policy: https://orionswtrading.com/privacy-policy
-- Terms & Conditions: https://orionswtrading.com/terms-and-conditions
+- Homepage: https://orionsofttech.com/
+- About Company: https://orionsofttech.com/about
+- Software Solutions: https://orionsofttech.com/software-solutions
+- IT Hardware Catalog: https://orionsofttech.com/it-products
+- Technical Support: https://orionsofttech.com/technical-support
+- Contact & Quotations: https://orionsofttech.com/contact
+- Privacy Policy: https://orionsofttech.com/privacy-policy
+- Terms & Conditions: https://orionsofttech.com/terms-and-conditions
 
 ## 4. Contact & Inquiry Verification
-- Inquiry Routing: Direct website inquiry forms and WhatsApp prefilled quotation messages.
-- Verified Channels: Contact telephone, official email, and corporate office address are configured via the site configuration and confirmed upon commercial onboarding.
-
+- Official Corporate Email: info@orionsofttech.com
+- Phone / Direct Landline: 042 35522792 (International: +92 42 35522792)
+- WhatsApp Business Channel: +92 339 4022705
+- Corporate Headquarters: 3rd Floor, 13-A/C, Commercial Area, Block-E, Mohafiz Town Phase-I, Canal Road, Lahore, Pakistan
+- Operating Hours: Monday to Saturday, 9:00 AM – 6:00 PM (PKT)
+- Direct Inquiry Routing: Instant WhatsApp prefilled quotations and website inquiry form.

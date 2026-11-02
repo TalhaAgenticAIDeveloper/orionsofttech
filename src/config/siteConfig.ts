@@ -1,48 +1,52 @@
 export const siteConfig = {
   companyName: 'Orion Software & Trading',
-  companyShortName: 'Orion',
+  companyShortName: 'Orion SoftTech',
   tagline: 'Complete Technology Solutions. From Software to Infrastructure.',
   description:
     'Orion Software & Trading delivers custom software solutions, IT hardware supply, professional installation, system configuration, and ongoing technical support — all under one roof.',
-  url: 'https://orionswtrading.com',
+  url: 'https://orionsofttech.com',
   logo: '/images/orion-logo.png',
   logoWebp: '/images/orion-logo.webp',
   defaultOgImage: '/images/og/og-default.jpg',
 
   // Corporate NAP & Official Verification Data
   contact: {
-    phone: '+971 4 234 5678',
-    whatsapp: '+971 50 123 4567',
-    email: 'info@orionswtrading.com',
-    supportEmail: 'support@orionswtrading.com',
-    salesEmail: 'sales@orionswtrading.com',
-    address: 'Office 1402, Iris Bay Tower, Business Bay',
-    city: 'Dubai',
-    state: 'Dubai',
-    country: 'United Arab Emirates',
-    postalCode: '415234',
+    phone: '042 35522792',
+    phoneIntl: '+92 42 35522792',
+    whatsapp: '+92 339 4022705',
+    whatsappDigits: '923394022705',
+    email: 'info@orionsofttech.com',
+    supportEmail: 'support@orionsofttech.com',
+    salesEmail: 'sales@orionsofttech.com',
+    address: '3rd Floor, 13-A/C, Commercial Area, Block-E, Mohafiz Town Phase-I, Canal Road',
+    city: 'Lahore',
+    state: 'Punjab',
+    country: 'Pakistan',
+    countryCode: 'PK',
+    postalCode: '54000',
     mapUrl:
-      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.1785536481745!2d55.2631!3d25.1872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682def9f5a77%3A0x8892f3b92482!2sBusiness%20Bay%2C%20Dubai!5e0!3m2!1sen!2sae!4v1680000000000!5m2!1sen!2sae',
-    mapLink: 'https://maps.google.com/?q=Orion+Software+Trading+Business+Bay+Dubai',
-    latitude: 25.1872,
-    longitude: 55.2631,
+      'https://maps.google.com/maps?q=3rd+Floor,+13-A/C,+Commercial+Area,+Block-E,+Mohafiz+Town+Phase-I,+Canal+Road,+Lahore,+Pakistan&t=&z=16&ie=UTF8&iwloc=&output=embed',
+    mapLink:
+      'https://maps.google.com/?q=Mohafiz+Town+Phase+1+Canal+Road+Lahore+Pakistan',
+    latitude: 31.4697,
+    longitude: 74.2415,
     openingHours: 'Mo-Sa 09:00-18:00',
     foundingYear: '2018',
   },
 
   social: {
-    facebook: 'https://www.facebook.com/orionswtrading',
-    twitter: 'https://x.com/orionswtrading',
-    linkedin: 'https://www.linkedin.com/company/orionswtrading',
-    instagram: 'https://www.instagram.com/orionswtrading',
-    youtube: 'https://www.youtube.com/@orionswtrading',
+    facebook: 'https://www.facebook.com/orionsofttech',
+    twitter: 'https://x.com/orionsofttech',
+    linkedin: 'https://www.linkedin.com/company/orionsofttech',
+    instagram: 'https://www.instagram.com/orionsofttech',
+    youtube: 'https://www.youtube.com/@orionsofttech',
   },
 
   // Analytics & Webmaster Verification
   analytics: {
-    googleAnalyticsId: 'G-ORION01TR',
+    googleAnalyticsId: 'G-ORIONST01',
     googleTagManagerId: 'GTM-ORION01',
-    googleSearchConsoleVerification: 'gsc-orionswtrading-v1-verified',
+    googleSearchConsoleVerification: 'gsc-orionsofttech-v1-verified',
   },
 
   seo: {

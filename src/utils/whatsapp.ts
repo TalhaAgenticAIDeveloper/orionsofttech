@@ -1,7 +1,9 @@
 import { siteConfig } from '@/config/siteConfig';
 
 export function generateWhatsAppUrl(message: string): string {
-  const phone = siteConfig.contact.whatsapp.replace(/[^\d+]/g, '');
+  const phone =
+    siteConfig.contact.whatsappDigits ||
+    siteConfig.contact.whatsapp.replace(/[^\d]/g, '');
   if (!phone) {
     console.warn('WhatsApp number not configured in siteConfig');
     return '#';

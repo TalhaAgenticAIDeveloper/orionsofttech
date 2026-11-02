@@ -11,7 +11,7 @@ export function generateOrganizationSchema() {
     logo: `${siteConfig.url}${siteConfig.logoWebp || siteConfig.logo}`,
     description: siteConfig.description,
     email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phone,
+    telephone: siteConfig.contact.phoneIntl || siteConfig.contact.phone,
     foundingDate: siteConfig.contact.foundingYear,
     address: {
       '@type': 'PostalAddress',
@@ -24,17 +24,17 @@ export function generateOrganizationSchema() {
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        telephone: siteConfig.contact.phone,
+        telephone: siteConfig.contact.phoneIntl || siteConfig.contact.phone,
         contactType: 'customer support',
         email: siteConfig.contact.supportEmail || siteConfig.contact.email,
-        availableLanguage: ['English', 'Arabic'],
+        availableLanguage: ['English', 'Urdu'],
       },
       {
         '@type': 'ContactPoint',
         telephone: siteConfig.contact.whatsapp,
         contactType: 'sales',
         email: siteConfig.contact.salesEmail || siteConfig.contact.email,
-        availableLanguage: ['English', 'Arabic'],
+        availableLanguage: ['English', 'Urdu'],
       },
     ],
     sameAs: Object.values(siteConfig.social).filter(Boolean),
@@ -52,11 +52,11 @@ export function generateLocalBusinessSchema() {
     logo: `${siteConfig.url}${siteConfig.logoWebp || siteConfig.logo}`,
     image: `${siteConfig.url}/images/og/og-home.jpg`,
     description: siteConfig.description,
-    telephone: siteConfig.contact.phone,
+    telephone: siteConfig.contact.phoneIntl || siteConfig.contact.phone,
     email: siteConfig.contact.email,
     priceRange: '$$',
-    paymentAccepted: 'Cash, Credit Card, Wire Transfer, Bank Transfer',
-    currenciesAccepted: 'AED, USD, EUR, GBP',
+    paymentAccepted: 'Cash, Bank Transfer, Pay Order, Wire Transfer, Credit Card',
+    currenciesAccepted: 'PKR, USD, AED, EUR, GBP',
     address: {
       '@type': 'PostalAddress',
       streetAddress: siteConfig.contact.address,
@@ -88,7 +88,7 @@ export function generateLocalBusinessSchema() {
     areaServed: [
       {
         '@type': 'Country',
-        name: 'United Arab Emirates',
+        name: 'Pakistan',
       },
       {
         '@type': 'AdministrativeArea',
@@ -256,7 +256,7 @@ export function generateContactPageSchema() {
       name: siteConfig.companyName,
       url: siteConfig.url,
       email: siteConfig.contact.email,
-      telephone: siteConfig.contact.phone,
+      telephone: siteConfig.contact.phoneIntl || siteConfig.contact.phone,
       address: {
         '@type': 'PostalAddress',
         streetAddress: siteConfig.contact.address,

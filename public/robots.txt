@@ -1,5 +1,5 @@
 # Robots.txt for Orion Software & Trading
-# https://orionswtrading.com
+# https://orionsofttech.com
 
 User-agent: *
 Allow: /
@@ -25,4 +25,4 @@ User-agent: Applebot-Extended
 Allow: /
 
 # XML Sitemaps
-Sitemap: https://orionswtrading.com/sitemap.xml
+Sitemap: https://orionsofttech.com/sitemap.xml
