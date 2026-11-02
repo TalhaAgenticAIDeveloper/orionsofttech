@@ -6,7 +6,7 @@ import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/buttons/Button';
 import { products } from '@/data/products/products';
-import { generateWebPageSchema } from '@/utils/seo';
+import { generateWebPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
 import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/whatsapp';
 
 const CATEGORY_ALIASES: Record<string, string> = {
@@ -326,21 +326,19 @@ export const ITProductsPage: React.FC = () => {
     url: '/it-products',
   });
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'IT Hardware Catalog', url: '/it-products' },
+  ]);
+
   return (
     <>
       <SEOHead
         title="IT Hardware & Equipment Catalog | Orion Software & Trading"
         description="Browse enterprise IT hardware catalog. Servers, business laptops, Cisco switches, CCTV cameras, UPS power systems. Inquire for availability and quotations."
         canonicalPath="/it-products"
-        keywords={[
-          'IT hardware supplier',
-          'enterprise server supplier',
-          'business laptops procurement',
-          'Cisco network switches',
-          'CCTV surveillance supply',
-          'UPS power backup solutions',
-        ]}
-        schema={pageSchema}
+        ogImage="/images/og/og-hardware.jpg"
+        schema={[pageSchema, breadcrumbSchema]}
       />
 
       {/* Header Banner */}
@@ -413,6 +411,7 @@ export const ITProductsPage: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Left Column: Filters Sidebar */}
           <aside className="lg:col-span-1 space-y-6">
+            <h2 className="sr-only">Filter Hardware Catalog by Category and Manufacturer</h2>
             {/* Search Input */}
             <div className="p-6 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs">
               <label htmlFor="catalog-search" className="block text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-2.5">
@@ -549,11 +548,20 @@ export const ITProductsPage: React.FC = () => {
 
           {/* Right Column: Product Grid */}
           <main className="lg:col-span-3">
+            {/* Catalog Section Header */}
+            <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+                  Commercial Hardware Catalog
+                </h2>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  Showing <strong className="text-slate-900 dark:text-white font-bold">{filteredProducts.length}</strong> verified enterprise items
+                </p>
+              </div>
+            </div>
+
             {/* Active Filters Bar */}
             <div className="mb-6 flex flex-wrap items-center justify-between gap-3 text-xs">
-              <div className="text-slate-500 dark:text-slate-400">
-                Showing <strong className="text-slate-900 dark:text-white font-bold">{filteredProducts.length}</strong> products
-              </div>
 
               {(selectedCategory !== 'all' || selectedBrand !== 'all' || searchQuery) && (
                 <div className="flex items-center flex-wrap gap-2">

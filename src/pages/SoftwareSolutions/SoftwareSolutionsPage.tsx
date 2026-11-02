@@ -5,7 +5,7 @@ import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/buttons/Button';
 import { softwareServices } from '@/data/services/softwareServices';
-import { generateWebPageSchema } from '@/utils/seo';
+import { generateWebPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
 
 export const SoftwareSolutionsPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -68,21 +68,19 @@ export const SoftwareSolutionsPage: React.FC = () => {
     url: '/software-solutions',
   });
 
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Software Solutions', url: '/software-solutions' },
+  ]);
+
   return (
     <>
       <SEOHead
         title="Custom Software Solutions & Development Services | Orion"
         description="Explore custom software development services from Orion Software & Trading. Bespoke web apps, mobile solutions, ERP, CRM, and AI automation tailored to your business."
         canonicalPath="/software-solutions"
-        keywords={[
-          'custom software development',
-          'enterprise software solutions',
-          'ERP development company',
-          'web application development',
-          'mobile app development',
-          'AI business automation',
-        ]}
-        schema={pageSchema}
+        ogImage="/images/og/og-software.jpg"
+        schema={[pageSchema, breadcrumbSchema]}
       />
 
       {/* Header Banner */}
@@ -193,6 +191,15 @@ export const SoftwareSolutionsPage: React.FC = () => {
       {/* Services Grid */}
       <section className="py-8 md:py-12 bg-slate-50/60 dark:bg-[#080D1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+              Enterprise Software Engineering Capabilities
+            </h2>
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+              Select a specialized discipline below to view technical specifications, architecture blueprints, and FAQs.
+            </p>
+          </div>
+
           {filteredServices.length === 0 ? (
             <div className="text-center py-16 bg-white dark:bg-[#111827] rounded-3xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
               <Layers className="w-12 h-12 text-slate-400 mx-auto mb-3" />

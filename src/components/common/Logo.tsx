@@ -25,46 +25,62 @@ export const Logo: React.FC<LogoProps> = ({
     <div className={`inline-flex items-center shrink-0 select-none ${className}`}>
       {variant === 'dark' ? (
         /* Always Dark Mode Logo (For Dark Footer or Dark Surfaces) */
-        <img
-          src="/images/orion-logo-dark.png"
-          alt="Orion Software & Trading"
-          className={`${sizeClasses[size]} w-auto object-contain`}
-          width="198"
-          height="64"
-          loading="eager"
-        />
+        <picture>
+          <source srcSet="/images/orion-logo-dark.webp" type="image/webp" />
+          <img
+            src="/images/orion-logo-dark.png"
+            alt="Orion Software & Trading"
+            className={`${sizeClasses[size]} w-auto object-contain`}
+            width="198"
+            height="64"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
       ) : variant === 'light' ? (
         /* Always Light Mode Logo */
-        <img
-          src="/images/orion-logo-light.png"
-          alt="Orion Software & Trading"
-          className={`${sizeClasses[size]} w-auto object-contain`}
-          width="198"
-          height="64"
-          loading="eager"
-        />
+        <picture>
+          <source srcSet="/images/orion-logo-light.webp" type="image/webp" />
+          <img
+            src="/images/orion-logo-light.png"
+            alt="Orion Software & Trading"
+            className={`${sizeClasses[size]} w-auto object-contain`}
+            width="198"
+            height="64"
+            loading="eager"
+            decoding="async"
+          />
+        </picture>
       ) : (
         /* Auto Theme Adaptive: Changes with Light/Dark mode (For Navbar) */
         <>
           {/* Light Theme: Dark Charcoal text on light navbar */}
-          <img
-            src="/images/orion-logo-light.png"
-            alt="Orion Software & Trading"
-            className={`${sizeClasses[size]} w-auto object-contain block dark:hidden`}
-            width="198"
-            height="64"
-            loading="eager"
-          />
+          <picture className="block dark:hidden">
+            <source srcSet="/images/orion-logo-light.webp" type="image/webp" />
+            <img
+              src="/images/orion-logo-light.png"
+              alt="Orion Software & Trading"
+              className={`${sizeClasses[size]} w-auto object-contain`}
+              width="198"
+              height="64"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
 
           {/* Dark Theme: Crisp White text on dark navbar */}
-          <img
-            src="/images/orion-logo-dark.png"
-            alt="Orion Software & Trading"
-            className={`${sizeClasses[size]} w-auto object-contain hidden dark:block`}
-            width="198"
-            height="64"
-            loading="eager"
-          />
+          <picture className="hidden dark:block">
+            <source srcSet="/images/orion-logo-dark.webp" type="image/webp" />
+            <img
+              src="/images/orion-logo-dark.png"
+              alt="Orion Software & Trading"
+              className={`${sizeClasses[size]} w-auto object-contain`}
+              width="198"
+              height="64"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
         </>
       )}
     </div>

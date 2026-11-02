@@ -25,7 +25,7 @@ export const productCategories: ProductCategory[] = [
         'HP computers',
         'enterprise computing',
       ],
-      canonicalPath: '/products/computers-workstations',
+      canonicalPath: '/it-products?category=computers-workstations',
     },
   },
   {
@@ -50,7 +50,7 @@ export const productCategories: ProductCategory[] = [
         'Lenovo ThinkPad',
         'enterprise laptops',
       ],
-      canonicalPath: '/products/laptops',
+      canonicalPath: '/it-products?category=laptops',
     },
   },
   {
@@ -75,7 +75,7 @@ export const productCategories: ProductCategory[] = [
         'Dell OptiPlex',
         'HP ProDesk',
       ],
-      canonicalPath: '/products/desktops',
+      canonicalPath: '/it-products?category=desktops',
     },
   },
   {
@@ -100,7 +100,7 @@ export const productCategories: ProductCategory[] = [
         'rendering workstation',
         'professional workstation',
       ],
-      canonicalPath: '/products/workstations',
+      canonicalPath: '/it-products?category=workstations',
     },
   },
 
@@ -129,7 +129,7 @@ export const productCategories: ProductCategory[] = [
         'server hardware',
         'server components',
       ],
-      canonicalPath: '/products/servers-server-components',
+      canonicalPath: '/it-products?category=servers-server-components',
     },
   },
   {
@@ -147,7 +147,7 @@ export const productCategories: ProductCategory[] = [
       description:
         'High-density rack servers from Dell PowerEdge and HP ProLiant. 1U and 2U servers for data centers and server rooms.',
       keywords: ['rack servers', '1U servers', '2U servers', 'data center servers', 'Dell PowerEdge', 'HP ProLiant'],
-      canonicalPath: '/products/rack-servers',
+      canonicalPath: '/it-products?category=rack-servers',
     },
   },
   {
@@ -165,7 +165,7 @@ export const productCategories: ProductCategory[] = [
       description:
         'Tower servers from Dell and HP for small offices. Easy to deploy standalone servers for file sharing, email, and applications.',
       keywords: ['tower servers', 'small business servers', 'standalone servers', 'Dell PowerEdge tower', 'HP ProLiant ML'],
-      canonicalPath: '/products/tower-servers',
+      canonicalPath: '/it-products?category=tower-servers',
     },
   },
   {
@@ -183,7 +183,7 @@ export const productCategories: ProductCategory[] = [
       description:
         'Server-grade components including Intel Xeon CPUs, ECC RAM, SAS drives, NVMe SSDs, and RAID controllers for Dell, HP, and Lenovo servers.',
       keywords: ['server components', 'server RAM', 'Xeon processors', 'SAS drives', 'RAID controllers', 'server upgrades'],
-      canonicalPath: '/products/server-components',
+      canonicalPath: '/it-products?category=server-components',
     },
   },
 
@@ -210,7 +210,7 @@ export const productCategories: ProductCategory[] = [
         'professional monitors',
         'office monitors',
       ],
-      canonicalPath: '/products/monitors-displays',
+      canonicalPath: '/it-products?category=monitors-displays',
     },
   },
 
@@ -237,7 +237,7 @@ export const productCategories: ProductCategory[] = [
         'HP LaserJet',
         'office printers',
       ],
-      canonicalPath: '/products/printers-scanners',
+      canonicalPath: '/it-products?category=printers-scanners',
     },
   },
 
@@ -276,7 +276,7 @@ export const productCategories: ProductCategory[] = [
         'motherboards',
         'power supplies',
       ],
-      canonicalPath: '/products/computer-components',
+      canonicalPath: '/it-products?category=computer-components',
     },
   },
   {
@@ -292,7 +292,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Processors (CPUs) | Intel Core & AMD Ryzen',
       description: 'Desktop and workstation CPUs from Intel Core and AMD Ryzen. Processors for office, gaming, and professional workloads.',
       keywords: ['processors', 'CPUs', 'Intel Core', 'AMD Ryzen', 'desktop processors', 'workstation CPUs'],
-      canonicalPath: '/products/processors',
+      canonicalPath: '/it-products?category=processors',
     },
   },
   {
@@ -308,7 +308,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Memory (RAM) | DDR4 & DDR5 Desktop, Laptop & Server RAM',
       description: 'DDR4 and DDR5 memory modules for desktops, laptops, and servers. Reliable RAM from Kingston, Crucial, and Corsair.',
       keywords: ['RAM', 'memory modules', 'DDR4', 'DDR5', 'desktop RAM', 'server memory', 'laptop memory'],
-      canonicalPath: '/products/memory-ram',
+      canonicalPath: '/it-products?category=memory-ram',
     },
   },
   {
@@ -324,7 +324,7 @@ export const productCategories: ProductCategory[] = [
       title: 'SSDs & Hard Drives | NVMe, SATA SSD & HDD Storage',
       description: 'NVMe SSDs, SATA SSDs, and HDDs from Samsung, Western Digital, and Seagate for desktops, laptops, and servers.',
       keywords: ['SSD', 'hard drive', 'NVMe', 'SATA SSD', 'HDD', 'storage drives', 'Samsung SSD', 'WD'],
-      canonicalPath: '/products/storage-drives',
+      canonicalPath: '/it-products?category=storage-drives',
     },
   },
   {
@@ -340,7 +340,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Graphics Cards (GPUs) | NVIDIA & AMD Graphics',
       description: 'Professional and consumer GPUs from NVIDIA and AMD. Graphics cards for CAD, AI, video editing, and workstation use.',
       keywords: ['graphics cards', 'GPU', 'NVIDIA RTX', 'AMD Radeon', 'workstation GPU', 'professional graphics'],
-      canonicalPath: '/products/graphics-cards',
+      canonicalPath: '/it-products?category=graphics-cards',
     },
   },
   {
@@ -356,7 +356,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Motherboards | Intel & AMD Desktop & Workstation Boards',
       description: 'Desktop and workstation motherboards from ASUS, MSI, and Gigabyte for Intel and AMD platforms.',
       keywords: ['motherboards', 'Intel motherboard', 'AMD motherboard', 'ASUS', 'MSI', 'Gigabyte', 'workstation motherboard'],
-      canonicalPath: '/products/motherboards',
+      canonicalPath: '/it-products?category=motherboards',
     },
   },
   {
@@ -372,7 +372,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Power Supplies (PSUs) | 80 PLUS Certified Desktop PSUs',
       description: '80 PLUS certified power supplies from Corsair, Seasonic, and EVGA. Modular PSUs for office and high-performance builds.',
       keywords: ['power supply', 'PSU', 'modular PSU', '80 PLUS', 'Corsair PSU', 'Seasonic', 'desktop power supply'],
-      canonicalPath: '/products/power-supplies',
+      canonicalPath: '/it-products?category=power-supplies',
     },
   },
   {
@@ -388,7 +388,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Computer Cases | Desktop Cases & Chassis',
       description: 'Desktop computer cases from Corsair, NZXT, and Fractal Design. Mid-tower, full-tower, and SFF cases for every build.',
       keywords: ['computer cases', 'PC cases', 'desktop chassis', 'mid-tower', 'full-tower', 'SFF case'],
-      canonicalPath: '/products/computer-cases',
+      canonicalPath: '/it-products?category=computer-cases',
     },
   },
   {
@@ -404,7 +404,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Cooling Solutions | CPU Coolers, AIO & Case Fans',
       description: 'CPU coolers, AIO liquid coolers, and case fans from Noctua, Corsair, and Arctic for optimal system cooling.',
       keywords: ['CPU cooler', 'AIO cooler', 'liquid cooling', 'case fans', 'Noctua', 'Corsair cooling'],
-      canonicalPath: '/products/cooling-solutions',
+      canonicalPath: '/it-products?category=cooling-solutions',
     },
   },
 
@@ -433,7 +433,7 @@ export const productCategories: ProductCategory[] = [
         'office peripherals',
         'Logitech',
       ],
-      canonicalPath: '/products/peripherals-accessories',
+      canonicalPath: '/it-products?category=peripherals-accessories',
     },
   },
   {
@@ -449,7 +449,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Keyboards | Wireless & Wired Office Keyboards',
       description: 'Professional keyboards from Logitech, Microsoft, and Dell. Wireless, ergonomic, and mechanical keyboards for office use.',
       keywords: ['keyboards', 'wireless keyboard', 'office keyboard', 'ergonomic keyboard', 'Logitech keyboard'],
-      canonicalPath: '/products/keyboards',
+      canonicalPath: '/it-products?category=keyboards',
     },
   },
   {
@@ -465,7 +465,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Mice | Wireless & Ergonomic Office Mice',
       description: 'Office mice from Logitech, Microsoft, and Dell. Wireless, ergonomic, and precision mice for professional use.',
       keywords: ['mice', 'wireless mouse', 'office mouse', 'ergonomic mouse', 'Logitech mouse'],
-      canonicalPath: '/products/mice',
+      canonicalPath: '/it-products?category=mice',
     },
   },
   {
@@ -481,7 +481,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Desk Accessories | Docking Stations, Webcams & Laptop Bags',
       description: 'Desk accessories including docking stations, webcams, headsets, laptop bags, and USB hubs for the modern workspace.',
       keywords: ['docking stations', 'webcams', 'laptop bags', 'USB hub', 'desk accessories', 'office accessories'],
-      canonicalPath: '/products/desk-accessories',
+      canonicalPath: '/it-products?category=desk-accessories',
     },
   },
 
@@ -518,7 +518,7 @@ export const productCategories: ProductCategory[] = [
         'Ubiquiti',
         'structured cabling',
       ],
-      canonicalPath: '/products/networking-equipment',
+      canonicalPath: '/it-products?category=networking-equipment',
     },
   },
   {
@@ -534,7 +534,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Routers | Enterprise & Business Routers',
       description: 'Enterprise routers from Cisco, MikroTik, and Ubiquiti for business internet, VPN, and multi-WAN connectivity.',
       keywords: ['routers', 'business routers', 'enterprise routers', 'Cisco router', 'MikroTik', 'VPN router'],
-      canonicalPath: '/products/routers',
+      canonicalPath: '/it-products?category=routers',
     },
   },
   {
@@ -550,7 +550,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Network Switches | Managed & PoE Switches',
       description: 'Managed and unmanaged network switches from Cisco, HP, and Ubiquiti. PoE switches from 8-port to 48-port.',
       keywords: ['network switches', 'managed switches', 'PoE switches', 'Cisco switch', 'Catalyst', '48-port switch'],
-      canonicalPath: '/products/network-switches',
+      canonicalPath: '/it-products?category=network-switches',
     },
   },
   {
@@ -566,7 +566,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Wireless Access Points | Enterprise Wi-Fi 6 APs',
       description: 'Enterprise Wi-Fi 6 access points from Ubiquiti, Cisco, and TP-Link for high-density wireless coverage.',
       keywords: ['wireless access points', 'Wi-Fi 6', 'enterprise WiFi', 'Ubiquiti AP', 'UniFi', 'access points'],
-      canonicalPath: '/products/wireless-access-points',
+      canonicalPath: '/it-products?category=wireless-access-points',
     },
   },
   {
@@ -582,7 +582,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Firewalls | Next-Gen Firewalls & UTM Appliances',
       description: 'Next-generation firewalls from Fortinet, Sophos, and Cisco. UTM appliances with IPS, VPN, and content filtering.',
       keywords: ['firewalls', 'next-gen firewall', 'UTM', 'FortiGate', 'Sophos', 'network security'],
-      canonicalPath: '/products/firewalls',
+      canonicalPath: '/it-products?category=firewalls',
     },
   },
   {
@@ -598,7 +598,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Network Cables & Fiber | Ethernet & Fiber Optic Cabling',
       description: 'Cat6, Cat6a, and fiber optic cables for network installations. Bulk cable, patch cords, and fiber patch cables.',
       keywords: ['network cables', 'Cat6', 'Cat6a', 'fiber optic cable', 'Ethernet cable', 'patch cord'],
-      canonicalPath: '/products/network-cables',
+      canonicalPath: '/it-products?category=network-cables',
     },
   },
   {
@@ -614,7 +614,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Structured Cabling | Patch Panels, Keystones & Cable Management',
       description: 'Structured cabling components including patch panels, keystones, faceplates, cable trays, and racks.',
       keywords: ['structured cabling', 'patch panels', 'keystones', 'cable management', 'network rack', 'faceplates'],
-      canonicalPath: '/products/structured-cabling',
+      canonicalPath: '/it-products?category=structured-cabling',
     },
   },
 
@@ -645,7 +645,7 @@ export const productCategories: ProductCategory[] = [
         'access control',
         'biometric',
       ],
-      canonicalPath: '/products/cctv-surveillance',
+      canonicalPath: '/it-products?category=cctv-surveillance',
     },
   },
   {
@@ -661,7 +661,7 @@ export const productCategories: ProductCategory[] = [
       title: 'IP Cameras | Network Surveillance Cameras',
       description: 'IP surveillance cameras from Hikvision and Dahua. Dome, bullet, turret, and PTZ cameras up to 8MP.',
       keywords: ['IP cameras', 'network cameras', 'dome camera', 'bullet camera', 'PTZ camera', 'Hikvision', 'Dahua'],
-      canonicalPath: '/products/ip-cameras',
+      canonicalPath: '/it-products?category=ip-cameras',
     },
   },
   {
@@ -677,7 +677,7 @@ export const productCategories: ProductCategory[] = [
       title: 'NVR & DVR | Network & Digital Video Recorders',
       description: 'NVRs and DVRs from Hikvision and Dahua. 4 to 32-channel recorders with PoE and multi-TB storage support.',
       keywords: ['NVR', 'DVR', 'video recorder', 'Hikvision NVR', 'Dahua NVR', '16-channel NVR', 'PoE NVR'],
-      canonicalPath: '/products/nvr-dvr',
+      canonicalPath: '/it-products?category=nvr-dvr',
     },
   },
   {
@@ -693,7 +693,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Biometric Devices | Fingerprint & Face Recognition Terminals',
       description: 'Biometric terminals from ZKTeco for attendance and access control. Fingerprint and facial recognition devices.',
       keywords: ['biometric devices', 'fingerprint reader', 'face recognition', 'attendance system', 'ZKTeco', 'biometric terminal'],
-      canonicalPath: '/products/biometric-devices',
+      canonicalPath: '/it-products?category=biometric-devices',
     },
   },
   {
@@ -709,7 +709,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Access Control | Card Readers, Locks & Door Controllers',
       description: 'Access control hardware including card readers, EM locks, and door controllers for secure facility management.',
       keywords: ['access control', 'card reader', 'electromagnetic lock', 'door controller', 'security access', 'RFID access'],
-      canonicalPath: '/products/access-control',
+      canonicalPath: '/it-products?category=access-control',
     },
   },
 
@@ -738,7 +738,7 @@ export const productCategories: ProductCategory[] = [
         'uninterruptible power supply',
         'power protection',
       ],
-      canonicalPath: '/products/power-backup',
+      canonicalPath: '/it-products?category=power-backup',
     },
   },
   {
@@ -754,7 +754,7 @@ export const productCategories: ProductCategory[] = [
       title: 'UPS Systems | Uninterruptible Power Supply',
       description: 'UPS systems from APC and Vertiv. Line-interactive and online double-conversion UPS from 650VA to 10kVA+.',
       keywords: ['UPS', 'uninterruptible power supply', 'APC UPS', 'online UPS', 'rackmount UPS', 'Smart-UPS'],
-      canonicalPath: '/products/ups-systems',
+      canonicalPath: '/it-products?category=ups-systems',
     },
   },
   {
@@ -770,7 +770,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Server Racks & Cabinets | 19-inch Racks & Enclosures',
       description: 'Server racks and network cabinets from 6U wall-mount to 42U floor-standing. 19-inch racks with cable management.',
       keywords: ['server racks', 'network cabinets', '42U rack', 'wall-mount rack', '19-inch rack', 'server cabinet'],
-      canonicalPath: '/products/server-racks-cabinets',
+      canonicalPath: '/it-products?category=server-racks-cabinets',
     },
   },
   {
@@ -786,7 +786,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Power Distribution Units (PDUs) | Rack Mount PDUs',
       description: 'Rack-mount PDUs from APC and Vertiv. Basic, metered, and switched power distribution units for server racks.',
       keywords: ['PDU', 'power distribution unit', 'rack PDU', 'APC PDU', 'metered PDU', 'switched PDU'],
-      canonicalPath: '/products/power-distribution-units',
+      canonicalPath: '/it-products?category=power-distribution-units',
     },
   },
 
@@ -814,7 +814,7 @@ export const productCategories: ProductCategory[] = [
         'data center',
         'enterprise storage',
       ],
-      canonicalPath: '/products/storage-data-center',
+      canonicalPath: '/it-products?category=storage-data-center',
     },
   },
 
@@ -842,7 +842,7 @@ export const productCategories: ProductCategory[] = [
         'AV solutions',
         'presentation technology',
       ],
-      canonicalPath: '/products/audio-visual',
+      canonicalPath: '/it-products?category=audio-visual',
     },
   },
   {
@@ -858,7 +858,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Projectors | Business & Education Projectors',
       description: 'Business projectors from Epson, BenQ, and ViewSonic. DLP, LCD, and laser projectors for meetings and classrooms.',
       keywords: ['projectors', 'business projector', 'laser projector', 'Epson projector', 'education projector'],
-      canonicalPath: '/products/projectors',
+      canonicalPath: '/it-products?category=projectors',
     },
   },
   {
@@ -874,7 +874,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Interactive Displays | Interactive Flat Panels',
       description: 'Interactive flat panel displays for classrooms and boardrooms. Touch-enabled smart boards for collaboration.',
       keywords: ['interactive display', 'interactive flat panel', 'smart board', 'touch screen display', 'classroom display'],
-      canonicalPath: '/products/interactive-displays',
+      canonicalPath: '/it-products?category=interactive-displays',
     },
   },
   {
@@ -890,7 +890,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Video Conferencing | Conference Cameras & Room Systems',
       description: 'Video conferencing equipment from Logitech, Poly, and Yealink. Conference cameras, speakerphones, and room kits.',
       keywords: ['video conferencing', 'conference camera', 'speakerphone', 'Logitech Rally', 'Poly', 'room system'],
-      canonicalPath: '/products/video-conferencing',
+      canonicalPath: '/it-products?category=video-conferencing',
     },
   },
   {
@@ -906,7 +906,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Audio Equipment | Speakers, Amplifiers & Microphones',
       description: 'Professional audio equipment including speakers, amplifiers, microphones, and mixers for meetings and events.',
       keywords: ['audio equipment', 'speakers', 'amplifiers', 'microphones', 'PA system', 'professional audio'],
-      canonicalPath: '/products/audio-equipment',
+      canonicalPath: '/it-products?category=audio-equipment',
     },
   },
 
@@ -934,7 +934,7 @@ export const productCategories: ProductCategory[] = [
         'POS terminal',
         'retail hardware',
       ],
-      canonicalPath: '/products/pos-retail-solutions',
+      canonicalPath: '/it-products?category=pos-retail-solutions',
     },
   },
   {
@@ -950,7 +950,7 @@ export const productCategories: ProductCategory[] = [
       title: 'POS Terminals | Touchscreen Point of Sale Systems',
       description: 'All-in-one POS terminals with touchscreens for retail and food service. Reliable point-of-sale hardware.',
       keywords: ['POS terminal', 'point of sale system', 'touchscreen POS', 'retail POS', 'restaurant POS'],
-      canonicalPath: '/products/pos-terminals',
+      canonicalPath: '/it-products?category=pos-terminals',
     },
   },
   {
@@ -966,7 +966,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Barcode Scanners | 1D & 2D Handheld Scanners',
       description: 'Barcode scanners from Honeywell and Zebra. Handheld and presentation 1D and 2D scanners for retail and warehouse.',
       keywords: ['barcode scanners', 'handheld scanner', '2D scanner', 'Honeywell scanner', 'Zebra scanner'],
-      canonicalPath: '/products/barcode-scanners',
+      canonicalPath: '/it-products?category=barcode-scanners',
     },
   },
   {
@@ -982,7 +982,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Thermal & Receipt Printers | POS Receipt Printers',
       description: 'Thermal receipt printers for POS and queue management. Fast, reliable printers with USB and Ethernet connectivity.',
       keywords: ['receipt printer', 'thermal printer', 'POS printer', 'label printer', 'Epson receipt printer'],
-      canonicalPath: '/products/receipt-printers',
+      canonicalPath: '/it-products?category=receipt-printers',
     },
   },
 
@@ -1010,7 +1010,7 @@ export const productCategories: ProductCategory[] = [
         'cable management',
         'IT accessories',
       ],
-      canonicalPath: '/products/it-consumables-accessories',
+      canonicalPath: '/it-products?category=it-consumables-accessories',
     },
   },
 
@@ -1027,7 +1027,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Mini PCs & Thin Clients Supplier | Compact Commercial PCs',
       description: 'Procure commercial Mini PCs, USFF computers, and VDI thin clients from Dell, HP, and Lenovo. Space-saving enterprise computing hardware.',
       keywords: ['mini PC supplier', 'thin clients', 'HP thin client', 'Dell micro desktop', 'USFF PC'],
-      canonicalPath: '/products/mini-pcs-thin-clients',
+      canonicalPath: '/it-products?category=mini-pcs-thin-clients',
     },
   },
   {
@@ -1042,7 +1042,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Laptop Accessories & Docking Stations | Commercial Docks & Chargers',
       description: 'Commercial laptop docking stations, OEM AC adapters, and business peripherals from Dell, HP, and Lenovo.',
       keywords: ['laptop docking station', 'Dell Thunderbolt dock', 'laptop charger supplier', 'USB-C dock'],
-      canonicalPath: '/products/laptop-accessories',
+      canonicalPath: '/it-products?category=laptop-accessories',
     },
   },
   {
@@ -1057,7 +1057,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Storage Devices & Memory Supplier | SSDs, HDDs & NAS Storage',
       description: 'Enterprise SSDs, SATA hard drives, surveillance HDDs, and network-attached storage systems from Western Digital, Samsung, Kingston, and Seagate.',
       keywords: ['SSD supplier', 'HDD supplier', 'enterprise SSD', 'surveillance hard drive', 'NAS storage'],
-      canonicalPath: '/products/storage-and-memory',
+      canonicalPath: '/it-products?category=storage-and-memory',
     },
   },
   {
@@ -1072,7 +1072,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Solid State Drives (SSDs) Supplier | NVMe M.2 & SATA SSDs',
       description: 'Shop commercial NVMe and SATA SSDs from Samsung, Kingston, and Crucial. Fast and reliable digital storage for business systems.',
       keywords: ['NVMe SSD supplier', 'M.2 SSD', 'SATA SSD', 'Kingston NVMe', 'Samsung 990 PRO'],
-      canonicalPath: '/products/solid-state-drives',
+      canonicalPath: '/it-products?category=solid-state-drives',
     },
   },
   {
@@ -1087,7 +1087,7 @@ export const productCategories: ProductCategory[] = [
       title: 'External & Portable SSDs Supplier | Rugged USB-C Storage',
       description: 'Procure portable SSDs and external hard drives from SanDisk, Samsung, and Western Digital. Shock-resistant commercial mobile storage.',
       keywords: ['portable SSD', 'external hard drive', 'SanDisk Extreme', 'USB-C external SSD'],
-      canonicalPath: '/products/external-portable-storage',
+      canonicalPath: '/it-products?category=external-portable-storage',
     },
   },
   {
@@ -1102,7 +1102,7 @@ export const productCategories: ProductCategory[] = [
       title: 'USB Flash Drives & Memory Cards | High-Speed Storage Media',
       description: 'Commercial USB 3.2 flash drives and high-speed SD cards from Kingston, SanDisk, and Samsung.',
       keywords: ['USB flash drive supplier', 'SanDisk Extreme SD card', 'Kingston DataTraveler', 'MicroSD card'],
-      canonicalPath: '/products/flash-drives-memory-cards',
+      canonicalPath: '/it-products?category=flash-drives-memory-cards',
     },
   },
   {
@@ -1117,7 +1117,7 @@ export const productCategories: ProductCategory[] = [
       title: 'NAS Storage Systems Supplier | Synology & QNAP Network Storage',
       description: 'Enterprise NAS storage solutions from Synology and QNAP for corporate file sharing, backup, and surveillance recording.',
       keywords: ['NAS storage supplier', 'Synology DiskStation', 'network attached storage', 'multi-bay NAS'],
-      canonicalPath: '/products/nas-san-storage-systems',
+      canonicalPath: '/it-products?category=nas-san-storage-systems',
     },
   },
   {
@@ -1132,7 +1132,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Hard Drive Enclosures & Docks | M.2 NVMe & SATA Docking Stations',
       description: 'External hard drive docks, M.2 NVMe USB-C enclosures, and drive duplicators for IT departments and technicians.',
       keywords: ['hard drive dock', 'M.2 enclosure', 'SATA USB adapter', 'disk duplicator dock'],
-      canonicalPath: '/products/storage-enclosures-docks',
+      canonicalPath: '/it-products?category=storage-enclosures-docks',
     },
   },
   {
@@ -1147,7 +1147,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Docking Stations & USB Hubs Supplier | Thunderbolt 4 Docks',
       description: 'Enterprise USB-C and Thunderbolt 4 docking stations from Dell, HP, Anker, and CalDigit.',
       keywords: ['Thunderbolt 4 dock', 'USB-C multiport hub', 'laptop docking station', 'display dock'],
-      canonicalPath: '/products/docking-stations-hubs',
+      canonicalPath: '/it-products?category=docking-stations-hubs',
     },
   },
   {
@@ -1162,7 +1162,7 @@ export const productCategories: ProductCategory[] = [
       title: 'KVM Switches Supplier | 4K HDMI & DisplayPort KVM Selectors',
       description: 'Commercial KVM switches from ATEN, UGREEN, and StarTech for control rooms, IT testing labs, and multi-PC workstations.',
       keywords: ['KVM switch supplier', '4K KVM switch', 'USB KVM', 'dual monitor KVM'],
-      canonicalPath: '/products/kvm-switches',
+      canonicalPath: '/it-products?category=kvm-switches',
     },
   },
   {
@@ -1177,7 +1177,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Dual Monitor Arms & Ergonomic Mounts | Commercial Desk Mounts',
       description: 'Commercial monitor arms and desk mounts from North Bayou, Ergotron, and Brateck. Full-motion gas-spring flexibility.',
       keywords: ['dual monitor arm', 'gas spring monitor mount', 'desk clamp arm', 'ergonomic monitor stand'],
-      canonicalPath: '/products/monitor-arms-stands',
+      canonicalPath: '/it-products?category=monitor-arms-stands',
     },
   },
   {
@@ -1192,7 +1192,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Audio Devices & Communication Equipment Supplier | Office Headsets & Mics',
       description: 'Enterprise headsets, conference speakerphones, and podcast microphones from Jabra, Poly, Shure, and Logitech.',
       keywords: ['office headset supplier', 'conference speakerphone', 'Jabra headset', 'Shure microphone'],
-      canonicalPath: '/products/audio-and-communication',
+      canonicalPath: '/it-products?category=audio-and-communication',
     },
   },
   {
@@ -1207,7 +1207,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Professional Office Headsets | Jabra & Poly Wireless Headsets',
       description: 'Enterprise noise-cancelling headsets for customer service, call centers, and corporate executives.',
       keywords: ['Jabra Evolve2 65', 'Poly Blackwire 5220', 'call center headset', 'noise cancelling office headset'],
-      canonicalPath: '/products/professional-headsets',
+      canonicalPath: '/it-products?category=professional-headsets',
     },
   },
   {
@@ -1222,7 +1222,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Professional Microphones Supplier | Shure & Rode USB/XLR Mics',
       description: 'High-fidelity USB and XLR microphones from Shure, Rode, and Audio-Technica for corporate streaming and conferencing.',
       keywords: ['Shure MV7', 'USB microphone', 'podcast mic', 'broadcast microphone supplier'],
-      canonicalPath: '/products/microphones',
+      canonicalPath: '/it-products?category=microphones',
     },
   },
   {
@@ -1237,7 +1237,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Conference Speakerphones Supplier | Poly & Jabra Speak Units',
       description: 'Portable and boardroom conference speakerphones from Poly and Jabra. Clear voice pickup with echo cancellation.',
       keywords: ['Poly Sync 20', 'Jabra Speak 750', 'conference speakerphone', 'meeting room speaker'],
-      canonicalPath: '/products/conference-speakerphones',
+      canonicalPath: '/it-products?category=conference-speakerphones',
     },
   },
   {
@@ -1252,7 +1252,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Commercial Desktop Speakers | Logitech Stereo Soundbars',
       description: 'Desktop stereo speakers and commercial soundbars for corporate workspaces and training centers.',
       keywords: ['desktop speakers', 'Logitech Z207', 'office soundbar', 'commercial stereo speakers'],
-      canonicalPath: '/products/desktop-audio-speakers',
+      canonicalPath: '/it-products?category=desktop-audio-speakers',
     },
   },
   {
@@ -1267,7 +1267,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Computer Cables & Adapters Supplier | HDMI, DP, Cat6, Fiber & Power',
       description: 'Comprehensive IT cable supply: 8K HDMI 2.1, DisplayPort, USB-C, Cat6a Ethernet, LC fiber patch cords, and server C13/C14 power cables.',
       keywords: ['computer cable supplier', 'HDMI cable supplier', 'DisplayPort cable', 'Cat6 patch cable', 'fiber patch cord', 'server power cable'],
-      canonicalPath: '/products/cables-and-adapters',
+      canonicalPath: '/it-products?category=cables-and-adapters',
     },
   },
   {
@@ -1282,7 +1282,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Display & Video Cables | 8K HDMI 2.1 & DisplayPort 1.4 Cables',
       description: 'Shop high-bandwidth HDMI 2.1 and DisplayPort cables from UGREEN and Cable Matters. Ultra HD 4K/8K video transmission.',
       keywords: ['HDMI 2.1 cable', 'DisplayPort cable', 'USB-C to HDMI', '8K video cable supplier'],
-      canonicalPath: '/products/display-video-cables',
+      canonicalPath: '/it-products?category=display-video-cables',
     },
   },
   {
@@ -1297,7 +1297,7 @@ export const productCategories: ProductCategory[] = [
       title: 'USB & Thunderbolt Cables Supplier | 100W PD & 40Gbps Cables',
       description: 'Commercial USB-C, USB4, and Thunderbolt 4 cables from Anker and UGREEN. High data transfer and rapid power delivery.',
       keywords: ['Thunderbolt 4 cable', 'USB4 cable', 'USB-C 100W cable', 'USB hub adapter'],
-      canonicalPath: '/products/usb-thunderbolt-cables',
+      canonicalPath: '/it-products?category=usb-thunderbolt-cables',
     },
   },
   {
@@ -1312,7 +1312,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Ethernet & Fiber Patch Cords Supplier | Cat6 & LC Fiber Leads',
       description: 'Procure high-performance Cat6 RJ45 patch leads and single-mode LC fiber cords from Legrand and Corning.',
       keywords: ['Cat6 patch cord', 'fiber patch cord', 'LC to LC fiber', 'network patch cable supplier'],
-      canonicalPath: '/products/ethernet-patch-cables',
+      canonicalPath: '/it-products?category=ethernet-patch-cables',
     },
   },
   {
@@ -1327,7 +1327,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Server Power Cords & PDU Jumpers | C13, C14, C19 & C20 Cables',
       description: 'Industrial server power cables and rack PDU extension jumpers from Tripp Lite and APC.',
       keywords: ['C13 to C14 cable', 'server power cord', 'PDU jumper cord', 'C19 power cable'],
-      canonicalPath: '/products/power-cords-adapters',
+      canonicalPath: '/it-products?category=power-cords-adapters',
     },
   },
   {
@@ -1342,7 +1342,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Cisco Console Cables & USB-to-RS232 Adapters | Serial IT Cables',
       description: 'Router configuration console cables and USB-to-RS232 FTDI adapters for network engineers and system administrators.',
       keywords: ['Cisco console cable', 'USB to RS232', 'rollover cable', 'FTDI serial cable'],
-      canonicalPath: '/products/serial-console-cables',
+      canonicalPath: '/it-products?category=serial-console-cables',
     },
   },
   {
@@ -1357,7 +1357,7 @@ export const productCategories: ProductCategory[] = [
       title: 'SFP Optical Transceivers & Media Converters | Cisco & TP-Link',
       description: 'Commercial SFP/SFP+ optical modules and fiber media converters from Cisco and TP-Link.',
       keywords: ['SFP module supplier', 'Cisco GLC-LH-SMD', '10G SFP+', 'fiber media converter'],
-      canonicalPath: '/products/sfp-transceivers-media-converters',
+      canonicalPath: '/it-products?category=sfp-transceivers-media-converters',
     },
   },
   {
@@ -1372,7 +1372,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Cat6 Patch Panels & Keystone Jacks | Structured Cabling Hardware',
       description: 'Enterprise 24-port patch panels and Cat6 keystones from D-Link, Schneider, and AMP Netconnect.',
       keywords: ['24 port patch panel', 'Cat6 keystone jack', 'rackmount patch panel', 'structured cabling'],
-      canonicalPath: '/products/patch-panels-keystones',
+      canonicalPath: '/it-products?category=patch-panels-keystones',
     },
   },
   {
@@ -1387,7 +1387,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Dell & HPE Server Power Supplies | Redundant Hot-Plug PSUs',
       description: 'Genuine server power supplies for Dell PowerEdge and HPE ProLiant servers. 750W, 1100W, and 1400W hot-plug modules.',
       keywords: ['Dell server PSU', 'PowerEdge redundant power supply', 'HPE server power supply', 'hot-plug PSU'],
-      canonicalPath: '/products/server-power-supplies',
+      canonicalPath: '/it-products?category=server-power-supplies',
     },
   },
   {
@@ -1402,7 +1402,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Rackmount KVM Consoles | 1U LCD Console Drawers ATEN & APC',
       description: '1U rackmount KVM LCD console drawers from ATEN and APC for data center server rack administration.',
       keywords: ['1U KVM console', 'rack console drawer', 'ATEN CL1000M', 'server rack LCD drawer'],
-      canonicalPath: '/products/rackmount-kvm-consoles',
+      canonicalPath: '/it-products?category=rackmount-kvm-consoles',
     },
   },
   {
@@ -1417,7 +1417,7 @@ export const productCategories: ProductCategory[] = [
       title: 'UPS Replacement Batteries | CSB & Yuasa 12V 7Ah / 9Ah Batteries',
       description: 'Genuine sealed lead acid replacement batteries for APC, Eaton, and Vertiv UPS systems from CSB and Yuasa.',
       keywords: ['UPS replacement battery', 'CSB 12V 9Ah battery', 'UPS battery pack', 'VRLA AGM battery'],
-      canonicalPath: '/products/ups-replacement-batteries',
+      canonicalPath: '/it-products?category=ups-replacement-batteries',
     },
   },
   {
@@ -1432,7 +1432,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Automatic Voltage Regulators & Stabilizers | Servo AVR Supplier',
       description: 'Commercial servo and relay voltage stabilizers from Delta and Staco. Clean power regulation for medical, industrial, and IT setups.',
       keywords: ['voltage stabilizer supplier', 'automatic voltage regulator AVR', 'servo stabilizer 5kVA'],
-      canonicalPath: '/products/voltage-regulators-stabilizers',
+      canonicalPath: '/it-products?category=voltage-regulators-stabilizers',
     },
   },
   {
@@ -1447,7 +1447,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Commercial Surge Protectors & Power Strips | APC SurgeArrest',
       description: 'Heavy-duty surge suppressors and multi-outlet power strips from APC and Schneider Electric for office and workstation protection.',
       keywords: ['surge protector supplier', 'APC SurgeArrest', 'power strip with surge protection', 'extension board'],
-      canonicalPath: '/products/surge-protectors-strips',
+      canonicalPath: '/it-products?category=surge-protectors-strips',
     },
   },
   {
@@ -1462,7 +1462,7 @@ export const productCategories: ProductCategory[] = [
       title: 'PTZ Cameras Supplier | Hikvision & Dahua Speed Dome IP Cameras',
       description: 'Commercial PTZ speed dome cameras from Hikvision and Dahua with 25x optical zoom and long-range IR night vision.',
       keywords: ['PTZ camera supplier', 'Hikvision speed dome', 'outdoor PTZ IP camera', 'optical zoom CCTV'],
-      canonicalPath: '/products/ptz-cameras',
+      canonicalPath: '/it-products?category=ptz-cameras',
     },
   },
   {
@@ -1477,7 +1477,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Surveillance Hard Drives Supplier | WD Purple & Seagate SkyHawk',
       description: 'Procure Western Digital WD Purple and Seagate SkyHawk surveillance HDDs for security DVR/NVR video recording.',
       keywords: ['WD Purple hard drive', 'surveillance HDD supplier', 'CCTV hard disk', 'WD Purple 4TB 8TB'],
-      canonicalPath: '/products/surveillance-storage',
+      canonicalPath: '/it-products?category=surveillance-storage',
     },
   },
   {
@@ -1492,7 +1492,7 @@ export const productCategories: ProductCategory[] = [
       title: 'CCTV Power Supplies & Video Baluns | Surveillance Accessories',
       description: 'Centralized 12V CCTV power supply boxes, passive video baluns, and BNC connectors for professional surveillance installations.',
       keywords: ['CCTV power supply box', 'video balun BNC', '12V 10A CCTV power', 'CCTV accessories supplier'],
-      canonicalPath: '/products/cctv-power-accessories',
+      canonicalPath: '/it-products?category=cctv-power-accessories',
     },
   },
   {
@@ -1507,7 +1507,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Biometric & Access Control Systems Supplier | ZKTeco Terminals & Locks',
       description: 'Enterprise access control systems from ZKTeco. Biometric fingerprint machines, facial terminals, and electromagnetic door locks.',
       keywords: ['biometric attendance supplier', 'ZKTeco K40', 'access control system', 'magnetic door lock 600lbs'],
-      canonicalPath: '/products/biometric-access-control',
+      canonicalPath: '/it-products?category=biometric-access-control',
     },
   },
   {
@@ -1522,7 +1522,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Fingerprint Time Attendance Machines | ZKTeco Office Attendance',
       description: 'ZKTeco time attendance machines for offices, schools, and factories. Easy network setup with automated attendance reporting.',
       keywords: ['ZKTeco K40 attendance', 'biometric clock', 'fingerprint attendance machine', 'time attendance terminal'],
-      canonicalPath: '/products/time-attendance-terminals',
+      canonicalPath: '/it-products?category=time-attendance-terminals',
     },
   },
   {
@@ -1537,7 +1537,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Magnetic Door Locks & Access Hardware | 600lbs EM Locks & Exit Buttons',
       description: 'Commercial electromagnetic door locks, exit buttons, and access power supplies for glass, wood, and fire doors.',
       keywords: ['magnetic door lock 600lbs', 'EM lock supplier', 'touchless exit button', 'access control door lock'],
-      canonicalPath: '/products/magnetic-door-locks-hardware',
+      canonicalPath: '/it-products?category=magnetic-door-locks-hardware',
     },
   },
   {
@@ -1552,7 +1552,7 @@ export const productCategories: ProductCategory[] = [
       title: 'RFID Cards & Keyfobs Supplier | 125kHz & Mifare Smart Cards',
       description: 'Wholesale RFID cards and keyfobs for corporate access control and time attendance systems.',
       keywords: ['RFID cards supplier', '125kHz proximity card', 'Mifare smart card', 'RFID keyfob'],
-      canonicalPath: '/products/rfid-cards-keyfobs',
+      canonicalPath: '/it-products?category=rfid-cards-keyfobs',
     },
   },
   {
@@ -1567,7 +1567,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Telecommunication & VoIP Equipment Supplier | IP PBX & Phones',
       description: 'Commercial VoIP and telecommunication equipment: Grandstream IP PBX, Yealink SIP phones, VoIP ATAs, and Motorola two-way radios.',
       keywords: ['VoIP phone supplier', 'IP PBX system', 'Yealink IP phone', 'Grandstream UCM', 'walkie talkie supplier'],
-      canonicalPath: '/products/telecom-and-voip',
+      canonicalPath: '/it-products?category=telecom-and-voip',
     },
   },
   {
@@ -1582,7 +1582,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Grandstream IP PBX Systems Supplier | Enterprise Telephone Exchanges',
       description: 'Grandstream UCM series IP PBX appliances for corporate telephony, branch office intercom, and SIP trunking.',
       keywords: ['Grandstream IP PBX', 'UCM6302', 'office telephone exchange', 'IP PBX server supplier'],
-      canonicalPath: '/products/ip-pbx-systems',
+      canonicalPath: '/it-products?category=ip-pbx-systems',
     },
   },
   {
@@ -1597,7 +1597,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Yealink IP Phones Supplier | Gigabit SIP Executive Desk Phones',
       description: 'Shop Yealink and Grandstream SIP phones for enterprise offices, call centers, and reception desks.',
       keywords: ['Yealink SIP-T46U', 'IP phone supplier', 'Gigabit SIP desk phone', 'business VoIP phone'],
-      canonicalPath: '/products/ip-phones',
+      canonicalPath: '/it-products?category=ip-phones',
     },
   },
   {
@@ -1612,7 +1612,7 @@ export const productCategories: ProductCategory[] = [
       title: 'VoIP Gateways & Analog Adapters (ATA) | Grandstream HT802',
       description: 'Grandstream 2-port and 4-port VoIP ATAs for connecting traditional telephone sets to SIP PBX systems.',
       keywords: ['Grandstream HT802', 'VoIP ATA adapter', 'analog to VoIP gateway', 'FXS FXO gateway'],
-      canonicalPath: '/products/voip-gateways-atas',
+      canonicalPath: '/it-products?category=voip-gateways-atas',
     },
   },
   {
@@ -1627,7 +1627,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Fiber ONTs & GPON Modems Supplier | Huawei & ZTE Optical Terminals',
       description: 'Commercial GPON fiber ONTs from Huawei and ZTE for enterprise broadband fiber connections and VoIP integration.',
       keywords: ['Huawei GPON ONT', 'EchoLife HG8546M', 'optical network terminal', 'fiber modem supplier'],
-      canonicalPath: '/products/fiber-ont-gpon',
+      canonicalPath: '/it-products?category=fiber-ont-gpon',
     },
   },
   {
@@ -1642,7 +1642,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Two-Way Radios & Walkie Talkies | Motorola Commercial Radios',
       description: 'Motorola commercial two-way radios and walkie talkies for site coordination, security teams, and warehouse staff.',
       keywords: ['Motorola walkie talkie', 'two-way radio supplier', 'Motorola CP200d', 'commercial radio'],
-      canonicalPath: '/products/two-way-radios-walkie-talkies',
+      canonicalPath: '/it-products?category=two-way-radios-walkie-talkies',
     },
   },
   {
@@ -1657,7 +1657,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Enterprise Tablets & Mobile Accessories Supplier | GaN Chargers & Power Banks',
       description: 'Rugged business tablets from Samsung, Anker 100W GaN chargers, 24,000mAh power banks, and anti-theft tablet stands.',
       keywords: ['rugged tablet supplier', 'Anker GaN charger', 'high capacity power bank', 'tablet POS stand'],
-      canonicalPath: '/products/mobile-tablet-accessories',
+      canonicalPath: '/it-products?category=mobile-tablet-accessories',
     },
   },
   {
@@ -1672,7 +1672,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Rugged Enterprise Tablets Supplier | Samsung Galaxy Tab Active',
       description: 'Procure Samsung Galaxy Tab Active series rugged enterprise tablets for warehouses, field audits, and mobile POS.',
       keywords: ['Samsung Galaxy Tab Active4 Pro', 'rugged tablet', 'enterprise Android tablet', 'industrial tablet'],
-      canonicalPath: '/products/enterprise-tablets',
+      canonicalPath: '/it-products?category=enterprise-tablets',
     },
   },
   {
@@ -1687,7 +1687,7 @@ export const productCategories: ProductCategory[] = [
       title: 'GaN Fast Chargers Supplier | Anker 100W Multi-Port USB-C Chargers',
       description: 'Commercial Anker and UGREEN GaN chargers with PowerIQ for laptops, tablets, and smartphones.',
       keywords: ['Anker Prime 100W charger', 'GaN charger supplier', 'multiport USB-C charger', 'laptop wall charger'],
-      canonicalPath: '/products/gan-fast-chargers',
+      canonicalPath: '/it-products?category=gan-fast-chargers',
     },
   },
   {
@@ -1702,7 +1702,7 @@ export const productCategories: ProductCategory[] = [
       title: 'High-Capacity Laptop Power Banks | Anker 737 PowerCore 24K',
       description: 'Enterprise laptop power banks from Anker with digital smart displays and 140W fast charging capabilities.',
       keywords: ['Anker 737 power bank', 'laptop power bank supplier', '24000mAh power bank', '140W power bank'],
-      canonicalPath: '/products/high-capacity-power-banks',
+      canonicalPath: '/it-products?category=high-capacity-power-banks',
     },
   },
   {
@@ -1717,7 +1717,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Lockable Tablet POS Stands | Anti-Theft Countertop Mounts',
       description: 'Commercial steel tablet stands and rotating POS enclosures for retail stores, hotels, and exhibition kiosks.',
       keywords: ['tablet POS stand', 'anti-theft tablet mount', 'countertop kiosk stand', 'lockable iPad stand'],
-      canonicalPath: '/products/tablet-stands-mounts',
+      canonicalPath: '/it-products?category=tablet-stands-mounts',
     },
   },
   {
@@ -1732,7 +1732,7 @@ export const productCategories: ProductCategory[] = [
       title: 'IT Infrastructure & Security Supplier | Firewalls, Racks & Monitoring',
       description: 'Complete server room infrastructure: Sophos & Fortinet firewalls, AKCP environmental sensors, and wall-mount network cabinets.',
       keywords: ['IT infrastructure supplier', 'hardware firewall supplier', 'server room sensor', 'wall mount network rack'],
-      canonicalPath: '/products/security-infrastructure',
+      canonicalPath: '/it-products?category=security-infrastructure',
     },
   },
   {
@@ -1747,7 +1747,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Server Room Temperature Monitoring | AKCP Environmental Sensors',
       description: 'AKCP sensorProbe appliances for 24/7 server room temperature, humidity, and flood monitoring with SNMP alerts.',
       keywords: ['AKCP sensorProbe2+', 'server room temperature monitor', 'humidity sensor data center', 'water leak sensor'],
-      canonicalPath: '/products/server-room-monitoring',
+      canonicalPath: '/it-products?category=server-room-monitoring',
     },
   },
   {
@@ -1762,7 +1762,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Wall Mount Network Cabinets | 9U & 12U Server Enclosures Toten',
       description: 'Commercial 19-inch wall mount network cabinets from Toten and Digitus for branch offices and distributed switch racks.',
       keywords: ['9U wall mount rack', 'network cabinet supplier', 'Toten 9U cabinet', '19 inch server rack'],
-      canonicalPath: '/products/wall-mount-network-cabinets',
+      canonicalPath: '/it-products?category=wall-mount-network-cabinets',
     },
   },
   {
@@ -1777,7 +1777,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Wire Mesh Cable Trays & Rack Organizers | Server Room Cable Trays',
       description: 'Industrial wire mesh cable basket systems and rackmount cable duct organizers for clean structured cabling management.',
       keywords: ['wire mesh cable tray', 'cable basket supplier', 'rack cable organizer', 'server room cable duct'],
-      canonicalPath: '/products/cable-trays-organizers',
+      canonicalPath: '/it-products?category=cable-trays-organizers',
     },
   },
   {
@@ -1792,7 +1792,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Enterprise Software Licensing Supplier | Windows 11 Pro & Microsoft 365',
       description: 'Legitimate enterprise software licensing from Microsoft and Kaspersky. Windows 11 Pro OEM, Microsoft 365, and Windows Server 2022 licenses.',
       keywords: ['Windows 11 Pro license supplier', 'Microsoft 365 Business', 'Windows Server 2022 CAL', 'endpoint antivirus license'],
-      canonicalPath: '/products/software-and-licensing',
+      canonicalPath: '/it-products?category=software-and-licensing',
     },
   },
   {
@@ -1807,7 +1807,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Microsoft Windows 11 Pro Commercial License Supplier | OEM & CSP',
       description: 'Procure legitimate Windows 11 Pro licenses for your corporate computer fleet with full Microsoft compliance and support.',
       keywords: ['Windows 11 Pro OEM license', 'Windows 11 Pro ESD', 'Microsoft OS license supplier'],
-      canonicalPath: '/products/operating-system-licenses',
+      canonicalPath: '/it-products?category=operating-system-licenses',
     },
   },
   {
@@ -1822,7 +1822,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Microsoft 365 Business Standard Supplier | Office Suite Subscriptions',
       description: 'Annual Microsoft 365 Business Standard commercial licensing for businesses with cloud collaboration and full desktop Office apps.',
       keywords: ['Microsoft 365 Business Standard', 'Office 365 business license', 'Microsoft cloud subscription supplier'],
-      canonicalPath: '/products/office-productivity-suites',
+      canonicalPath: '/it-products?category=office-productivity-suites',
     },
   },
   {
@@ -1837,7 +1837,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Windows Server 2022 Licenses & CALs | Microsoft Server Licensing',
       description: 'Procure genuine Windows Server 2022 Standard 16-Core licenses and User/Device CALs for your on-premise infrastructure.',
       keywords: ['Windows Server 2022 Standard', 'Windows Server CALs', 'Microsoft server licensing supplier'],
-      canonicalPath: '/products/server-os-cals',
+      canonicalPath: '/it-products?category=server-os-cals',
     },
   },
   {
@@ -1852,7 +1852,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Endpoint Security & Enterprise Antivirus | Kaspersky & Bitdefender',
       description: 'Kaspersky Endpoint Security Cloud commercial multi-device protection with centralized admin console and behavioral anti-ransomware.',
       keywords: ['Kaspersky Endpoint Security Cloud', 'enterprise antivirus supplier', 'business endpoint security'],
-      canonicalPath: '/products/endpoint-security-antivirus',
+      canonicalPath: '/it-products?category=endpoint-security-antivirus',
     },
   },
   {
@@ -1867,7 +1867,7 @@ export const productCategories: ProductCategory[] = [
       title: 'IT Tools, Cable Testers & Consumables Supplier | Repair Kits & Crimpers',
       description: 'Professional IT maintenance tools: iFixit precision toolkits, Klein ratcheting crimpers, Noyafa cable testers, and Arctic thermal paste.',
       keywords: ['IT repair toolkit', 'RJ45 crimper tool', 'network cable tester', 'thermal paste supplier', 'Velcro cable ties'],
-      canonicalPath: '/products/tools-and-consumables',
+      canonicalPath: '/it-products?category=tools-and-consumables',
     },
   },
   {
@@ -1882,7 +1882,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Precision Computer Repair Toolkits | iFixit Pro Tech Toolkit',
       description: 'iFixit Pro Tech and commercial electronics repair kits for computer hardware engineers, IT departments, and technicians.',
       keywords: ['iFixit Pro Tech Toolkit', 'precision screwdriver kit', 'computer repair tool set', 'laptop opening kit'],
-      canonicalPath: '/products/precision-repair-toolkits',
+      canonicalPath: '/it-products?category=precision-repair-toolkits',
     },
   },
   {
@@ -1897,7 +1897,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Network Crimping Tools & Strippers | Klein Tools RJ45 Crimpers',
       description: 'Professional ratcheting RJ45 data crimpers and punchdown tools from Klein Tools and Pro\'sKit.',
       keywords: ['RJ45 crimping tool', 'Klein Tools crimper', 'pass through crimper', 'network cable stripper'],
-      canonicalPath: '/products/network-crimpers-strippers',
+      canonicalPath: '/it-products?category=network-crimpers-strippers',
     },
   },
   {
@@ -1912,7 +1912,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Digital Network Cable Testers | Noyafa & Fluke Wiremap Trackers',
       description: 'Commercial LAN cable testers and wire trackers with PoE detection and length measurement from Noyafa and Fluke.',
       keywords: ['Noyafa NF-8209', 'cable tester supplier', 'LAN wiremap tester', 'tone generator tracer'],
-      canonicalPath: '/products/cable-testers-toners',
+      canonicalPath: '/it-products?category=cable-testers-toners',
     },
   },
   {
@@ -1927,7 +1927,7 @@ export const productCategories: ProductCategory[] = [
       title: 'High-Performance Thermal Paste Supplier | Arctic MX-6 & Noctua',
       description: 'Commercial thermal grease and heat sink compounds from Arctic and Noctua for CPU cooling maintenance and server builds.',
       keywords: ['Arctic MX-6 thermal paste', 'CPU thermal grease', 'heatsink compound', 'non-conductive thermal paste'],
-      canonicalPath: '/products/thermal-compounds-pads',
+      canonicalPath: '/it-products?category=thermal-compounds-pads',
     },
   },
   {
@@ -1942,7 +1942,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Velcro Cable Ties & Cable Organizers | Reusable Cable Straps',
       description: 'Continuous Velcro cable wrap rolls and rack cable ties for neat, reusable server rack cable management.',
       keywords: ['Velcro ONE-WRAP roll', 'reusable cable ties', 'hook and loop cable wrap', 'network cable label'],
-      canonicalPath: '/products/cable-ties-labels',
+      canonicalPath: '/it-products?category=cable-ties-labels',
     },
   },
   {
@@ -1957,7 +1957,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Industrial & Embedded Technology Supplier | Industrial PCs & Raspberry Pi',
       description: 'Commercial industrial hardware: Advantech fanless box PCs, Raspberry Pi 5, Moxa DIN-rail switches, and isolated USB-to-RS485 converters.',
       keywords: ['industrial PC supplier', 'Raspberry Pi 5', 'Moxa industrial switch', 'DIN rail switch', 'USB to RS485 isolated'],
-      canonicalPath: '/products/industrial-embedded-tech',
+      canonicalPath: '/it-products?category=industrial-embedded-tech',
     },
   },
   {
@@ -1972,7 +1972,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Fanless Industrial Embedded PCs | Advantech Automation Box PCs',
       description: 'Advantech UNO series industrial box computers for factory control, smart metering, and automated industrial machinery.',
       keywords: ['Advantech UNO-2271G', 'industrial PC supplier', 'fanless embedded PC', 'rugged box PC'],
-      canonicalPath: '/products/industrial-embedded-pcs',
+      canonicalPath: '/it-products?category=industrial-embedded-pcs',
     },
   },
   {
@@ -1987,7 +1987,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Raspberry Pi 5 Single Board Computers Supplier | 8GB RAM SBC',
       description: 'Official Raspberry Pi 5 8GB single-board computers and accessories for commercial IoT, digital kiosks, and automation edge devices.',
       keywords: ['Raspberry Pi 5 8GB', 'single board computer supplier', 'Raspberry Pi distributor', 'commercial IoT board'],
-      canonicalPath: '/products/single-board-computers',
+      canonicalPath: '/it-products?category=single-board-computers',
     },
   },
   {
@@ -2002,7 +2002,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Industrial DIN-Rail Ethernet Switches | Moxa EDS-208 Series',
       description: 'Moxa industrial Ethernet switches with wide temperature operating range and redundant power inputs for factory network cabinets.',
       keywords: ['Moxa EDS-208', 'industrial switch supplier', 'DIN-rail Ethernet switch', 'hardened unmanaged switch'],
-      canonicalPath: '/products/industrial-ethernet-switches',
+      canonicalPath: '/it-products?category=industrial-ethernet-switches',
     },
   },
   {
@@ -2017,7 +2017,7 @@ export const productCategories: ProductCategory[] = [
       title: 'Industrial USB to RS485 Converters | Waveshare Galvanic Isolated',
       description: 'Waveshare galvanic isolated USB to RS485/RS422/RS232 serial communication adapters for PLCs and industrial sensors.',
       keywords: ['Waveshare USB to RS485', 'isolated serial converter', 'RS485 adapter', 'industrial COM converter'],
-      canonicalPath: '/products/serial-rs485-converters',
+      canonicalPath: '/it-products?category=serial-rs485-converters',
     },
   },
 ];

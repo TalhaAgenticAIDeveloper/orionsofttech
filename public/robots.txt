@@ -1,8 +1,9 @@
 # Robots.txt for Orion Software & Trading
-# https://www.orionsoftware.com
+# https://orionswtrading.com
 
 User-agent: *
 Allow: /
+Disallow: /404
 
 # Allow AI Search and Answer Engine Crawlers for Public Discovery
 User-agent: GPTBot
@@ -23,6 +24,5 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Sitemaps
-Sitemap: https://www.orionsoftware.com/sitemap.xml
-
+# XML Sitemaps
+Sitemap: https://orionswtrading.com/sitemap.xml

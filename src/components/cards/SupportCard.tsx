@@ -10,6 +10,8 @@ interface SupportCardProps {
 }
 
 export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '' }) => {
+  const detailUrl = `/technical-support/${service.slug}`;
+
   return (
     <article
       className={`group flex flex-col justify-between p-7 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
@@ -22,7 +24,9 @@ export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '
 
         {/* Title */}
         <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors leading-snug">
-          {service.name}
+          <Link to={detailUrl}>
+            {service.name}
+          </Link>
         </h3>
 
         {/* Description */}
@@ -32,7 +36,7 @@ export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '
 
         {/* Features Checklist */}
         <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/80 space-y-2">
-          {service.features.map((feat, index) => (
+          {service.features.slice(0, 4).map((feat, index) => (
             <div key={index} className="flex items-start gap-2.5 text-xs text-slate-600 dark:text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
               <span>{feat}</span>
@@ -41,14 +45,22 @@ export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '
         </div>
       </div>
 
-      {/* Inquiry link */}
-      <div className="mt-7 pt-4 border-t border-slate-100 dark:border-slate-800/80">
+      {/* Action Footer */}
+      <div className="mt-7 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
+        <Link
+          to={detailUrl}
+          className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all"
+          aria-label={`View scope and specifications for ${service.name}`}
+        >
+          <span>View Scope &amp; Deliverables</span>
+          <ArrowRight className="w-3.5 h-3.5" />
+        </Link>
+
         <Link
           to={`/contact?type=installation-services&subject=${encodeURIComponent(`Support Inquiry: ${service.name}`)}`}
-          className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all"
+          className="text-xs font-medium text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors"
         >
-          <span>Request Support Quotation</span>
-          <ArrowRight className="w-3.5 h-3.5" />
+          Request Quote
         </Link>
       </div>
     </article>

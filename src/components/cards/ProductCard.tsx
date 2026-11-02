@@ -12,20 +12,24 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, className = '' }) => {
   const whatsappUrl = generateWhatsAppUrl(generateProductInquiryMessage(product.name));
+  const productPath = `/it-products/${product.categorySlug}/${product.slug}`;
 
   return (
     <article
       className={`group flex flex-col justify-between rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 overflow-hidden shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
     >
       <div>
-        {/* Product Visual Area */}
+        {/* Product Visual Area with Explicit Aspect Ratio */}
         <div className="relative aspect-16/10 bg-slate-50/80 dark:bg-[#0E1526] flex items-center justify-center border-b border-slate-100 dark:border-slate-800 overflow-hidden">
           {product.image ? (
             <img
               src={product.image}
-              alt={product.name}
+              alt={`${product.brand ? product.brand + ' ' : ''}${product.name} enterprise IT hardware quotation`}
+              width="400"
+              height="250"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
+              decoding="async"
             />
           ) : (
             <div className="w-16 h-16 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200/60 dark:border-emerald-800/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
@@ -49,7 +53,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, className = '
         {/* Product Information */}
         <div className="p-6">
           <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors line-clamp-1 leading-snug">
-            <Link to={`/it-products/${product.categorySlug}/${product.slug}`}>
+            <Link to={productPath} className="focus:outline-none">
               {product.name}
             </Link>
           </h3>
@@ -82,10 +86,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, className = '
       {/* Action Buttons */}
       <div className="p-6 pt-0 flex items-center gap-2.5">
         <Button
-          to={`/it-products/${product.categorySlug}/${product.slug}`}
+          to={productPath}
           variant="outline"
           size="sm"
           className="flex-1 justify-center text-xs font-semibold"
+          aria-label={`View full technical specifications for ${product.name}`}
           icon={<ArrowRight className="w-3.5 h-3.5" />}
           iconPosition="right"
         >

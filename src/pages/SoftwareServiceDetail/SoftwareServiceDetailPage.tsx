@@ -3,12 +3,9 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import {
   CheckCircle2,
   AlertCircle,
-  HelpCircle,
   ArrowRight,
   MessageSquare,
   ChevronDown,
-  Layers,
-  Cpu,
 } from 'lucide-react';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
@@ -67,6 +64,7 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         description={service.seo.description}
         keywords={service.seo.keywords}
         canonicalPath={service.seo.canonicalPath}
+        ogImage="/images/og/og-software.jpg"
         schema={combinedSchemas}
       />
 
@@ -170,12 +168,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Service Introduction */}
         <section>
           <div className="max-w-3xl">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
               Overview
-            </h2>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-4">
               Engineering Tailored for Real Organizational Impact
-            </h3>
+            </h2>
             <div className="space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed whitespace-pre-line">
               {service.fullDescription}
             </div>
@@ -185,12 +183,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Problems Solved */}
         <section className="p-6 sm:p-8 rounded-2xl bg-amber-50/50 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-800/40">
           <div className="max-w-3xl mb-6">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">
+            <span className="block text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">
               Pain Points Addressed
-            </h2>
-            <h3 className="text-2xl font-extrabold text-slate-900 dark:text-white">
+            </span>
+            <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">
               The Operational Problems This Solution Solves
-            </h3>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -211,12 +209,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Key Features */}
         <section>
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               Capabilities
-            </h2>
-            <h3 className="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+            </span>
+            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               Key Features &amp; Engineering Standards
-            </h3>
+            </h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
               Every feature is built with precision, maintainability, and end-user ergonomics in mind.
             </p>
@@ -245,12 +243,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Business Benefits */}
         <section className="p-6 sm:p-8 rounded-2xl bg-slate-900 text-white">
           <div className="max-w-3xl mb-8">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">
               Return on Investment
-            </h2>
-            <h3 className="text-2xl sm:text-3xl font-extrabold">
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold">
               Measurable Business Benefits
-            </h3>
+            </h2>
             <p className="mt-2 text-slate-300 text-sm">
               How investing in tailored software drives bottom-line efficiency and operational resilience.
             </p>
@@ -279,12 +277,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Real-World Use Cases */}
         <section>
           <div className="max-w-3xl mb-8">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
               Applications
-            </h2>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               Practical Use Cases Across Industries
-            </h3>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -312,12 +310,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Development Approach */}
         <section className="p-6 sm:p-8 rounded-2xl bg-slate-50 dark:bg-slate-950/60 border border-slate-200/80 dark:border-slate-800">
           <div className="text-center max-w-3xl mx-auto mb-8">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
               Our Methodology
-            </h2>
-            <h3 className="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+            </span>
+            <h2 className="mt-2 text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               The Development Journey
-            </h3>
+            </h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
               Structured agile execution with complete stakeholder transparency at every milestone.
             </p>
@@ -349,12 +347,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {service.technologies && service.technologies.length > 0 && (
           <section>
             <div className="max-w-3xl mb-6">
-              <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
+              <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
                 Tech Stack
-              </h2>
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+              </span>
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white">
                 Technologies &amp; Frameworks Involved
-              </h3>
+              </h2>
             </div>
 
             <div className="flex flex-wrap gap-2.5">
@@ -373,12 +371,12 @@ export const SoftwareServiceDetailPage: React.FC = () => {
         {/* Frequently Asked Questions */}
         <section>
           <div className="max-w-3xl mb-6">
-            <h2 className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
+            <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
               Got Questions?
-            </h2>
-            <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               Frequently Asked Questions
-            </h3>
+            </h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
               Clear answers to the most common questions regarding {service.name.toLowerCase()}.
             </p>
@@ -419,9 +417,9 @@ export const SoftwareServiceDetailPage: React.FC = () => {
 
         {/* Explore Other Services */}
         <section className="pt-8 border-t border-slate-200 dark:border-slate-800">
-          <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white mb-6">
             Explore Other Software Solutions
-          </h3>
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {otherServices.map((other) => (
               <div

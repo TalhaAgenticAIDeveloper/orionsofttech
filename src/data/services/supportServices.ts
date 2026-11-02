@@ -226,3 +226,16 @@ export const supportServices: SupportService[] = [
     ],
   },
 ];
+
+export function getSupportServiceBySlug(slug: string): SupportService | undefined {
+  return supportServices.find((s) => s.slug.toLowerCase() === slug.toLowerCase());
+}
+
+export function getAllSupportServices(): SupportService[] {
+  return supportServices;
+}
+
+export function getRelatedSupportServices(currentSlug: string, count = 3): SupportService[] {
+  return supportServices.filter((s) => s.slug !== currentSlug).slice(0, count);
+}
+

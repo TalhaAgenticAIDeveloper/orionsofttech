@@ -15,17 +15,24 @@ import {
 import { Button } from '@/components/buttons/Button';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
-import { generateWebPageSchema } from '@/utils/seo';
+import { generateWebPageSchema, generateBreadcrumbSchema, generateOrganizationSchema } from '@/utils/seo';
 
 export const AboutPage: React.FC = () => {
   const breadcrumbItems = [{ label: 'About Us' }];
 
   const pageSchema = generateWebPageSchema({
-    name: 'About Orion Software & Trading',
+    name: 'About Orion Software & Trading | Technology Solutions & Trading Provider',
     description:
       'Learn about Orion Software & Trading, an integrated technology solutions provider delivering software engineering, IT hardware procurement, and professional technical support.',
     url: '/about',
   });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'About Us', url: '/about' },
+  ]);
+
+  const organizationSchema = generateOrganizationSchema();
 
   const coreValues = [
     {
@@ -90,10 +97,11 @@ export const AboutPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="About Us | Orion Software & Trading"
-        description="Learn about Orion Software & Trading. A comprehensive technology provider delivering custom software, IT hardware, installation, and technical support."
+        title="About Us | Technology Solutions & IT Hardware Supplier | Orion"
+        description="Learn about Orion Software & Trading. Enterprise provider delivering custom software, IT hardware supply, network installation, and technical support."
         canonicalPath="/about"
-        schema={pageSchema}
+        ogImage="/images/og/og-home.jpg"
+        schema={[pageSchema, breadcrumbSchema, organizationSchema]}
       />
 
       {/* Hero Header Banner with Modern Visual */}
@@ -113,7 +121,7 @@ export const AboutPage: React.FC = () => {
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
-                About <span className="text-emerald-600 dark:text-emerald-400">Orion Software &amp; Trading</span>
+                About <span className="text-emerald-600 dark:text-emerald-400">Orion Software &amp; Trading</span> | Technology Solutions &amp; IT Supplier
               </h1>
 
               <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">

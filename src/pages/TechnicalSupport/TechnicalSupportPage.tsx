@@ -7,7 +7,6 @@ import {
   Laptop,
   ArrowRight,
   MessageSquare,
-  Clock,
   Layers,
 } from 'lucide-react';
 import { SupportCard } from '@/components/cards/SupportCard';
@@ -15,7 +14,7 @@ import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/buttons/Button';
 import { supportServices } from '@/data/services/supportServices';
-import { generateWebPageSchema } from '@/utils/seo';
+import { generateWebPageSchema, generateBreadcrumbSchema, generateServiceSchema } from '@/utils/seo';
 import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/whatsapp';
 
 export const TechnicalSupportPage: React.FC = () => {
@@ -26,6 +25,18 @@ export const TechnicalSupportPage: React.FC = () => {
     name: 'Technical Support & Installation Services | Orion Software & Trading',
     description:
       'Professional hardware installation, server configuration, network setup, CCTV mounting, operating system deployment, and after-sales technical maintenance.',
+    url: '/technical-support',
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Technical Support & Installation', url: '/technical-support' },
+  ]);
+
+  const serviceSchema = generateServiceSchema({
+    name: 'IT Technical Support & Infrastructure Installation',
+    description:
+      'Professional hardware installation, server provisioning, structured Cat6 cabling, CCTV surveillance setup, and after-sales maintenance.',
     url: '/technical-support',
   });
 
@@ -62,15 +73,8 @@ export const TechnicalSupportPage: React.FC = () => {
         title="Technical Support & Installation Services | Orion Software & Trading"
         description="Comprehensive IT support: hardware installation, server setup, network configuration, CCTV installation, biometric systems, and after-sales support."
         canonicalPath="/technical-support"
-        keywords={[
-          'hardware installation services',
-          'server configuration services',
-          'network installation',
-          'CCTV installation company',
-          'biometric access setup',
-          'IT maintenance services',
-        ]}
-        schema={pageSchema}
+        ogImage="/images/og/og-support.jpg"
+        schema={[pageSchema, breadcrumbSchema, serviceSchema]}
       />
 
       {/* Header Banner */}

@@ -36,6 +36,11 @@ const TechnicalSupportPage = lazy(() =>
     default: m.TechnicalSupportPage,
   }))
 );
+const SupportServiceDetailPage = lazy(() =>
+  import('@/pages/SupportServiceDetail/SupportServiceDetailPage').then((m) => ({
+    default: m.SupportServiceDetailPage,
+  }))
+);
 const ContactPage = lazy(() =>
   import('@/pages/Contact/ContactPage').then((m) => ({ default: m.ContactPage }))
 );
@@ -86,6 +91,10 @@ export const App: React.FC = () => {
                 element={<ProductDetailPage />}
               />
               <Route path="technical-support" element={<TechnicalSupportPage />} />
+              <Route
+                path="technical-support/:slug"
+                element={<SupportServiceDetailPage />}
+              />
               <Route path="contact" element={<ContactPage />} />
               <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
               <Route path="terms-and-conditions" element={<TermsPage />} />

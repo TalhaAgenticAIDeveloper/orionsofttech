@@ -1,17 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { siteConfig } from '@/config/siteConfig';
+import { generateWebPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
 
 export const TermsPage: React.FC = () => {
   const breadcrumbItems = [{ label: 'Terms and Conditions' }];
 
+  const pageSchema = generateWebPageSchema({
+    name: 'Terms and Conditions | Orion Software & Trading',
+    description:
+      'Terms and conditions governing quotations, IT hardware procurement, custom software development, and technical installation services.',
+    url: '/terms-and-conditions',
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Terms and Conditions', url: '/terms-and-conditions' },
+  ]);
+
   return (
     <>
       <SEOHead
-        title="Terms and Conditions | Orion Software & Trading"
-        description="Terms and conditions governing the use of Orion Software & Trading website, quotations, hardware procurement, and software development services."
+        title="Terms & Conditions | Orion Software & Trading"
+        description="Terms and conditions governing quotations, hardware procurement, software engineering, and technical installation services at Orion Software & Trading."
         canonicalPath="/terms-and-conditions"
+        ogImage="/images/og/og-default.jpg"
+        schema={[pageSchema, breadcrumbSchema]}
       />
 
       <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8">
@@ -41,14 +57,14 @@ export const TermsPage: React.FC = () => {
             2. Product Catalog &amp; Quotations Policy
           </h2>
           <p>
-            The products displayed on our website represent equipment categories and items commonly supplied by {siteConfig.companyName}.
+            The products displayed in our <Link to="/it-products" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">IT hardware catalog</Link> represent equipment categories and items commonly supplied by {siteConfig.companyName}.
           </p>
           <ul className="list-disc pl-6 space-y-1 text-slate-600 dark:text-slate-400">
             <li>
               <strong>No Online Checkout or Public Prices:</strong> Product listings do not constitute fixed retail price offers. Prices vary based on order volumes, delivery locations, currency exchange rates, and manufacturer pricing revisions.
             </li>
             <li>
-              <strong>Stock Availability:</strong> Inventory levels fluctuate rapidly. Formal quotations must be obtained from our team to confirm real-time availability, delivery timelines, and payment terms.
+              <strong>Stock Availability:</strong> Inventory levels fluctuate rapidly. Formal quotations must be obtained from our team via our <Link to="/contact" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">contact desk</Link> to confirm real-time availability, delivery timelines, and payment terms.
             </li>
             <li>
               <strong>Specifications:</strong> While we endeavor to ensure technical specifications are accurate and up to date, manufacturers may alter hardware models and revisions without prior notice.
@@ -61,7 +77,7 @@ export const TermsPage: React.FC = () => {
             3. Software Development Services
           </h2>
           <p>
-            Custom software engineering projects are governed by separate, mutually agreed Service Level Agreements (SLAs), Statement of Work (SOW) documents, and project milestone schedules executed between {siteConfig.companyName} and the client.
+            Custom software engineering projects across our <Link to="/software-solutions" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">software solutions portfolio</Link> (including ERP, web, and mobile development) are governed by separate, mutually agreed Service Level Agreements (SLAs), Statement of Work (SOW) documents, and project milestone schedules executed between {siteConfig.companyName} and the client.
           </p>
         </section>
 
@@ -70,7 +86,7 @@ export const TermsPage: React.FC = () => {
             4. Installation &amp; Technical Support Scope
           </h2>
           <p>
-            On-site installation, configuration, and technical maintenance services are provided according to specific scope descriptions agreed during quotation. Support warranties apply as specified in formal sales invoices and manufacturer terms. We do not provide open-ended or unlimited technical support unless covered under an active Annual Maintenance Contract (AMC).
+            On-site installation, configuration, and maintenance services across our <Link to="/technical-support" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">technical support &amp; installation services</Link> are provided according to specific scope descriptions agreed during quotation. Please review our <Link to="/privacy-policy" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">Privacy Policy</Link> for details on confidential customer project data handling.
           </p>
         </section>
 

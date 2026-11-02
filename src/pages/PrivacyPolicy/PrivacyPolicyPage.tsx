@@ -1,17 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { siteConfig } from '@/config/siteConfig';
+import { generateWebPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
 
 export const PrivacyPolicyPage: React.FC = () => {
   const breadcrumbItems = [{ label: 'Privacy Policy' }];
+
+  const pageSchema = generateWebPageSchema({
+    name: 'Privacy Policy | Orion Software & Trading',
+    description:
+      'Privacy policy for Orion Software & Trading. Learn how customer inquiry data, hardware procurement specifications, and project privacy are handled.',
+    url: '/privacy-policy',
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Privacy Policy', url: '/privacy-policy' },
+  ]);
 
   return (
     <>
       <SEOHead
         title="Privacy Policy | Orion Software & Trading"
-        description="Privacy policy for Orion Software & Trading. Learn how we handle customer inquiries, project data, and website visitor privacy responsibly."
+        description="Privacy policy for Orion Software & Trading. Learn how customer inquiry data, hardware procurement specifications, and project privacy are protected."
         canonicalPath="/privacy-policy"
+        ogImage="/images/og/og-default.jpg"
+        schema={[pageSchema, breadcrumbSchema]}
       />
 
       <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8">
@@ -41,7 +57,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             2. Information We Collect
           </h2>
           <p>
-            We collect personal and corporate information that you voluntarily choose to provide when inquiring about our software development services, IT hardware catalog, or installation services:
+            We collect personal and corporate information that you voluntarily choose to provide when inquiring about our <Link to="/software-solutions" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">software development services</Link>, <Link to="/it-products" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">IT hardware catalog</Link>, or <Link to="/technical-support" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">installation services</Link>:
           </p>
           <ul className="list-disc pl-6 space-y-1 text-slate-600 dark:text-slate-400">
             <li>Contact details such as Full Name, Email Address, and Phone/WhatsApp Number.</li>
@@ -89,7 +105,7 @@ export const PrivacyPolicyPage: React.FC = () => {
             6. Contacting Us About Privacy
           </h2>
           <p>
-            If you have questions regarding this Privacy Policy or wish to request the modification or removal of your contact information, please submit an inquiry through our Contact page.
+            If you have questions regarding this Privacy Policy or wish to request the modification or removal of your contact information, please submit an inquiry through our <Link to="/contact" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">Contact Us page</Link> or review our <Link to="/terms-and-conditions" className="text-emerald-600 dark:text-emerald-400 font-semibold underline hover:text-emerald-500">Terms and Conditions</Link>.
           </p>
         </section>
       </div>

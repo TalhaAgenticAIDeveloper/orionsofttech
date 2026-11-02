@@ -132,7 +132,7 @@ export const Footer: React.FC = () => {
               ) : (
                 <div className="flex items-center gap-2 text-slate-500">
                   <Mail className="w-4 h-4 shrink-0" />
-                  <span>info@orionsoftware.com (Verification pending)</span>
+                  <span>info@orionswtrading.com</span>
                 </div>
               )}
 

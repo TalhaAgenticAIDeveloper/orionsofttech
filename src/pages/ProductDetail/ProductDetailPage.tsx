@@ -7,7 +7,6 @@ import {
   Wrench,
   Truck,
   CheckCircle2,
-  Layers,
   PhoneCall,
 } from 'lucide-react';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
@@ -200,6 +199,11 @@ export const ProductDetailPage: React.FC = () => {
     return <Navigate to="/404" replace />;
   }
 
+  // Enforce single canonical route: redirect 1-segment or mismatched category URLs
+  if (categorySlug !== product.categorySlug) {
+    return <Navigate to={`/it-products/${product.categorySlug}/${product.slug}`} replace />;
+  }
+
   const relatedProducts = getRelatedProducts(product.id);
   const whatsappUrl = generateWhatsAppUrl(generateProductInquiryMessage(product.name));
 
@@ -212,6 +216,9 @@ export const ProductDetailPage: React.FC = () => {
     name: product.name,
     description: product.shortDescription,
     brand: product.brand,
+    sku: product.slug,
+    category: product.categorySlug,
+    image: product.image,
     url: `/it-products/${product.categorySlug}/${product.slug}`,
   });
 
@@ -228,6 +235,7 @@ export const ProductDetailPage: React.FC = () => {
         description={product.seo.description}
         keywords={product.seo.keywords}
         canonicalPath={product.seo.canonicalPath}
+        ogImage={product.image || '/images/og/og-hardware.jpg'}
         schema={[productSchema, breadcrumbSchema]}
       />
 
@@ -247,8 +255,12 @@ export const ProductDetailPage: React.FC = () => {
               <div className="relative h-64 sm:h-72 w-full overflow-hidden">
                 <img
                   src={product.image || '/images/heroes/hardware-hero.jpg'}
-                  alt={product.name}
+                  alt={`${product.brand ? product.brand + ' ' : ''}${product.name} enterprise IT hardware quotation and installation`}
+                  width="600"
+                  height="450"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  loading="eager"
+                  fetchPriority="high"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/20 to-transparent" />
 

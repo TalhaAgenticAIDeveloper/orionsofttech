@@ -12,7 +12,7 @@ interface ServiceCardProps {
 export const ServiceCard: React.FC<ServiceCardProps> = ({ service, className = '' }) => {
   return (
     <article
-      className={`group flex flex-col justify-between p-7 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
+      className={`group relative flex flex-col justify-between p-7 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
     >
       <div>
         {/* Service Icon with Brand Green Treatment */}
@@ -20,9 +20,12 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, className = '
           <DynamicIcon name={service.icon} className="w-6 h-6" />
         </div>
 
-        {/* Title */}
+        {/* Title as Primary Stretched Semantic Link */}
         <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors leading-snug">
-          <Link to={`/software-solutions/${service.slug}`}>
+          <Link
+            to={`/software-solutions/${service.slug}`}
+            className="focus:outline-none after:absolute after:inset-0"
+          >
             {service.name}
           </Link>
         </h3>
@@ -43,15 +46,15 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, className = '
         </div>
       </div>
 
-      {/* Action Footer */}
+      {/* Action Footer Indicator (Non-Duplicate Semantic Anchor) */}
       <div className="mt-7 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
-        <Link
-          to={`/software-solutions/${service.slug}`}
+        <span
           className="text-sm font-semibold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all"
+          aria-hidden="true"
         >
           <span>Explore Details</span>
           <ArrowRight className="w-4 h-4" />
-        </Link>
+        </span>
       </div>
     </article>
   );

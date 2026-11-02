@@ -31,6 +31,7 @@ import { industries } from '@/data/industries';
 import {
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateLocalBusinessSchema,
 } from '@/utils/seo';
 import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/whatsapp';
 
@@ -39,7 +40,7 @@ export const HomePage: React.FC = () => {
   const featuredProducts = products.slice(0, 6);
   const whatsappUrl = generateWhatsAppUrl(generateGeneralInquiryMessage());
 
-  const structuredSchema = [generateOrganizationSchema(), generateWebSiteSchema()];
+  const structuredSchema = [generateOrganizationSchema(), generateWebSiteSchema(), generateLocalBusinessSchema()];
 
   const whyChooseReasons = [
     {
@@ -131,9 +132,10 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Complete Technology Solutions | From Software to Infrastructure"
-        description="Orion Software & Trading delivers custom software development, IT hardware supply, professional on-site installation, and technical support under one roof."
+        title="Complete Technology Solutions | Software & Hardware | Orion"
+        description="Orion Software & Trading provides custom software development, enterprise IT hardware supply, professional installation, and ongoing technical support."
         canonicalPath="/"
+        ogImage="/images/og/og-home.jpg"
         schema={structuredSchema}
       />
 
@@ -259,7 +261,7 @@ export const HomePage: React.FC = () => {
                         </div>
                         <div>
                           <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division A</span>
-                          <h4 className="text-xs sm:text-sm font-bold text-white">Custom Software Engineering</h4>
+                          <div className="text-xs sm:text-sm font-bold text-white">Custom Software Engineering</div>
                           <p className="text-[11px] text-slate-400 mt-0.5">ERP, CRM, Web &amp; Mobile Applications</p>
                         </div>
                       </div>
@@ -270,7 +272,7 @@ export const HomePage: React.FC = () => {
                         </div>
                         <div>
                           <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division B</span>
-                          <h4 className="text-xs sm:text-sm font-bold text-white">Enterprise IT Hardware Supply</h4>
+                          <div className="text-xs sm:text-sm font-bold text-white">Enterprise IT Hardware Supply</div>
                           <p className="text-[11px] text-slate-400 mt-0.5">Servers, Laptops, Cisco Networking &amp; CCTV</p>
                         </div>
                       </div>
@@ -281,7 +283,7 @@ export const HomePage: React.FC = () => {
                         </div>
                         <div>
                           <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division C</span>
-                          <h4 className="text-xs sm:text-sm font-bold text-white">Installation &amp; Ongoing Support</h4>
+                          <div className="text-xs sm:text-sm font-bold text-white">Installation &amp; Ongoing Support</div>
                           <p className="text-[11px] text-slate-400 mt-0.5">On-Site Mounting, OS Setup &amp; Maintenance</p>
                         </div>
                       </div>

@@ -1,7 +1,7 @@
 # Orion Software & Trading — AI / LLM Factual Summary
 # System Reference: llms.txt
 # Version: 1.0.0
-# Canonical URL: https://www.orionsoftware.com
+# Canonical URL: https://orionswtrading.com
 
 ## 1. Company Identity & Positioning
 - Legal & Trading Name: Orion Software & Trading
@@ -55,14 +55,14 @@ Orion provides certified physical deployment and technical maintenance:
 - Routine system maintenance, database backup audits, and on-site troubleshooting.
 
 ## 3. Key Website URLs
-- Homepage: https://www.orionsoftware.com/
-- About Company: https://www.orionsoftware.com/about
-- Software Solutions: https://www.orionsoftware.com/software-solutions
-- IT Hardware Catalog: https://www.orionsoftware.com/it-products
-- Technical Support: https://www.orionsoftware.com/technical-support
-- Contact & Quotations: https://www.orionsoftware.com/contact
-- Privacy Policy: https://www.orionsoftware.com/privacy-policy
-- Terms & Conditions: https://www.orionsoftware.com/terms-and-conditions
+- Homepage: https://orionswtrading.com/
+- About Company: https://orionswtrading.com/about
+- Software Solutions: https://orionswtrading.com/software-solutions
+- IT Hardware Catalog: https://orionswtrading.com/it-products
+- Technical Support: https://orionswtrading.com/technical-support
+- Contact & Quotations: https://orionswtrading.com/contact
+- Privacy Policy: https://orionswtrading.com/privacy-policy
+- Terms & Conditions: https://orionswtrading.com/terms-and-conditions
 
 ## 4. Contact & Inquiry Verification
 - Inquiry Routing: Direct website inquiry forms and WhatsApp prefilled quotation messages.

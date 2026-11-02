@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import {
   Phone,
   Mail,
@@ -14,7 +14,7 @@ import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/buttons/Button';
 import { siteConfig } from '@/config/siteConfig';
-import { generateContactPageSchema } from '@/utils/seo';
+import { generateContactPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
 import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/whatsapp';
 
 export const ContactPage: React.FC = () => {
@@ -25,14 +25,19 @@ export const ContactPage: React.FC = () => {
   const breadcrumbItems = [{ label: 'Contact Us' }];
   const whatsappUrl = generateWhatsAppUrl(generateGeneralInquiryMessage());
   const contactSchema = generateContactPageSchema();
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Contact Us', url: '/contact' },
+  ]);
 
   return (
     <>
       <SEOHead
-        title="Contact Us | Orion Software & Trading"
-        description="Contact Orion Software & Trading for software development inquiries, IT hardware procurement, installation quotes, and technical support."
+        title="Contact Us | Request IT Hardware Quotation & Consultation"
+        description="Contact Orion Software & Trading for software development inquiries, IT hardware quotations, network installation, and technical support consultation."
         canonicalPath="/contact"
-        schema={contactSchema}
+        ogImage="/images/og/og-default.jpg"
+        schema={[contactSchema, breadcrumbSchema]}
       />
 
       {/* Header Banner */}
@@ -207,7 +212,7 @@ export const ContactPage: React.FC = () => {
                     </a>
                   ) : (
                     <span className="text-xs text-slate-500 italic mt-0.5 block">
-                      info@orionsoftware.com (Configurable placeholder)
+                      info@orionswtrading.com
                     </span>
                   )}
                 </div>
@@ -260,9 +265,56 @@ export const ContactPage: React.FC = () => {
                 We respect your data privacy. Customer inquiries and project details are kept strictly confidential.
               </span>
             </div>
+
+            {/* Direct Quick Internal Links */}
+            <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-2xs space-y-3 text-xs">
+              <h3 className="text-sm font-bold text-slate-900 dark:text-white pb-2 border-b border-slate-100 dark:border-slate-700">
+                Explore Our Technology Divisions
+              </h3>
+              <ul className="space-y-2 text-slate-600 dark:text-slate-300">
+                <li>
+                  <Link to="/software-solutions" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                    &bull; Custom Software Engineering &amp; ERP Solutions &rarr;
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/it-products" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                    &bull; Commercial IT Hardware Catalog &amp; Quotations &rarr;
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/technical-support" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                    &bull; On-Site Server, Network &amp; CCTV Installation &rarr;
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
+                    &bull; Client Confidentiality &amp; Privacy Policy &rarr;
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </aside>
         </div>
       </div>
+
+      {/* Corporate Location Map Embed */}
+      {siteConfig.contact.mapUrl && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+          <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md h-80 sm:h-96 w-full">
+            <iframe
+              src={siteConfig.contact.mapUrl}
+              title="Orion Software & Trading Corporate Office Location"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </section>
+      )}
     </>
   );
 };

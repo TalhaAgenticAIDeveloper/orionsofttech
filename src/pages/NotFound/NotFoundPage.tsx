@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Home, Search, ArrowRight } from 'lucide-react';
+import { Home, Search } from 'lucide-react';
 import { Button } from '@/components/buttons/Button';
 import { SEOHead } from '@/components/seo/SEOHead';
 
@@ -8,9 +7,10 @@ export const NotFoundPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="404 - Page Not Found | Orion Software & Trading"
+        title="404 - Page Not Found"
         description="The page you are looking for does not exist or has been moved. Explore Orion Software & Trading solutions."
         canonicalPath="/404"
+        robots="noindex, follow"
       />
 
       <div className="min-h-[50vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950/60">
@@ -48,20 +48,8 @@ export const NotFoundPage: React.FC = () => {
               Browse Products
             </Button>
           </div>
-
-          <div className="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500">
-            <span>Looking for custom software? </span>
-            <Link
-              to="/software-solutions"
-              className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline inline-flex items-center gap-0.5"
-            >
-              <span>Explore Software Solutions</span>
-              <ArrowRight className="w-3 h-3" />
-            </Link>
-          </div>
         </div>
       </div>
     </>
   );
 };
-
