@@ -41,29 +41,29 @@ export const ContactPage: React.FC = () => {
       />
 
       {/* Header Banner */}
-      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
         {/* Subtle Ambient Glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
                 <Send className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 Direct Communication Channel
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight">
-                Get in Touch with Orion
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
+                Get in Touch with <span className="text-emerald-600 dark:text-emerald-400">Orion</span>
               </h1>
-              <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                Whether you need custom software, commercial IT hardware pricing, on-site installation, or technical support, our team is ready to evaluate your requirements and provide prompt assistance.
+              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                Connect with our engineering and procurement team for custom software scopes, commercial IT hardware pricing, or on-site technical support.
               </p>
 
               {/* Quick Communication Highlights */}
-              <div className="mt-5 flex flex-wrap items-center gap-2 text-xs">
+              <div className="mt-5 flex flex-wrap items-center gap-2.5 text-xs">
                 {['Direct WhatsApp Desk', 'Transparent Quotations', 'Strict Confidentiality', 'Rapid Scoping'].map((item) => (
                   <span
                     key={item}
@@ -82,7 +82,7 @@ export const ContactPage: React.FC = () => {
                 <img
                   src="/images/heroes/contact-hero.jpg"
                   alt="Corporate Consultation and Customer Support Workspace"
-                  className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
@@ -148,7 +148,7 @@ export const ContactPage: React.FC = () => {
               </div>
 
               <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed mt-3">
-                Need an immediate response regarding product availability, hardware quotes, or quick technical questions? Connect directly with our team on WhatsApp.
+                Connect with our sales and technical desk on WhatsApp for instant hardware quotes and project inquiries.
               </p>
               <p className="text-xs font-semibold text-emerald-300 mt-2">
                 WhatsApp: {siteConfig.contact.whatsapp}

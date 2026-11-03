@@ -84,25 +84,25 @@ export const SoftwareSolutionsPage: React.FC = () => {
       />
 
       {/* Header Banner */}
-      <section className="bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800 py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
         {/* Subtle Ambient Glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
                 <Code2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 Software Engineering Division
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-                Software Solutions
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                Custom Software <span className="text-emerald-600 dark:text-emerald-400">Solutions</span>
               </h1>
-              <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                We design, architect, and build scalable digital solutions tailored to your operational processes. From full-scale enterprise ERP systems to cross-platform mobile apps and practical AI automation.
+              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                Scalable digital solutions engineered for your business workflows — from enterprise ERPs and web platforms to mobile apps and practical AI automation.
               </p>
 
               {/* Technologies Involved Tags */}
@@ -125,7 +125,7 @@ export const SoftwareSolutionsPage: React.FC = () => {
                 <img
                   src="/images/heroes/software-hero.jpg"
                   alt="Software Engineering & Modern Architecture"
-                  className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
@@ -189,14 +189,14 @@ export const SoftwareSolutionsPage: React.FC = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-8 md:py-12 bg-slate-50/60 dark:bg-[#080D1A]">
+      <section className="py-8 sm:py-10 lg:py-12 bg-slate-50/60 dark:bg-[#080D1A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8">
             <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">
               Enterprise Software Engineering Capabilities
             </h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
-              Select a specialized discipline below to view technical specifications, architecture blueprints, and FAQs.
+              Explore our specialized disciplines to view capabilities, architecture details, and deliverables.
             </p>
           </div>
 
@@ -238,7 +238,7 @@ export const SoftwareSolutionsPage: React.FC = () => {
             Need a Custom Architecture for Your Unique Workflow?
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Schedule a technical discovery session with our software architects to review your requirements, integration points, and project scope.
+            Schedule a discovery call with our software architects to review your project scope, tech stack, and timeline.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button

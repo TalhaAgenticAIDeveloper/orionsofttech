@@ -80,7 +80,7 @@ export const SoftwareServiceDetailPage: React.FC = () => {
                 Custom Development Service
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
                 {service.name}
               </h1>
 

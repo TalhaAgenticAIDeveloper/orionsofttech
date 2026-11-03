@@ -10,14 +10,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Turn your unique operational workflows and business requirements into secure, high-performance software designed to scale with your enterprise.',
     fullDescription:
-      'Off-the-shelf software often forces businesses into rigid workflows that stifle innovation and decrease operational efficiency. At Orion Software & Trading, our custom software development services deliver bespoke solutions engineered from the ground up to match your exact processes, compliance requirements, and strategic growth goals.\n\nOur engineering team collaborates closely with your operational stakeholders to design, architect, and implement resilient systems that solve core organizational bottlenecks. Whether you need an internal enterprise tool, a high-throughput operational platform, or specialized industry software, we build reliable, secure, and future-proof digital assets.\n\nWe emphasize maintainability, clean code architecture, comprehensive API integration, and enterprise-grade data security to ensure that your technology investment drives lasting competitive advantage.',
+      'Off-the-shelf software often forces businesses into rigid workflows that decrease efficiency. At Orion Software & Trading, we build bespoke software tailored from the ground up to match your exact processes and strategic goals.\n\nOur full-stack engineers design modular, secure, and scalable systems — giving you 100% intellectual property ownership with zero recurring per-user license fees.',
     icon: 'Code2',
     problems: [
-      'Commercial off-the-shelf software fails to accommodate unique business processes.',
-      'Siloed legacy systems creating data fragmentation and manual double-entry.',
-      'Costly per-user licensing fees for generic software that includes unused features.',
-      'Inability to scale infrastructure or add customized capabilities as the organization grows.',
-      'Security and compliance vulnerabilities arising from unmaintained commercial packages.',
+      'Commercial software does not fit your operational workflows.',
+      'Disconnected systems causing manual data re-entry and errors.',
+      'Escalating per-user licensing costs for unused features.',
+      'Inability to scale or add custom features as your team grows.',
     ],
     features: [
       {
@@ -194,14 +193,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Modern, secure, and responsive web applications engineered for seamless user experience across all devices and screen sizes.',
     fullDescription:
-      'A modern web application is the primary digital touchpoint for customer engagement, operational collaboration, and enterprise transaction processing. At Orion Software & Trading, we engineer web platforms that blend responsive user interfaces with resilient cloud-ready backends.\n\nWe specialize in Single Page Applications (SPAs), Progressive Web Apps (PWAs), and comprehensive multi-tenant customer portals. Utilizing modern front-end frameworks like React and lightweight styling systems like Tailwind CSS, our interfaces are engineered for maximum speed, strict accessibility (WCAG AA), and effortless mobile navigation.\n\nFrom internal employee portals to high-traffic customer-facing web services, our web solutions are designed for security, fast loading times, and maintainability.',
+      'Your web application is the core of modern client engagement and daily business operations. We build responsive, high-performance web platforms that deliver seamless experiences across desktop, tablet, and mobile.\n\nUsing modern frameworks like React, Next.js, and Node.js, we engineer fast, secure, and SEO-ready web applications with enterprise data security.',
     icon: 'Globe',
     problems: [
-      'Sluggish web interfaces causing high bounce rates and user dissatisfaction.',
-      'Poor mobile responsiveness leading to broken layouts on tablets and smartphones.',
-      'Unstructured front-end code that is difficult to maintain and extend.',
-      'Inadequate client-side and server-side data validation exposing security vulnerabilities.',
-      'Lack of modern progressive web app capabilities for offline or low-bandwidth usage.',
+      'Slow, clunky web interfaces that frustrate users and hurt conversions.',
+      'Poor mobile responsiveness causing broken layouts across devices.',
+      'Outdated legacy codebases that are difficult to update or maintain.',
+      'Security vulnerabilities and lack of modern API integration.',
     ],
     features: [
       {
@@ -378,14 +376,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Intuitive, responsive, and reliable mobile applications that connect your business with customers and field teams on the move.',
     fullDescription:
-      'With smartphone usage driving modern commerce and field operations, having a reliable mobile application is essential for maintaining agility and customer engagement. Orion Software & Trading builds robust mobile applications for iOS and Android that deliver native performance, offline capabilities, and intuitive user experiences.\n\nWe utilize industry-proven cross-platform frameworks alongside native integrations, allowing you to reach both Android and iOS users without maintaining two disconnected codebases. Our mobile apps are engineered with battery efficiency, secure local data storage, and low-latency API synchronizations in mind.\n\nWhether you need an internal enterprise tool for warehouse staff, a service booking application, or an executive approval dashboard, we deliver polished, secure mobile software built to meet real business requirements.',
+      'Deliver powerful mobile experiences to your customers and field teams. We design and develop native and cross-platform mobile apps for iOS and Android that run smoothly even in low-connectivity environments.\n\nFrom customer-facing commerce to internal field operations, we focus on intuitive navigation, offline data caching, and real-time backend synchronization.',
     icon: 'Smartphone',
     problems: [
-      'Field personnel unable to access enterprise data without returning to an office workstation.',
-      'High development and maintenance costs when maintaining separate iOS and Android codebases.',
-      'Mobile apps crashing or freezing under poor network connectivity.',
-      'Poor user adoption caused by unintuitive mobile navigation and clunky touch controls.',
-      'Delays in synchronizing mobile field data with central company databases.',
+      'Field teams unable to access business data on the go.',
+      'High cost of maintaining separate iOS and Android codebases.',
+      'App lag and crashes caused by poor network connectivity.',
+      'Complex navigation leading to low user adoption.',
     ],
     features: [
       {
@@ -562,14 +559,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Robust, offline-capable desktop applications engineered for high computational workloads, direct hardware interfacing, and intensive data processing.',
     fullDescription:
-      'While web applications serve many needs, specific operational environments demand the raw performance, deep operating system integration, and uninterrupted reliability of dedicated desktop software. At Orion Software & Trading, we develop specialized desktop applications engineered for Windows and Linux environments.\n\nOur desktop applications excel in environments requiring direct hardware interfacing — such as serial port communication with barcode printers, industrial weighing scales, biometric scanners, and CCTV capture cards. With direct access to local system resources, our desktop solutions eliminate browser sandbox constraints and offer instantaneous responsiveness.\n\nWe build desktop software using modern frameworks that provide modern graphical user interfaces, multi-threading capabilities, robust local SQLite/PostgreSQL storage, and automatic update capabilities.',
+      'For high-throughput industrial operations, offline workflows, and specialized hardware control, desktop software remains unmatched. We build robust desktop applications for Windows, Linux, and macOS.\n\nOur applications interface directly with local peripherals — barcode scanners, biometric devices, POS printers, and industrial controllers — with sub-second response times.',
     icon: 'Monitor',
     problems: [
-      'Web browsers cannot interface directly with serial devices, USB peripherals, or local COM ports.',
-      'Intensive data entry workflows slowed down by web latency and browser limitations.',
-      'Operations halted whenever internet service drops in industrial or retail settings.',
-      'Inability to utilize multi-core processing and local GPU acceleration inside browser tabs.',
-      'Complex local file system operations constrained by web security sandboxes.',
+      'Web applications unable to interface reliably with specialized local hardware.',
+      'Workflows grinding to a halt whenever internet connectivity drops.',
+      'Need for intensive local data processing with zero network latency.',
+      'Legacy desktop tools that crash or fail on modern operating systems.',
     ],
     features: [
       {
@@ -746,14 +742,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Turn your software vision into a scalable, multi-tenant Software-as-a-Service (SaaS) platform with automated billing, tenant isolation, and high availability.',
     fullDescription:
-      'Launching a successful Software-as-a-Service (SaaS) platform requires more than building software features — it demands a resilient multi-tenant architecture, robust subscription management, automated provisioning, and uncompromising data isolation. Orion Software & Trading provides full-lifecycle SaaS engineering services to help visionaries and enterprises launch market-ready cloud platforms.\n\nWe architect scalable multi-tenant databases, design granular role-based permissions, and implement seamless payment and subscription tier management. From self-service user onboarding and automated workspace provisioning to detailed administrative analytics, every aspect of your SaaS platform is engineered for high availability and low maintenance overhead.\n\nWhether you are commercializing internal proprietary software or creating a brand-new B2B product, our engineering ensures your SaaS platform scales smoothly from ten to ten thousand active organizations.',
+      'Transform your proprietary software idea or enterprise tool into a multi-tenant cloud SaaS platform. We architect scalable SaaS applications ready for commercial subscription distribution.\n\nWe implement robust tenant data isolation, automated billing, granular role permissions, and scalable microservices that keep infrastructure costs low as your subscriber base expands.',
     icon: 'Cloud',
     problems: [
-      'Architecture bottlenecks when scaling beyond initial pilot customers.',
-      'Data leakage risks between different organizational tenants.',
-      'Manual, error-prone customer onboarding and subscription renewal workflows.',
-      'Lack of granular usage metering and billing tier enforcement.',
-      'High server infrastructure costs caused by unoptimized resource utilization.',
+      'Difficulties isolating tenant data securely in shared database architectures.',
+      'Complexities in integrating recurring subscription billing and license tiers.',
+      'Infrastructure costs escalating faster than user subscription revenue.',
+      'Lack of automated provisioning, self-serve onboarding, and usage analytics.',
     ],
     features: [
       {
@@ -930,14 +925,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Comprehensive ERP systems engineered to eliminate operational silos, automate cross-departmental data flows, and provide actionable real-time business visibility.',
     fullDescription:
-      'Growing enterprises frequently struggle with disjointed tools: finance runs on one software, warehouse teams track stock in spreadsheets, and sales teams use separate order books. Orion Software & Trading designs, develops, and deploys customized Enterprise Resource Planning (ERP) solutions that integrate all your operational departments into a single source of truth.\n\nOur ERP solutions are tailored to your industry dynamics — whether you run wholesale distribution, discrete manufacturing, multi-branch trading, or service enterprises. We unify core financial accounting, procurement lifecycles, warehouse inventories, human resources, and customer management.\n\nBy replacing fragmented software with an integrated ERP platform, your leadership team gains real-time visibility into cash flow, inventory valuations, and order fulfillment cycles.',
+      'Eliminate operational silos across your organization. Our custom ERP solutions unify inventory, accounting, procurement, HR, and sales into a single centralized platform.\n\nTailored specifically to your business model, our ERP systems replace multiple disconnected spreadsheets and software licenses with real-time operational visibility.',
     icon: 'Building2',
     problems: [
-      'Data discrepancies between inventory records and financial accounting statements.',
-      'Manual reconciliation across disparate spreadsheets wasting hundreds of man-hours.',
-      'Inability of executive leadership to view real-time company-wide profitability and stock status.',
-      'Delayed order fulfillment cycles caused by broken communication between sales and warehouses.',
-      'Rigid generic tier-1 ERPs requiring astronomical implementation budgets and license fees.',
+      'Finance, sales, and warehouse teams operating in disconnected silos.',
+      'Costly human errors and wasted hours from manual data re-entry.',
+      'Lack of real-time visibility into stock levels, cash flow, and order status.',
+      'Expensive recurring licenses for generic ERP systems full of unused bloated modules.',
     ],
     features: [
       {
@@ -1114,14 +1108,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Bespoke CRM solutions designed to capture leads, streamline sales pipelines, automate follow-ups, and elevate customer satisfaction.',
     fullDescription:
-      'Your customer relationships are the lifeblood of your commercial success. However, when sales inquiries get lost in unread inboxes and customer interaction histories are scattered across personal WhatsApp chats, revenue opportunities slip away. Orion Software & Trading builds customized Customer Relationship Management (CRM) platforms that empower your sales and support teams to operate with structure and speed.\n\nOur CRM solutions are built specifically around your sales cycle — whether you handle high-touch B2B contracts, transactional wholesale inquiries, or multi-stage project bids. We centralize all lead sources, track deal progression visually, and provide automated reminder sequences to ensure no potential client is overlooked.\n\nWith integrated communication tracking, quotation generators, and customer service ticketing, your team can deliver prompt, personalized service that turns prospects into loyal accounts.',
+      'Turn client relationships into measurable revenue growth. We build bespoke CRM systems structured around your exact sales pipeline, quotation workflows, and customer support channels.\n\nTrack every customer interaction, automate proposal generation, and empower your sales team with actionable deal insights and follow-up reminders.',
     icon: 'Users',
     problems: [
-      'Inquiries and sales leads falling through the cracks due to disorganized tracking methods.',
-      'Zero historical context when a customer calls because interaction logs are scattered.',
-      'Sales managers having no visibility into rep pipelines, deal stages, and projected closing dates.',
-      'Manual, time-consuming quotation generation slowing down responses to hot prospects.',
-      'Commercial off-the-shelf CRMs charging high per-user monthly fees while overloading staff with complex irrelevant fields.',
+      'Sales leads falling through the cracks due to disorganized tracking.',
+      'No centralized record of customer communications and purchase history.',
+      'Lengthy manual proposal and quote generation delaying sales closings.',
+      'Sales reps overwhelmed by complex, rigid commercial CRM interfaces.',
     ],
     features: [
       {
@@ -1298,14 +1291,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Control your stock with surgical precision. Prevent stockouts, track serial numbers, automate warehouse transfers, and optimize cash tied in inventory.',
     fullDescription:
-      'In trading, retail, and manufacturing enterprises, mismanaged inventory directly drains working capital. When stock levels are inaccurate, businesses either overbuy dead stock or face painful stockouts that drive valuable customers to competitors. Orion Software & Trading builds robust, real-time Inventory Management Systems engineered to give you absolute control over every item in your warehouse.\n\nOur systems handle complex multi-location warehousing, automated reorder thresholds, batch/serial number tracking, and barcode/QR verification. We support landed-cost calculations, accounting for shipping, import duties, and handling expenses to reveal the true cost of goods sold (COGS).\n\nWhether you operate a central distribution warehouse, retail storefronts, or consignment stock, our inventory solutions streamline stock takes, eliminate shrinkage, and synchronize inventory data with your sales teams in real time.',
+      'Prevent stockouts, reduce holding costs, and optimize your supply chain. We engineer custom inventory systems with multi-warehouse tracking, automated reorder triggers, and barcode integration.\n\nGain complete visibility over stock movements, batch numbers, serial tracking, and supplier lead times across all your storage locations and retail branches.',
     icon: 'Package',
     problems: [
-      'Frequent stock discrepancies between physical warehouse counts and system records.',
-      'Capital tied up in slow-moving or obsolete items while fast-moving products run out.',
-      'Difficulty tracking warranties and serial numbers for individual IT hardware units.',
-      'Manual, error-prone stock audits requiring warehouse shutdowns for days.',
-      'No clear calculation of true landed costs including freight, customs duty, and clearance fees.',
+      'Unexpected stockouts and overstocking tying up crucial working capital.',
+      'Manual stock counts causing discrepancies and fulfillment delays.',
+      'Lack of multi-location inventory tracking across warehouses and branches.',
+      'No automated alerts for reorder points or expiring batches.',
     ],
     features: [
       {
@@ -1482,14 +1474,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Integrated healthcare management platforms connecting OPD/IPD registration, electronic medical records (EMR), laboratory diagnostics, and hospital billing.',
     fullDescription:
-      'Modern healthcare institutions require seamless coordination between clinical practitioners, diagnostic laboratories, nursing staff, and administrative billing. Orion Software & Trading develops comprehensive Hospital Management Systems (HMS) that replace slow paperwork with secure, unified clinical workflows.\n\nOur healthcare platforms cover patient registration, electronic medical records (EMR), OPD appointment queues, IPD bed management, pathology lab investigations, pharmacy inventory, and insurance billing. We prioritize data confidentiality, HIPAA-conscious access controls, and fast retrieval of critical patient histories.\n\nWhether you manage a specialized outpatient clinic, diagnostic center, or multi-department hospital, our HMS software minimizes patient waiting times, reduces diagnostic reporting errors, and ensures complete financial accountability across departments.',
+      'Streamline clinical workflows and improve patient care. Our hospital management systems unify patient registration, electronic health records (EHR), appointment scheduling, billing, and pharmacy management.\n\nEngineered with strict patient data privacy and role-based access, our HMS ensures smooth coordination between doctors, nurses, laboratories, and billing departments.',
     icon: 'HeartPulse',
     problems: [
-      'Lost or disorganized paper medical records leading to delayed patient consultations.',
-      'Long patient queues at registration desks and billing counters causing frustration.',
-      'Communication delays between diagnostic laboratories and consulting physicians.',
-      'Medication dispensing errors and untracked pharmacy stock leaks.',
-      'Complex billing discrepancies between inpatient bed charges, doctor fees, and medicines.',
+      'Long patient wait times caused by fragmented manual registration.',
+      'Medical records scattered across paper files and disconnected systems.',
+      'Billing discrepancies between pharmacy, diagnostic labs, and ward charges.',
+      'Lack of secure, role-based controls for sensitive patient health data.',
     ],
     features: [
       {
@@ -1666,14 +1657,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Complete educational management software covering student admissions, fee collections, timetable planning, examination grading, and parent communication.',
     fullDescription:
-      'Educational institutions juggle complex operational requirements across academic scheduling, tuition fee management, staff attendance, student records, and parent communication. Orion Software & Trading engineers comprehensive School & University Management Systems designed to modernize educational administration and enhance communication between campuses, teachers, students, and parents.\n\nOur educational solutions centralize student lifecycles from online admission inquiries and enrollment to final graduation transcripts. We automate recurring tuition fee generation, manage multi-installment vouchers with automated bank challan printing, track attendance via biometric devices, and automate examination grading cards.\n\nWith intuitive portals for administrators, teachers, and parents, our education platforms eliminate administrative chaos and provide campus leadership with real-time operational insights.',
+      'Modernize campus administration and enhance student engagement. We build comprehensive school and university portals covering admissions, fee collection, gradebooks, attendance, and exam scheduling.\n\nProvide dedicated, intuitive portals for administrators, teachers, students, and parents — complete with automated fee reminders and attendance notifications.',
     icon: 'GraduationCap',
     problems: [
-      'Tedious manual tuition fee tracking leading to uncollected dues and reconciliation delays.',
-      'Teachers spending excessive instructional time marking paper attendance and calculating grade sheets.',
-      'Disconnected communication between school administration and parents regarding student progress.',
-      'Paper-based student admission workflows causing long queues and lost documents.',
-      'Difficulty generating official transcripts and grade cards adhering to institutional formats.',
+      'Administrative burden of manual fee tracking and receipt generation.',
+      'Fragmented communication between administration, teachers, and parents.',
+      'Time-consuming manual grading, attendance logging, and report card prep.',
+      'Lack of a centralized portal for students to access timetables and assignments.',
     ],
     features: [
       {
@@ -1850,14 +1840,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Engineered digital storefronts, wholesale ordering portals, and secure payment integrations built for seamless consumer purchasing and B2B transactions.',
     fullDescription:
-      'In a competitive digital marketplace, generic slow-loading online stores fail to convert visitors into loyal paying customers. Orion Software & Trading builds high-performance, conversion-oriented E-commerce platforms designed to showcase products effectively, streamline checkout experiences, and integrate seamlessly with your backend inventory.\n\nWe build both consumer-facing (B2C) storefronts and wholesale (B2B) trade portals. For B2B platforms, we implement tiered wholesale pricing, minimum order quantities, quotation request engines, and corporate credit terms. For B2C retailers, we focus on frictionless mobile shopping, sub-second product search, and secure multi-channel payment integrations.\n\nFrom automated shipping rate calculators to inventory synchronization with your physical warehouse, our e-commerce solutions are built to turn clicks into profitable commercial relationships.',
+      'Drive online sales with fast, high-converting digital storefronts. We build custom B2C online shops and B2B wholesale portals with secure payment gateway integrations and automated inventory synchronization.\n\nEngineered for lightning-fast load times, mobile checkout optimization, and seamless integration with your accounting and shipping logistics.',
     icon: 'ShoppingCart',
     problems: [
-      'High shopping cart abandonment rates caused by slow checkout flows and complex forms.',
-      'Online stores selling products that are physically out of stock in the warehouse.',
-      'Inability to support wholesale trade clients who require price quotes rather than fixed prices.',
-      'Poor mobile shopping experiences driving away majority mobile smartphone shoppers.',
-      'Disjointed manual order processing requiring employees to copy data into accounting tools.',
+      'Slow-loading e-commerce pages driving shoppers away before checkout.',
+      'Clunky mobile checkout experiences resulting in high cart abandonment.',
+      'Manual stock updates between online storefronts and warehouse inventories.',
+      'Lack of support for wholesale trade pricing, credit terms, or bulk ordering.',
     ],
     features: [
       {
@@ -2034,14 +2023,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Leverage modern artificial intelligence, machine learning, and predictive analytics to automate manual tasks, extract document insights, and drive smarter business decisions.',
     fullDescription:
-      'Artificial intelligence is no longer an experimental luxury — it is a practical operational tool that can deliver measurable business efficiencies when applied to the right business problems. Orion Software & Trading designs, develops, and integrates pragmatic AI-powered applications engineered to solve specific operational challenges.\n\nRather than chasing superficial AI gimmicks, we focus on high-impact business applications: automated document extraction (OCR for invoices and receipts), intelligent demand forecasting, automated customer inquiry classification, and predictive equipment maintenance. We securely connect leading Large Language Model (LLM) APIs and specialized machine learning models with your internal operational databases.\n\nAll our AI implementations are built with enterprise privacy and data isolation at their core, ensuring that your proprietary operational data is never exposed to public training sets.',
+      'Harness practical AI to automate complex tasks and extract actionable intelligence from your business data. We build custom AI applications focused on document processing, predictive analytics, and workflow automation.\n\nWe integrate state-of-the-art language and vision models into your proprietary workflows with strict data privacy and on-premise or private cloud deployment options.',
     icon: 'Brain',
     problems: [
-      'Employees spending hours manually retyping data from printed invoices, bills, and contracts.',
-      'Inability to forecast inventory demand accurately, leading to costly stock surpluses or shortages.',
-      'Overwhelmed support teams answering repetitive customer questions manually.',
-      'Valuable corporate knowledge buried in unorganized PDFs, emails, and documentation.',
-      'Concerns regarding data confidentiality and security when using public AI tools.',
+      'High labor costs spent manually extracting data from invoices and documents.',
+      'Inability to analyze large volumes of operational data for predictive decisions.',
+      'Repetitive decision-making processes causing business bottlenecks.',
+      'Privacy concerns preventing the use of public third-party AI tools.',
     ],
     features: [
       {
@@ -2217,14 +2205,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Context-aware AI chatbots and conversational assistants that answer customer questions, qualify leads, and provide instant technical support around the clock.',
     fullDescription:
-      'Customers expect immediate answers to their questions, regardless of what time zone they are in or whether your office is currently open. When inquiries wait until the next business morning, potential deals are frequently lost to competitors. Orion Software & Trading develops intelligent AI chatbots and virtual assistants that provide 24/7 conversational customer engagement.\n\nUnlike frustrating legacy rule-based bots that break on the slightest typo, our modern virtual assistants utilize natural language understanding to understand user intent, answer detailed questions from your verified company catalog, and collect lead contact information accurately.\n\nWe integrate chatbots seamlessly across your website, WhatsApp Business API, and internal company support desks, allowing automated handling of common inquiries while gracefully handing off complex requests to human staff.',
+      'Provide 24/7 intelligent customer assistance and lead capture. We develop conversational AI assistants integrated directly with your website, WhatsApp Business API, and internal knowledge bases.\n\nOur chatbots accurately answer product questions, qualify sales leads, and resolve common support requests without frustrating rule-based menus.',
     icon: 'MessageSquare',
     problems: [
-      'Valuable customer inquiries arriving outside office hours going completely unanswered.',
-      'Support personnel overwhelmed by answering the same ten basic product questions all day.',
-      'Frustrating rule-based chatbots providing canned, robotic replies that annoy website visitors.',
-      'Delayed lead capture resulting in prospects clicking away to competitor websites.',
-      'Disjointed customer conversations across website chat, email, and WhatsApp.',
+      'Missed sales inquiries and customer support requests outside office hours.',
+      'Support staff overwhelmed by repetitive tier-1 customer inquiries.',
+      'Rigid legacy chatbots that fail to understand natural user questions.',
+      'Lack of integration between chat inquiries and your central CRM.',
     ],
     features: [
       {
@@ -2401,14 +2388,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Connect disconnected software, automate repetitive tasks, and build reliable digital workflows that save hundreds of operational hours each month.',
     fullDescription:
-      'In many organizations, valuable employees spend hours acting as "human bridges" between disconnected software tools: manually copy-pasting numbers from emails into spreadsheets, generating PDF invoices one by one, and sending repetitive status notifications. Orion Software & Trading builds robust Business Automation Solutions engineered to eliminate manual bottlenecks and let your team focus on core growth.\n\nWe connect your internal databases, third-party cloud services, messaging channels, and operational hardware into cohesive automated pipelines. From automated order confirmations and inventory alerts to multi-tier approval chains and scheduled report distribution, our automation architectures run quietly and reliably in the background.\n\nEvery automation workflow we build includes end-to-end audit logging, automated error notifications, and secure execution fail-safes to ensure reliable operational continuity.',
+      'Eliminate repetitive manual tasks across your business. We engineer automated workflows that connect your ERP, CRM, emails, payment gateways, and accounting systems into a cohesive engine.\n\nReduce human error, accelerate turnaround times, and free your staff to focus on strategic growth rather than routine data entry.',
     icon: 'Cog',
     problems: [
-      'Staff spending excessive working hours copying data between disconnected applications.',
-      'Human data entry mistakes causing shipping errors, incorrect invoices, and delayed orders.',
-      'Manual approval workflows stalling critical purchasing and client delivery decisions.',
-      'No automated alerts when critical business anomalies or stock shortages occur.',
-      'Fragile, unmaintained spreadsheets holding together vital company operational workflows.',
+      'Employees wasting hours copying data between disconnected applications.',
+      'Manual approval delays stalling orders, invoices, and purchase requisitions.',
+      'Frequent human errors in invoice generation and order fulfillment.',
+      'Lack of visibility and audit logging for critical administrative handoffs.',
     ],
     features: [
       {
@@ -2585,14 +2571,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Design, build, and integrate high-performance RESTful and WebSocket APIs that connect mobile apps, third-party services, and internal enterprise systems.',
     fullDescription:
-      'Modern digital architectures rely on Application Programming Interfaces (APIs) to exchange data swiftly, securely, and reliably between frontend interfaces, mobile devices, and third-party commercial partners. Orion Software & Trading specializes in architecting high-throughput RESTful, GraphQL, and WebSocket APIs engineered for low latency and enterprise resilience.\n\nWhether you need backend APIs for a new mobile application, a secure middleware bridge connecting legacy databases with cloud services, or public developer APIs for commercial partners, we deliver clean, standardized, and self-documenting endpoints.\n\nWe adhere strictly to modern security standards — implementing OAuth2, JWT tokenization, rate limiting, and strict input validation schemas (via Pydantic/Zod) to safeguard your backend assets from unauthorized access.',
+      'Connect your disparate software platforms into a unified ecosystem. We design and build high-performance REST and GraphQL APIs, webhooks, and secure integration middleware.\n\nOur APIs are engineered for high throughput, robust security (OAuth2, JWT), and comprehensive documentation for straightforward developer adoption.',
     icon: 'Plug',
     problems: [
-      'Mobile apps and web frontends unable to communicate efficiently with legacy backends.',
-      'Slow, unoptimized API endpoints causing sluggish user experiences under peak traffic.',
-      'Security risks arising from unauthenticated endpoints, missing rate limits, and unvalidated data.',
-      'Lack of standardized API documentation frustrating internal and external developer teams.',
-      'Inability to integrate with payment gateways, logistics couriers, and third-party enterprise platforms.',
+      'Siloed business software unable to communicate or share real-time data.',
+      'Fragile third-party integrations that frequently break or lose data.',
+      'Lack of standardized API endpoints for mobile apps and external partners.',
+      'Security risks from unauthenticated or poorly monitored backend endpoints.',
     ],
     features: [
       {
@@ -2769,14 +2754,13 @@ export const softwareServices: SoftwareService[] = [
     shortDescription:
       'Architect, migrate, and maintain cloud-native applications with containerized deployments, automated backups, and resilient cloud architectures.',
     fullDescription:
-      'Relying on fragile in-office servers that shut down when the local power fails or internet drops places business continuity at severe risk. Orion Software & Trading designs, builds, and deploys cloud-based applications that deliver 99.9% availability, automated data redundancy, and global accessibility.\n\nWe help businesses migrate legacy on-premise software into secure cloud environments or architect brand-new cloud-native solutions from scratch. Utilizing Docker containerization, managed cloud databases, and automated backup routines, our cloud architectures protect your organization against hardware failures and data loss.\n\nFrom configuring secure Virtual Private Clouds (VPCs) and SSL certificates to implementing cost-optimized cloud sizing, we ensure your technology operations run continuously without maintaining expensive server hardware on site.',
+      'Ensure high availability, data security, and seamless remote access. We help businesses migrate legacy on-premise software to modern cloud infrastructure on AWS, Azure, and Google Cloud.\n\nWe configure automated backups, containerized microservices, and auto-scaling environments so your systems remain accessible and resilient around the clock.',
     icon: 'CloudCog',
     problems: [
-      'In-office servers crashing during local power cuts, halting business operations completely.',
-      'Catastrophic data loss risks due to missing, unverified, or irregular local manual backups.',
-      'Remote branch offices unable to access central software reliably over slow connections.',
-      'High upfront capital expenditure purchasing and replacing server hardware every few years.',
-      'Security risks from unpatched, physically accessible on-premise servers.',
+      'Risk of catastrophic data loss from aging on-premise office server hardware.',
+      'Employees unable to access essential business tools when working remotely.',
+      'High server maintenance costs and unexpected hardware replacement expenses.',
+      'Downtime and lost revenue caused by local power or internet outages.',
     ],
     features: [
       {

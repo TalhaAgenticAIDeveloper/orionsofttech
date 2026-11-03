@@ -342,33 +342,33 @@ export const ITProductsPage: React.FC = () => {
       />
 
       {/* Header Banner */}
-      <section className="bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800 py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
         {/* Subtle Ambient Glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
                 <Server className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 IT Hardware Supply &amp; Procurement
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-                IT Hardware Catalog
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                Enterprise IT <span className="text-emerald-600 dark:text-emerald-400">Hardware Catalog</span>
               </h1>
-              <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                Explore authentic commercial technology hardware and infrastructure equipment. Contact our team to confirm real-time stock availability, delivery lead times, and receive custom project quotations.
+              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                Commercial computing, networking, surveillance, and power infrastructure. Sourced directly from tier-one enterprise manufacturers.
               </p>
 
               {/* Crucial Pricing Policy Notice */}
-              <div className="mt-4 p-4 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 text-xs sm:text-sm text-slate-600 dark:text-slate-300 flex items-start gap-3 shadow-2xs">
+              <div className="mt-4 p-3.5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 text-xs sm:text-sm text-slate-600 dark:text-slate-300 flex items-start gap-3 shadow-2xs">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 mt-1.5 shrink-0" />
                 <div>
                   <strong className="text-slate-900 dark:text-white font-bold">Commercial Procurement Notice:</strong>{' '}
-                  Due to fluctuating exchange rates and institutional volume pricing tiers, product prices are not posted online. Please submit an inquiry with your desired bill of quantities for an exact, competitive quotation.
+                  Prices vary based on quantity and configuration. Submit your bill of quantities (BOQ) for live availability and corporate pricing.
                 </div>
               </div>
             </div>
@@ -379,7 +379,7 @@ export const ITProductsPage: React.FC = () => {
                 <img
                   src="/images/heroes/hardware-hero.jpg"
                   alt="Enterprise IT Hardware and Rack Server Architecture"
-                  className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
@@ -602,7 +602,7 @@ export const ITProductsPage: React.FC = () => {
                   No products found
                 </h3>
                 <p className="mt-1.5 text-sm text-slate-600 dark:text-slate-400 max-w-md mx-auto leading-relaxed">
-                  We could not find any products matching your current filters. Contact our procurement team directly — we source over 45 categories of IT hardware.
+                  No products matched your filters. Contact our team directly — we source 45+ categories of enterprise hardware.
                 </p>
                 <div className="mt-6 flex items-center justify-center gap-3">
                   <Button variant="outline" size="sm" onClick={clearAllFilters}>

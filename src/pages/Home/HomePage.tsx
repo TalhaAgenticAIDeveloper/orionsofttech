@@ -45,42 +45,42 @@ export const HomePage: React.FC = () => {
   const whyChooseReasons = [
     {
       title: 'Competitive Market Pricing',
-      description: 'Direct procurement channels and transparent quotations designed to maximize your IT budget efficiency.',
+      description: 'Direct procurement channels and transparent quotations to maximize IT budget efficiency.',
       icon: Coins,
     },
     {
       title: 'Comprehensive Solutions',
-      description: 'Eliminate finger-pointing between vendors. We handle software engineering, hardware supply, and networking.',
+      description: 'One accountable partner for software engineering, hardware supply, and networking.',
       icon: Layers,
     },
     {
       title: 'Professional Installation',
-      description: 'Certified technicians configure routers, rack servers, terminate Cat6 cabling, and set up operating systems.',
+      description: 'Certified technicians handle on-site mounting, OS deployment, and network configuration.',
       icon: Wrench,
     },
     {
       title: 'Deep Technical Expertise',
-      description: 'Experienced full-stack software engineers and infrastructure specialists guiding each technical decision.',
+      description: 'Full-stack software engineers and infrastructure specialists for every project.',
       icon: Cpu,
     },
     {
       title: 'Reliable After-Sales Support',
-      description: 'Your relationship with Orion doesn’t end at delivery. We stay available for maintenance, fixes, and upgrades.',
+      description: 'Ongoing technical maintenance, troubleshooting, and scheduled system upgrades.',
       icon: Headphones,
     },
     {
       title: 'Customer-Focused Approach',
-      description: 'Solutions tailored specifically to your organizational workflows rather than forced one-size-fits-all packages.',
+      description: 'Tailored to your organizational workflows, not rigid one-size-fits-all packages.',
       icon: ShieldCheck,
     },
     {
       title: 'Broad IT Product Catalog',
-      description: 'Access 45+ categories of IT equipment — from laptops and servers to access control and power backups.',
+      description: '45+ categories of IT hardware sourced directly from tier-one manufacturers.',
       icon: Server,
     },
     {
       title: 'Bespoke Software Development',
-      description: 'Custom web, mobile, desktop, and ERP systems engineered to scale alongside your business growth.',
+      description: 'Custom web, mobile, and ERP systems engineered to scale with your business.',
       icon: Code2,
     },
   ];
@@ -89,32 +89,32 @@ export const HomePage: React.FC = () => {
     {
       step: '01',
       title: 'Discuss Your Requirements',
-      description: 'We listen to your operational challenges, evaluate workstation needs, and map desired technical outcomes.',
+      description: 'We evaluate your workflow bottlenecks, workstation needs, and technical outcomes.',
     },
     {
       step: '02',
       title: 'Select the Right Solution',
-      description: 'Our architects recommend hardware specifications, architecture blueprints, or hybrid software options.',
+      description: 'Our architects recommend optimal hardware specs, architecture blueprints, or custom software.',
     },
     {
       step: '03',
       title: 'Procurement & Supply',
-      description: 'Sourcing authentic commercial-grade IT equipment and setting up software development environments.',
+      description: 'Sourcing authentic commercial-grade IT equipment and provisioning development environments.',
     },
     {
       step: '04',
       title: 'Installation & Configuration',
-      description: 'On-site physical mounting, operating system installs, network routing, and software environment configuration.',
+      description: 'On-site physical mounting, operating system setup, and network routing configuration.',
     },
     {
       step: '05',
       title: 'Deployment & Testing',
-      description: 'Rigorous end-to-end testing, burn-in validation, employee onboarding, and parallel verification runs.',
+      description: 'Rigorous end-to-end testing, burn-in validation, and team onboarding.',
     },
     {
       step: '06',
       title: 'Ongoing Technical Support',
-      description: 'Continuous troubleshooting, hardware maintenance, routine backups, and remote technical assistance.',
+      description: 'Scheduled maintenance, routine backups, and responsive technical troubleshooting.',
     },
   ];
 
@@ -140,37 +140,37 @@ export const HomePage: React.FC = () => {
       />
 
       {/* ─── SECTION 2: HERO SECTION ────────────────────────────────────────── */}
-      <section className="relative overflow-hidden pt-8 pb-12 md:pt-12 md:pb-16 bg-linear-to-b from-slate-50 via-white to-white dark:from-[#080D1A] dark:via-[#0B0F19] dark:to-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800/80">
+      <section className="relative overflow-hidden py-5 sm:py-6 lg:py-8 bg-linear-to-b from-slate-50 via-white to-white dark:from-[#080D1A] dark:via-[#0B0F19] dark:to-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800/80">
         {/* Subtle Background Glows */}
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-emerald-500/10 dark:bg-emerald-500/15 blur-3xl pointer-events-none rounded-full" />
-        <div className="absolute -top-10 left-10 w-72 h-72 bg-emerald-400/5 dark:bg-emerald-400/10 blur-2xl pointer-events-none rounded-full" />
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-emerald-500/10 dark:bg-emerald-500/15 blur-3xl pointer-events-none rounded-full" />
+        <div className="absolute -top-10 left-10 w-60 h-60 bg-emerald-400/5 dark:bg-emerald-400/10 blur-2xl pointer-events-none rounded-full" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-center">
             {/* Left Content */}
             <div className="lg:col-span-7 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold tracking-wide uppercase mb-6 shadow-2xs">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-[11px] sm:text-xs font-semibold tracking-wide uppercase mb-2.5 sm:mb-3 shadow-2xs">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 Integrated Technology Partner
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.12]">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
                 Complete Technology Solutions.{' '}
-                <span className="text-emerald-600 dark:text-emerald-400 block mt-2">
+                <span className="text-emerald-600 dark:text-emerald-400 block mt-1 sm:mt-1.5">
                   From Software to Infrastructure.
                 </span>
               </h1>
 
-              <p className="mt-6 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Orion Software &amp; Trading delivers custom software solutions, commercial IT hardware, professional on-site installation, system configuration, and ongoing technical support — all under one roof.
+              <p className="mt-2.5 sm:mt-3 text-xs sm:text-sm lg:text-base text-slate-600 dark:text-slate-300 leading-normal sm:leading-relaxed max-w-xl mx-auto lg:mx-0">
+                Custom software development, commercial IT hardware supply, professional on-site installation, and ongoing technical support — all from one trusted partner.
               </p>
 
               {/* CTAs */}
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+              <div className="mt-4 sm:mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3">
                 <Button
                   to="/software-solutions"
                   variant="primary"
-                  size="lg"
+                  size="md"
                   className="w-full sm:w-auto font-bold shadow-md shadow-emerald-600/20"
                   icon={<ArrowRight className="w-4 h-4" />}
                   iconPosition="right"
@@ -181,7 +181,7 @@ export const HomePage: React.FC = () => {
                 <Button
                   to="/contact"
                   variant="outline"
-                  size="lg"
+                  size="md"
                   className="w-full sm:w-auto font-semibold"
                 >
                   Request a Quote
@@ -191,7 +191,7 @@ export const HomePage: React.FC = () => {
                   <Button
                     href={whatsappUrl}
                     variant="whatsapp"
-                    size="lg"
+                    size="md"
                     className="w-full sm:w-auto font-semibold shadow-sm"
                     icon={<MessageSquare className="w-4 h-4" />}
                   >
@@ -201,110 +201,110 @@ export const HomePage: React.FC = () => {
               </div>
 
               {/* Trust Metrics Bar */}
-              <div className="mt-8 pt-6 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+              <div className="mt-4 sm:mt-5 pt-3.5 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-3 gap-3 text-center lg:text-left">
                 <div>
-                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Software</p>
-                  <p className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white mt-0.5">16 Core Services</p>
+                  <p className="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Software</p>
+                  <p className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white mt-0.5">16 Core Services</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">IT Hardware</p>
-                  <p className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white mt-0.5">45+ Categories</p>
+                  <p className="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">IT Hardware</p>
+                  <p className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white mt-0.5">45+ Categories</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Support</p>
-                  <p className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white mt-0.5">End-to-End Care</p>
+                  <p className="text-[10px] sm:text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Support</p>
+                  <p className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white mt-0.5">End-to-End Care</p>
                 </div>
               </div>
             </div>
 
             {/* Right Visual Architecture Stack */}
             <div className="lg:col-span-5 relative">
-              <div className="relative mx-auto max-w-md lg:max-w-none">
+              <div className="relative mx-auto max-w-sm lg:max-w-none">
                 {/* Tech Card Window */}
-                <div className="rounded-3xl bg-[#0F172A] text-white overflow-hidden shadow-2xl border border-slate-800 relative z-10">
+                <div className="rounded-2xl sm:rounded-3xl bg-[#0F172A] text-white overflow-hidden shadow-xl border border-slate-800 relative z-10">
                   {/* Top Image Showcase Banner */}
-                  <div className="relative h-44 sm:h-48 overflow-hidden">
+                  <div className="relative h-24 sm:h-28 lg:h-32 overflow-hidden">
                     <img
                       src="/images/heroes/home-hero.jpg"
-                      alt="Orion Technology Infrastructure &amp; Systems Architecture"
+                      alt="Orion Technology Infrastructure & Systems Architecture"
                       className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700"
                       loading="eager"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent" />
 
                     {/* Window Controls */}
-                    <div className="absolute top-3 left-4 flex items-center gap-2">
-                      <div className="w-2.5 h-2.5 rounded-full bg-rose-500/90" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-amber-500/90" />
-                      <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/90" />
+                    <div className="absolute top-2.5 left-3 flex items-center gap-1.5">
+                      <div className="w-2 h-2 rounded-full bg-rose-500/90" />
+                      <div className="w-2 h-2 rounded-full bg-amber-500/90" />
+                      <div className="w-2 h-2 rounded-full bg-emerald-500/90" />
                     </div>
 
-                    <div className="absolute top-3 right-4">
-                      <span className="text-[11px] text-white/90 backdrop-blur-md bg-slate-900/70 border border-slate-700/80 px-2.5 py-0.5 rounded-full font-mono flex items-center gap-1.5 shadow-sm">
-                        <Sparkles className="w-3 h-3 text-emerald-400" />
+                    <div className="absolute top-2.5 right-3">
+                      <span className="text-[10px] text-white/90 backdrop-blur-md bg-slate-900/70 border border-slate-700/80 px-2 py-0.5 rounded-full font-mono flex items-center gap-1 shadow-sm">
+                        <Sparkles className="w-2.5 h-2.5 text-emerald-400" />
                         orion-tech-stack
                       </span>
                     </div>
 
-                    <div className="absolute bottom-3 left-4 right-4">
-                      <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider block">Production Architecture</span>
-                      <p className="text-xs font-bold text-white">Engineering &bull; Enterprise IT &bull; Support</p>
+                    <div className="absolute bottom-2 left-3 right-3">
+                      <span className="text-[9px] text-emerald-400 font-bold uppercase tracking-wider block">Production Architecture</span>
+                      <p className="text-[11px] font-bold text-white">Engineering &bull; Enterprise IT &bull; Support</p>
                     </div>
                   </div>
 
-                  <div className="p-5 sm:p-6 pt-2">
+                  <div className="p-3 sm:p-3.5 pt-2">
                     {/* 3 Pillars Visual */}
-                    <div className="mt-2 space-y-2.5">
-                      <div className="p-3.5 rounded-2xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-3.5 hover:border-emerald-500/40 transition-colors">
-                        <div className="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
-                          <Code2 className="w-4 h-4" />
+                    <div className="space-y-1.5 sm:space-y-2">
+                      <div className="p-2 sm:p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-2.5 hover:border-emerald-500/40 transition-colors">
+                        <div className="p-1.5 sm:p-2 rounded-lg bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
+                          <Code2 className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division A</span>
-                          <div className="text-xs sm:text-sm font-bold text-white">Custom Software Engineering</div>
-                          <p className="text-[11px] text-slate-400 mt-0.5">ERP, CRM, Web &amp; Mobile Applications</p>
+                          <span className="text-[9px] text-emerald-400 font-bold uppercase tracking-wider">Division A</span>
+                          <div className="text-xs font-bold text-white leading-tight">Custom Software Engineering</div>
+                          <p className="text-[10px] text-slate-400 mt-0.5">ERP, CRM, Web &amp; Mobile Applications</p>
                         </div>
                       </div>
 
-                      <div className="p-3.5 rounded-2xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-3.5 hover:border-emerald-500/40 transition-colors">
-                        <div className="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
-                          <Server className="w-4 h-4" />
+                      <div className="p-2 sm:p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-2.5 hover:border-emerald-500/40 transition-colors">
+                        <div className="p-1.5 sm:p-2 rounded-lg bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
+                          <Server className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division B</span>
-                          <div className="text-xs sm:text-sm font-bold text-white">Enterprise IT Hardware Supply</div>
-                          <p className="text-[11px] text-slate-400 mt-0.5">Servers, Laptops, Cisco Networking &amp; CCTV</p>
+                          <span className="text-[9px] text-emerald-400 font-bold uppercase tracking-wider">Division B</span>
+                          <div className="text-xs font-bold text-white leading-tight">Enterprise IT Hardware Supply</div>
+                          <p className="text-[10px] text-slate-400 mt-0.5">Servers, Laptops, Cisco Networking &amp; CCTV</p>
                         </div>
                       </div>
 
-                      <div className="p-3.5 rounded-2xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-3.5 hover:border-emerald-500/40 transition-colors">
-                        <div className="p-2.5 rounded-xl bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
-                          <Wrench className="w-4 h-4" />
+                      <div className="p-2 sm:p-2.5 rounded-xl bg-slate-800/70 border border-slate-700/60 flex items-center gap-2.5 hover:border-emerald-500/40 transition-colors">
+                        <div className="p-1.5 sm:p-2 rounded-lg bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 shrink-0">
+                          <Wrench className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Division C</span>
-                          <div className="text-xs sm:text-sm font-bold text-white">Installation &amp; Ongoing Support</div>
-                          <p className="text-[11px] text-slate-400 mt-0.5">On-Site Mounting, OS Setup &amp; Maintenance</p>
+                          <span className="text-[9px] text-emerald-400 font-bold uppercase tracking-wider">Division C</span>
+                          <div className="text-xs font-bold text-white leading-tight">Installation &amp; Ongoing Support</div>
+                          <p className="text-[10px] text-slate-400 mt-0.5">On-Site Mounting, OS Setup &amp; Maintenance</p>
                         </div>
                       </div>
                     </div>
 
                     {/* Core Proposition Quote */}
-                    <div className="mt-4 p-3 rounded-2xl bg-emerald-950/50 border border-emerald-800/60 text-xs text-emerald-200 flex items-start gap-2.5 leading-relaxed">
-                      <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                      <span>&ldquo;We don&apos;t just supply technology. We help you install it, configure it, and keep it running.&rdquo;</span>
+                    <div className="mt-2.5 p-2 rounded-xl bg-emerald-950/50 border border-emerald-800/60 text-[11px] text-emerald-200 flex items-start gap-2 leading-snug">
+                      <CheckCircle className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                      <span>&ldquo;We supply your technology, configure it, and keep it running smoothly.&rdquo;</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Decorative background glow */}
-                <div className="absolute -inset-3 bg-linear-to-r from-emerald-600/30 to-teal-600/30 rounded-3xl blur-2xl -z-10" />
+                <div className="absolute -inset-2 bg-linear-to-r from-emerald-600/25 to-teal-600/25 rounded-3xl blur-xl -z-10" />
               </div>
             </div>
           </div>
         </div>
       </section>
-
+      
       {/* ─── SECTION 3: CORE CAPABILITIES ───────────────────────────────────── */}
       <section className="py-10 md:py-14 bg-white dark:bg-[#0B0F19]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -316,7 +316,7 @@ export const HomePage: React.FC = () => {
               Three Pillars of Integrated Technology
             </h2>
             <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              A unified technology partner capable of architecting your digital platforms, procuring required hardware, and ensuring reliable daily operations.
+              From initial software architecture and hardware supply to deployment and ongoing maintenance.
             </p>
           </div>
 
@@ -329,7 +329,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Software Solutions</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Tailored web applications, mobile platforms, enterprise ERP systems, AI-powered automation, and specialized business management tools built to streamline your operations.
+                  Bespoke web and mobile apps, enterprise ERPs, and AI automation built to streamline your operations.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -351,7 +351,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">IT Hardware &amp; Products</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Commercial laptops, rack servers, switches, biometric access controllers, CCTV surveillance systems, UPS backups, and structured networking equipment from leading brands.
+                  Commercial laptops, rack servers, switches, CCTV surveillance, biometric access, and UPS systems from leading brands.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -373,7 +373,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Installation &amp; Support</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Professional on-site hardware mounting, server OS setup, network configuration, printer deployment, data migration, and reliable after-sales technical maintenance.
+                  On-site server mounting, OS configuration, structured network cabling, and reliable after-sales maintenance.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -493,7 +493,7 @@ export const HomePage: React.FC = () => {
               Looking for a specific IT product or hardware component?
             </h3>
             <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              We supply over 45 categories of IT hardware. Reach out with your desired bill of quantities (BOQ) for instant availability checks and competitive corporate pricing.
+              We supply 45+ categories of enterprise hardware. Share your bill of quantities (BOQ) for prompt availability and competitive corporate quotes.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <Button to="/contact" variant="primary" size="sm">
@@ -548,7 +548,7 @@ export const HomePage: React.FC = () => {
                 We don&apos;t just supply technology.
               </h3>
               <p className="mt-1.5 text-emerald-100 text-sm sm:text-base max-w-xl leading-relaxed">
-                We help you install it, configure it, integrate it, and keep it running smoothly day after day.
+                We supply your technology, handle physical installation and configuration, and keep your systems running smoothly.
               </p>
             </div>
             <Button
@@ -616,7 +616,7 @@ export const HomePage: React.FC = () => {
           </h2>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            Whether you need custom software, commercial IT hardware, professional installation, or ongoing technical maintenance, Orion Software &amp; Trading is ready to help your business operate with confidence.
+            Whether you need custom software, commercial IT hardware, on-site installation, or technical support, our team is ready to assist.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">

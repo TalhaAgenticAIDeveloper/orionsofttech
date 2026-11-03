@@ -70,22 +70,22 @@ export const SupportServiceDetailPage: React.FC = () => {
     {
       question: `Do you provide on-site technical assistance for ${service.name.toLowerCase()}?`,
       answer:
-        'Yes. Our certified field engineers visit corporate offices, data rooms, branches, and commercial sites equipped with all requisite diagnostic tools, mounting gear, and termination equipment to complete installation on-site.',
+        'Yes. Our certified field engineers visit your site equipped with all necessary diagnostic, mounting, and termination tools for complete on-site deployment.',
     },
     {
       question: 'Can you supply the hardware equipment along with the installation?',
       answer:
-        'Absolutely. Orion Software & Trading supplies genuine commercial-grade hardware (including Dell servers, Cisco switches, Hikvision cameras, APC UPS systems) directly from tier-one distribution channels alongside full installation services.',
+        'Yes. Orion supplies authentic commercial hardware (Dell, HP, Cisco, Hikvision, APC) directly alongside full installation services.',
     },
     {
       question: 'How quickly can your technicians be mobilized for a project?',
       answer:
-        'Standard installation schedules are arranged within 24 to 48 hours following quotation approval and site assessment. Emergency troubleshooting can be prioritized based on engineer availability.',
+        'Standard deployments are scheduled within 24 to 48 hours of quotation approval. Emergency troubleshooting is prioritized for AMC clients.',
     },
     {
       question: 'Do you offer Annual Maintenance Contracts (AMC) after setup?',
       answer:
-        'Yes. We provide tailored AMC packages covering routine preventative maintenance, periodic health checks, priority troubleshooting tickets, and SLA-backed emergency on-site visits.',
+        'Yes. We provide customized AMC packages covering preventative maintenance, priority troubleshooting, and SLA-backed emergency support.',
     },
   ];
 
@@ -102,24 +102,24 @@ export const SupportServiceDetailPage: React.FC = () => {
       />
 
       {/* Hero Header Section */}
-      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
                 <Wrench className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 Technical Installation &amp; Support Division
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
                 {service.name}
               </h1>
 
-              <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              <p className="mt-2.5 sm:mt-3 text-xs sm:text-sm lg:text-base text-slate-600 dark:text-slate-300 leading-normal sm:leading-relaxed">
                 {service.description}
               </p>
 
@@ -244,7 +244,7 @@ export const SupportServiceDetailPage: React.FC = () => {
                 Need Hardware Supplied Alongside Your Setup?
               </h2>
               <p className="mt-3 text-sm text-slate-300 leading-relaxed">
-                Save time and eliminate vendor conflict by procuring equipment directly through Orion. We supply servers, Cisco switches, Cat6 patch panels, UPS battery backups, CCTV cameras, and workstations at competitive enterprise pricing.
+                Procure equipment directly through Orion to avoid vendor disputes. We supply servers, switches, cabling, UPS systems, and workstations at competitive corporate rates.
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">

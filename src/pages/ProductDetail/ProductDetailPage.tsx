@@ -248,11 +248,11 @@ export const ProductDetailPage: React.FC = () => {
 
       {/* Main Product Overview Area */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           {/* Left Column: Visual Area */}
           <div className="lg:col-span-5">
             <div className="rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 overflow-hidden relative group shadow-sm">
-              <div className="relative h-64 sm:h-72 w-full overflow-hidden">
+              <div className="relative h-64 sm:h-72 lg:h-80 w-full overflow-hidden">
                 <img
                   src={product.image || '/images/heroes/hardware-hero.jpg'}
                   alt={`${product.brand ? product.brand + ' ' : ''}${product.name} enterprise IT hardware quotation and installation`}

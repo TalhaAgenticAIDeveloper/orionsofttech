@@ -44,25 +44,25 @@ export const TechnicalSupportPage: React.FC = () => {
     {
       title: 'Hardware & OS Deployment',
       description:
-        'Unboxing, physical mounting, power management connection, clean OS installation, driver updates, and hardware burn-in testing.',
+        'Workstation setup, server rack mounting, clean OS installs, and hardware burn-in validation.',
       icon: Laptop,
     },
     {
       title: 'Infrastructure & Network Setup',
       description:
-        'VLAN creation, firewall security rules, managed switch configuration, wireless access point roaming, and VPN tunnels.',
+        'VLANs, firewalls, managed switches, Wi-Fi access points, and secure VPN tunnels.',
       icon: Layers,
     },
     {
       title: 'On-Site Technical Assistance',
       description:
-        'Hands-on field engineers visiting your corporate office, retail branch, or campus for physical cabling, mounting, and system integration.',
+        'Hands-on field engineers for physical cabling, equipment mounting, and system integration.',
       icon: Wrench,
     },
     {
       title: 'Remote Diagnostics & Troubleshooting',
       description:
-        'Secure screen sharing and diagnostic assistance to resolve software bugs, configuration issues, and user access problems rapidly.',
+        'Rapid remote support for software glitches, driver updates, and configuration issues.',
       icon: Headphones,
     },
   ];
@@ -78,34 +78,34 @@ export const TechnicalSupportPage: React.FC = () => {
       />
 
       {/* Header Banner */}
-      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 md:py-12 relative overflow-hidden">
+      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
         {/* Subtle Ambient Glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
                 <Wrench className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                 After-Sales &amp; Infrastructure Services
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight">
-                Installation, Configuration &amp; Technical Support
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
+                Installation, Configuration <span className="text-emerald-600 dark:text-emerald-400">&amp; Support</span>
               </h1>
-              <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                We do not simply deliver hardware in boxes and leave you on your own. Orion provides professional deployment, network configuration, device setup, and ongoing technical maintenance.
+              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                We don’t just deliver hardware in boxes. Orion provides certified on-site deployment, network routing, operating system setup, and dedicated technical maintenance.
               </p>
 
               {/* Core Proposition Callout */}
-              <div className="mt-4 p-4 sm:p-5 rounded-2xl bg-emerald-900 text-white flex items-start gap-4 shadow-sm">
+              <div className="mt-4 p-4 rounded-2xl bg-emerald-900 text-white flex items-start gap-4 shadow-sm">
                 <ShieldCheck className="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" />
                 <div>
                   <h2 className="text-base font-bold text-white">Our Proposition:</h2>
                   <p className="text-sm text-emerald-100 mt-1 italic">
-                    &ldquo;We don&apos;t just supply technology. We help you install it, configure it, integrate it, and keep it running.&rdquo;
+                    &ldquo;We supply your technology, handle physical installation and configuration, and keep your systems running smoothly.&rdquo;
                   </p>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export const TechnicalSupportPage: React.FC = () => {
                 <img
                   src="/images/heroes/support-hero.jpg"
                   alt="Certified Technician Racking and Configuring Server Infrastructure"
-                  className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
@@ -156,10 +156,7 @@ export const TechnicalSupportPage: React.FC = () => {
                 Your Relationship With Orion Doesn&apos;t End After Delivery
               </h3>
               <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                Many hardware vendors disappear the moment an invoice is settled, leaving internal office staff to struggle with complex router configurations, unpatched operating systems, and cable spaghetti.
-              </p>
-              <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                At Orion Software &amp; Trading, we believe true value lies in execution. Our qualified engineers remain available to assist with physical hardware installation, driver configuration, server virtualization setup, troubleshooting, and scheduled technical maintenance.
+                Hardware procurement is only step one. Our qualified engineers handle physical mounting, driver setup, server configuration, network routing, and routine maintenance — keeping your operations reliable and downtime minimal.
               </p>
             </div>
 
@@ -169,7 +166,7 @@ export const TechnicalSupportPage: React.FC = () => {
               </h4>
               <div className="flex items-start gap-2 text-slate-600 dark:text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                <span>On-site deployments scheduled around business working hours</span>
+                <span>Deployments scheduled around your business working hours</span>
               </div>
               <div className="flex items-start gap-2 text-slate-600 dark:text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
@@ -177,7 +174,7 @@ export const TechnicalSupportPage: React.FC = () => {
               </div>
               <div className="flex items-start gap-2 text-slate-600 dark:text-slate-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                <span>Scope of support tailored specifically to purchased hardware</span>
+                <span>Dedicated technical support tailored to your hardware</span>
               </div>
             </div>
           </div>

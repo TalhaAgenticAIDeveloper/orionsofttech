@@ -38,25 +38,25 @@ export const AboutPage: React.FC = () => {
     {
       title: 'Integrity & Transparency',
       description:
-        'We believe in honest, realistic technical recommendations and clear procurement quotations without hidden charges or invented specifications.',
+        'Honest technical recommendations and upfront quotations with zero hidden costs.',
       icon: ShieldCheck,
     },
     {
       title: 'Technical Competence',
       description:
-        'Every solution we deliver is guided by experienced software engineers and hardware specialists who understand real-world operational constraints.',
+        'Every solution is guided by experienced software engineers and certified infrastructure specialists.',
       icon: Cpu,
     },
     {
       title: 'Customer-Centric Focus',
       description:
-        'We listen first. Our software and hardware recommendations are tailored around your specific operational workflows rather than generic templates.',
+        'Tailored around your specific workflows rather than generic off-the-shelf templates.',
       icon: HeartHandshake,
     },
     {
       title: 'End-to-End Accountability',
       description:
-        'From the first requirements discussion through procurement, installation, and ongoing support, we take full responsibility for our work.',
+        'Full responsibility from initial requirements through procurement, installation, and ongoing support.',
       icon: Layers,
     },
   ];
@@ -66,31 +66,31 @@ export const AboutPage: React.FC = () => {
       step: '01',
       title: 'Active Listening & Needs Assessment',
       description:
-        'We begin by thoroughly understanding your business model, current technology bottlenecks, and short-term and long-term organizational objectives.',
+        'We evaluate your business workflows, current bottlenecks, and technical objectives.',
     },
     {
       step: '02',
       title: 'Tailored Solution Architecture',
       description:
-        'Rather than pushing pre-packaged bundles, we design a customized software architecture or hardware specification suited to your exact operational requirements.',
+        'We design a custom software blueprint and exact hardware bill of materials.',
     },
     {
       step: '03',
       title: 'Transparent Procurement & Execution',
       description:
-        'We deliver genuine commercial hardware at competitive rates and build software iteratively with regular milestone demonstrations for full visibility.',
+        'Genuine commercial hardware procurement and agile software delivery with regular milestone reviews.',
     },
     {
       step: '04',
       title: 'On-Site Installation & Configuration',
       description:
-        'Our certified technicians deploy systems on-site, handle operating system installations, configure network routing, and ensure production readiness.',
+        'Certified technicians handle on-site mounting, OS deployment, and network readiness.',
     },
     {
       step: '05',
       title: 'Long-Term After-Sales Support',
       description:
-        'We remain available as your dependable technical partner for routine maintenance, troubleshooting, and system upgrades as your business grows.',
+        'Dedicated technical maintenance, proactive updates, and responsive troubleshooting.',
     },
   ];
 
@@ -105,14 +105,14 @@ export const AboutPage: React.FC = () => {
       />
 
       {/* Hero Header Banner with Modern Visual */}
-      <section className="relative overflow-hidden bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800/80 py-8 md:py-12">
+      <section className="relative overflow-hidden bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800/80 py-8 sm:py-10 lg:py-12">
         {/* Subtle Ambient Glow */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <Breadcrumbs items={breadcrumbItems} />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -120,16 +120,19 @@ export const AboutPage: React.FC = () => {
                 Corporate Profile &amp; Mission
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
-                About <span className="text-emerald-600 dark:text-emerald-400">Orion Software &amp; Trading</span> | Technology Solutions &amp; IT Supplier
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                About <span className="text-emerald-600 dark:text-emerald-400">Orion Software &amp; Trading</span>
               </h1>
+              <p className="text-xs sm:text-sm font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mt-1.5">
+                Technology Solutions &bull; IT Hardware &bull; Technical Support
+              </p>
 
-              <p className="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-                Orion Software &amp; Trading is a comprehensive technology solutions provider focused on helping businesses, institutions, and organizations access the right software, hardware, and technical expertise.
+              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                Orion Software &amp; Trading is an integrated technology partner delivering bespoke software engineering, commercial IT hardware procurement, and certified on-site technical support.
               </p>
 
               {/* Quick Trust Chips */}
-              <div className="mt-6 flex flex-wrap items-center gap-2.5">
+              <div className="mt-5 flex flex-wrap items-center gap-2.5 text-xs">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 shadow-2xs">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
                   Bespoke Software Engineering
@@ -151,7 +154,7 @@ export const AboutPage: React.FC = () => {
                 <img
                   src="/images/heroes/about-hero.jpg"
                   alt="Orion Technology Team Collaborating"
-                  className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/30 to-transparent" />
@@ -193,13 +196,10 @@ export const AboutPage: React.FC = () => {
 
               <div className="mt-6 space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  In a rapidly evolving digital landscape, businesses often find themselves managing disconnected vendors: one company builds their website, another supplies office laptops, and a third is called when the network fails. When problems arise, vendors point fingers at each other, leaving the business owner stuck with operational downtime.
+                  Most businesses face unnecessary downtime managing disconnected vendors — one builds the website, another ships hardware, and nobody takes responsibility when systems fail. Orion Software &amp; Trading eliminates this friction by unifying software engineering, IT hardware procurement, and on-site support under one roof.
                 </p>
                 <p>
-                  Orion Software &amp; Trading was founded to eliminate this friction. We operate at the intersection of custom software engineering, commercial IT hardware procurement, and hands-on technical infrastructure support.
-                </p>
-                <p>
-                  Whether you are a startup needing custom software to launch an idea, a growing commercial enterprise requiring 50 configured workstations, or an institution seeking to overhaul its campus network, we provide end-to-end technical execution under one roof.
+                  Whether you need bespoke enterprise software, 50 configured workstations, or campus-wide network infrastructure, our certified team delivers end-to-end execution with full accountability.
                 </p>
               </div>
 
@@ -227,7 +227,7 @@ export const AboutPage: React.FC = () => {
                       Custom Software Solutions
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      We design and build bespoke web platforms, mobile applications, desktop software, ERPs, CRM platforms, and practical AI automation systems.
+                      Bespoke web platforms, mobile applications, ERPs, CRM systems, and practical AI automation engineered for your workflows.
                     </p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ export const AboutPage: React.FC = () => {
                       IT Hardware &amp; Equipment Supply
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      We supply computers, laptops, servers, switches, routers, biometric access terminals, CCTV systems, UPS units, and cabling at competitive market rates.
+                      Commercial laptops, rack servers, managed switches, biometric terminals, CCTV, and UPS backups at competitive rates.
                     </p>
                   </div>
                 </div>
@@ -255,7 +255,7 @@ export const AboutPage: React.FC = () => {
                       Installation &amp; Ongoing Support
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      We mount server racks, terminate structured cabling, configure operating systems, deploy software, and provide responsive on-site and remote technical support.
+                      Server rack mounting, structured cabling, operating system setup, software deployment, and responsive technical maintenance.
                     </p>
                   </div>
                 </div>
@@ -275,7 +275,7 @@ export const AboutPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
               <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                To empower businesses and organizations with reliable, cost-effective, and scalable technology solutions. We bridge the gap between software innovation, hardware procurement, and technical installation so our clients can focus entirely on growing their core operations.
+                To empower businesses with reliable, scalable technology solutions. We bridge software engineering, hardware supply, and on-site deployment so you can focus entirely on core business growth.
               </p>
             </div>
 
@@ -285,7 +285,7 @@ export const AboutPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
               <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                To be the most trusted and comprehensive technology partner in our region — recognized for factual advice, high-standard software engineering, authentic hardware supply, and dependable after-sales technical support.
+                To be the region’s most trusted technology partner — recognized for technical excellence, authentic hardware procurement, and dependable after-sales support.
               </p>
             </div>
           </div>
