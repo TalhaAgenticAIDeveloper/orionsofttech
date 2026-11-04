@@ -37,26 +37,22 @@ export const AboutPage: React.FC = () => {
   const coreValues = [
     {
       title: 'Integrity & Transparency',
-      description:
-        'Honest technical recommendations and upfront quotations with zero hidden costs.',
+      description: 'Honest technical advice and clear upfront quotations with zero hidden costs.',
       icon: ShieldCheck,
     },
     {
       title: 'Technical Competence',
-      description:
-        'Every solution is guided by experienced software engineers and certified infrastructure specialists.',
+      description: 'Led by experienced software engineers and certified infrastructure specialists.',
       icon: Cpu,
     },
     {
       title: 'Customer-Centric Focus',
-      description:
-        'Tailored around your specific workflows rather than generic off-the-shelf templates.',
+      description: 'Tailored around your specific workflows, not rigid off-the-shelf templates.',
       icon: HeartHandshake,
     },
     {
       title: 'End-to-End Accountability',
-      description:
-        'Full responsibility from initial requirements through procurement, installation, and ongoing support.',
+      description: 'Single-point ownership from procurement through deployment and support.',
       icon: Layers,
     },
   ];
@@ -64,33 +60,28 @@ export const AboutPage: React.FC = () => {
   const approachSteps = [
     {
       step: '01',
-      title: 'Active Listening & Needs Assessment',
-      description:
-        'We evaluate your business workflows, current bottlenecks, and technical objectives.',
+      title: 'Needs Assessment',
+      description: 'Evaluating your workflow bottlenecks, workstation needs, and technical goals.',
     },
     {
       step: '02',
-      title: 'Tailored Solution Architecture',
-      description:
-        'We design a custom software blueprint and exact hardware bill of materials.',
+      title: 'Solution Architecture',
+      description: 'Tailored software architecture blueprints and exact hardware specifications.',
     },
     {
       step: '03',
-      title: 'Transparent Procurement & Execution',
-      description:
-        'Genuine commercial hardware procurement and agile software delivery with regular milestone reviews.',
+      title: 'Transparent Execution',
+      description: 'Genuine commercial hardware procurement and agile software milestone reviews.',
     },
     {
       step: '04',
-      title: 'On-Site Installation & Configuration',
-      description:
-        'Certified technicians handle on-site mounting, OS deployment, and network readiness.',
+      title: 'On-Site Deployment',
+      description: 'Physical rack mounting, OS deployment, network routing, and verification.',
     },
     {
       step: '05',
-      title: 'Long-Term After-Sales Support',
-      description:
-        'Dedicated technical maintenance, proactive updates, and responsive troubleshooting.',
+      title: 'Ongoing Support',
+      description: 'Preventative technical maintenance, routine updates, and responsive troubleshooting.',
     },
   ];
 
@@ -194,12 +185,12 @@ export const AboutPage: React.FC = () => {
                 A Unified Technology Partner for the Modern Enterprise
               </h2>
 
-              <div className="mt-6 space-y-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+              <div className="mt-4 space-y-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                  Most businesses face unnecessary downtime managing disconnected vendors — one builds the website, another ships hardware, and nobody takes responsibility when systems fail. Orion Software &amp; Trading eliminates this friction by unifying software engineering, IT hardware procurement, and on-site support under one roof.
+                  Managing disconnected vendors creates operational friction — one builds software, another ships laptops, and nobody takes responsibility when systems fail. Orion Software &amp; Trading eliminates this by unifying custom software engineering, commercial IT hardware procurement, and on-site technical support under one roof.
                 </p>
                 <p>
-                  Whether you need bespoke enterprise software, 50 configured workstations, or campus-wide network infrastructure, our certified team delivers end-to-end execution with full accountability.
+                  From custom web and ERP platforms to 50 configured workstations or campus-wide network infrastructure, we provide single-point accountability.
                 </p>
               </div>
 
@@ -227,7 +218,7 @@ export const AboutPage: React.FC = () => {
                       Custom Software Solutions
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Bespoke web platforms, mobile applications, ERPs, CRM systems, and practical AI automation engineered for your workflows.
+                      Bespoke web platforms, mobile applications, ERPs, CRM systems, and practical AI automation.
                     </p>
                   </div>
                 </div>
@@ -241,7 +232,7 @@ export const AboutPage: React.FC = () => {
                       IT Hardware &amp; Equipment Supply
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Commercial laptops, rack servers, managed switches, biometric terminals, CCTV, and UPS backups at competitive rates.
+                      Commercial laptops, rack servers, switches, biometric terminals, CCTV, and UPS backups.
                     </p>
                   </div>
                 </div>
@@ -255,7 +246,7 @@ export const AboutPage: React.FC = () => {
                       Installation &amp; Ongoing Support
                     </h4>
                     <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                      Server rack mounting, structured cabling, operating system setup, software deployment, and responsive technical maintenance.
+                      Server rack mounting, structured cabling, operating system setup, and responsive maintenance.
                     </p>
                   </div>
                 </div>
@@ -275,7 +266,7 @@ export const AboutPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Our Mission</h3>
               <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                To empower businesses with reliable, scalable technology solutions. We bridge software engineering, hardware supply, and on-site deployment so you can focus entirely on core business growth.
+                To empower businesses with scalable software, authentic commercial IT hardware, and certified on-site technical deployment.
               </p>
             </div>
 
@@ -285,7 +276,7 @@ export const AboutPage: React.FC = () => {
               </div>
               <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Our Vision</h3>
               <p className="mt-4 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
-                To be the region’s most trusted technology partner — recognized for technical excellence, authentic hardware procurement, and dependable after-sales support.
+                To be the region’s most trusted technology partner — recognized for engineering excellence, authentic hardware, and dependable support.
               </p>
             </div>
           </div>
@@ -302,28 +293,22 @@ export const AboutPage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               Our Core Values
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              The fundamental standards that guide how we engineer software, quote hardware, and serve our business clients.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {coreValues.map((value, index) => {
               const IconComp = value.icon;
               return (
                 <div
                   key={index}
-                  className="p-7 rounded-2xl bg-slate-50 dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs"
+                  className="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-all shadow-2xs flex items-center gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 border border-emerald-200 dark:border-emerald-800/60">
+                  <div className="w-11 h-11 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-200 dark:border-emerald-800/60 group-hover:scale-105 transition-transform">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
                     {value.title}
                   </h3>
-                  <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {value.description}
-                  </p>
                 </div>
               );
             })}
@@ -341,28 +326,20 @@ export const AboutPage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               Our 5-Step Approach
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              A structured, transparent process engineered to minimize project risks and ensure smooth technical adoption.
-            </p>
           </div>
 
-          <div className="space-y-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {approachSteps.map((step) => (
               <div
                 key={step.step}
-                className="p-6 sm:p-7 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 shadow-2xs hover:border-emerald-500/40 transition-colors"
+                className="p-5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 flex items-center gap-4 shadow-2xs hover:border-emerald-500/40 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 font-mono font-black text-lg flex items-center justify-center shrink-0 border border-emerald-200 dark:border-emerald-800">
+                <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 font-mono font-black text-base flex items-center justify-center shrink-0 border border-emerald-200 dark:border-emerald-800">
                   {step.step}
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                    {step.title}
-                  </h3>
-                  <p className="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
+                <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
+                  {step.title}
+                </h3>
               </div>
             ))}
           </div>

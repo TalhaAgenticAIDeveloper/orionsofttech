@@ -45,42 +45,42 @@ export const HomePage: React.FC = () => {
   const whyChooseReasons = [
     {
       title: 'Competitive Market Pricing',
-      description: 'Direct procurement channels and transparent quotations to maximize IT budget efficiency.',
+      description: 'Direct procurement channels with transparent corporate quotations.',
       icon: Coins,
     },
     {
       title: 'Comprehensive Solutions',
-      description: 'One accountable partner for software engineering, hardware supply, and networking.',
+      description: 'Software engineering, hardware supply, and networking unified.',
       icon: Layers,
     },
     {
       title: 'Professional Installation',
-      description: 'Certified technicians handle on-site mounting, OS deployment, and network configuration.',
+      description: 'On-site server mounting, OS setup, and network routing.',
       icon: Wrench,
     },
     {
       title: 'Deep Technical Expertise',
-      description: 'Full-stack software engineers and infrastructure specialists for every project.',
+      description: 'Full-stack software engineers and infrastructure specialists.',
       icon: Cpu,
     },
     {
       title: 'Reliable After-Sales Support',
-      description: 'Ongoing technical maintenance, troubleshooting, and scheduled system upgrades.',
+      description: 'Routine maintenance, troubleshooting, and system upgrades.',
       icon: Headphones,
     },
     {
       title: 'Customer-Focused Approach',
-      description: 'Tailored to your organizational workflows, not rigid one-size-fits-all packages.',
+      description: 'Tailored to your organizational workflows, not rigid templates.',
       icon: ShieldCheck,
     },
     {
       title: 'Broad IT Product Catalog',
-      description: '45+ categories of IT hardware sourced directly from tier-one manufacturers.',
+      description: '45+ categories of tier-one enterprise IT hardware.',
       icon: Server,
     },
     {
       title: 'Bespoke Software Development',
-      description: 'Custom web, mobile, and ERP systems engineered to scale with your business.',
+      description: 'Scalable web, mobile, and custom ERP systems.',
       icon: Code2,
     },
   ];
@@ -88,33 +88,33 @@ export const HomePage: React.FC = () => {
   const journeySteps = [
     {
       step: '01',
-      title: 'Discuss Your Requirements',
-      description: 'We evaluate your workflow bottlenecks, workstation needs, and technical outcomes.',
+      title: 'Needs Assessment',
+      description: 'Evaluating your workflow, workstation, and technical requirements.',
     },
     {
       step: '02',
-      title: 'Select the Right Solution',
-      description: 'Our architects recommend optimal hardware specs, architecture blueprints, or custom software.',
+      title: 'Solution Architecture',
+      description: 'Hardware specifications and software architecture blueprints.',
     },
     {
       step: '03',
-      title: 'Procurement & Supply',
-      description: 'Sourcing authentic commercial-grade IT equipment and provisioning development environments.',
+      title: 'Procurement & Setup',
+      description: 'Sourcing authentic IT equipment and staging environments.',
     },
     {
       step: '04',
-      title: 'Installation & Configuration',
-      description: 'On-site physical mounting, operating system setup, and network routing configuration.',
+      title: 'Installation & Routing',
+      description: 'On-site physical mounting, OS deployment, and network routing.',
     },
     {
       step: '05',
-      title: 'Deployment & Testing',
-      description: 'Rigorous end-to-end testing, burn-in validation, and team onboarding.',
+      title: 'Testing & Handover',
+      description: 'End-to-end burn-in validation, testing, and team onboarding.',
     },
     {
       step: '06',
-      title: 'Ongoing Technical Support',
-      description: 'Scheduled maintenance, routine backups, and responsive technical troubleshooting.',
+      title: 'Ongoing Support',
+      description: 'Preventative maintenance, routine backups, and SLA assistance.',
     },
   ];
 
@@ -315,9 +315,6 @@ export const HomePage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               Three Pillars of Integrated Technology
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              From initial software architecture and hardware supply to deployment and ongoing maintenance.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -329,7 +326,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Software Solutions</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Bespoke web and mobile apps, enterprise ERPs, and AI automation built to streamline your operations.
+                  Custom web and mobile apps, enterprise ERPs, and practical AI automation.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -351,7 +348,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">IT Hardware &amp; Products</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Commercial laptops, rack servers, switches, CCTV surveillance, biometric access, and UPS systems from leading brands.
+                  Commercial laptops, rack servers, switches, CCTV surveillance, biometric access, and UPS backups.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -373,7 +370,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Installation &amp; Support</h3>
                 <p className="mt-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  On-site server mounting, OS configuration, structured network cabling, and reliable after-sales maintenance.
+                  On-site server mounting, OS configuration, Cat6 cabling, and routine maintenance.
                 </p>
               </div>
               <div className="mt-8 pt-4 border-t border-slate-200 dark:border-slate-800">
@@ -400,28 +397,22 @@ export const HomePage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               Built on Trust, Technical Precision &amp; Reliability
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              We stand apart through factual expertise, competitive procurement, and genuine post-installation technical dedication.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {whyChooseReasons.map((reason, index) => {
               const IconComp = reason.icon;
               return (
                 <div
                   key={index}
-                  className="p-7 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-colors"
+                  className="p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-all flex items-center gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 border border-emerald-200/60 dark:border-emerald-800/60">
+                  <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-200/60 dark:border-emerald-800/60 group-hover:scale-105 transition-transform">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
                     {reason.title}
                   </h3>
-                  <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {reason.description}
-                  </p>
                 </div>
               );
             })}
@@ -440,9 +431,6 @@ export const HomePage: React.FC = () => {
               <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                 Engineered for High-Impact Business Workflows
               </h2>
-              <p className="mt-2 text-slate-600 dark:text-slate-300 text-sm max-w-2xl">
-                Explore our specialized development capabilities. Each service is custom-architected to solve specific operational bottlenecks.
-              </p>
             </div>
             <div className="mt-4 md:mt-0">
               <Button to="/software-solutions" variant="outline" size="md">
@@ -470,9 +458,6 @@ export const HomePage: React.FC = () => {
               <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
                 Enterprise Hardware at Competitive Rates
               </h2>
-              <p className="mt-2 text-slate-600 dark:text-slate-300 text-sm max-w-2xl">
-                Commercial computing, networking, surveillance, and power equipment. Contact our team to confirm current availability and receive project quotations.
-              </p>
             </div>
             <div className="mt-4 md:mt-0">
               <Button to="/it-products" variant="outline" size="md">
@@ -489,11 +474,11 @@ export const HomePage: React.FC = () => {
 
           {/* Catalog Quotation Notice Banner */}
           <div className="mt-8 p-6 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 text-center max-w-2xl mx-auto shadow-sm">
-            <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-              Looking for a specific IT product or hardware component?
+            <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+              Need a specific hardware component or bulk quotation?
             </h3>
-            <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-              We supply 45+ categories of enterprise hardware. Share your bill of quantities (BOQ) for prompt availability and competitive corporate quotes.
+            <p className="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              Share your bill of quantities (BOQ) for immediate stock availability and wholesale corporate pricing.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
               <Button to="/contact" variant="primary" size="sm">
@@ -517,38 +502,32 @@ export const HomePage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               End-to-End Technology Support
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              We accompany your organization through every phase of technical implementation — from initial consultation to long-term operational health.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {journeySteps.map((step) => (
               <div
                 key={step.step}
-                className="relative p-7 rounded-3xl bg-slate-50 dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs"
+                className="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs flex items-center gap-4"
               >
-                <div className="text-2xl font-black text-emerald-600 dark:text-emerald-400 mb-3 font-mono">
+                <div className="text-2xl font-black text-emerald-600 dark:text-emerald-400 font-mono shrink-0">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 dark:text-white">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white leading-snug">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  {step.description}
-                </p>
               </div>
             ))}
           </div>
 
           {/* Highlight Callout */}
           <div className="mt-8 p-6 sm:p-8 rounded-3xl bg-emerald-900 text-white text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
-            <div>
-              <h3 className="text-2xl font-extrabold tracking-tight">
-                We don&apos;t just supply technology.
+<div>
+              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+                Full-Lifecycle Technology Care
               </h3>
-              <p className="mt-1.5 text-emerald-100 text-sm sm:text-base max-w-xl leading-relaxed">
-                We supply your technology, handle physical installation and configuration, and keep your systems running smoothly.
+              <p className="mt-1 text-emerald-100 text-sm max-w-xl">
+                From procurement and physical mounting to configuration and ongoing technical maintenance.
               </p>
             </div>
             <Button
@@ -573,28 +552,22 @@ export const HomePage: React.FC = () => {
             <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               Industries We Serve
             </h2>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
-              Providing customized software architecture and commercial hardware deployments across diverse enterprise sectors.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {industries.map((ind, index) => {
               const IconComp = industryIcons[ind.name] || Building;
               return (
                 <div
                   key={index}
-                  className="p-7 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-colors"
+                  className="p-5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:border-emerald-500/40 dark:hover:border-emerald-500/40 transition-all flex items-center gap-4 group"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 border border-emerald-200/60 dark:border-emerald-800/60">
+                  <div className="w-11 h-11 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-200/60 dark:border-emerald-800/60 group-hover:scale-105 transition-transform">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
                     {ind.name}
                   </h3>
-                  <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                    {ind.description}
-                  </p>
                 </div>
               );
             })}
@@ -616,7 +589,7 @@ export const HomePage: React.FC = () => {
           </h2>
 
           <p className="mt-6 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto">
-            Whether you need custom software, commercial IT hardware, on-site installation, or technical support, our team is ready to assist.
+            Connect with our team for custom software scopes, hardware quotations, or on-site support.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">

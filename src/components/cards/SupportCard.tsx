@@ -14,11 +14,11 @@ export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '
 
   return (
     <article
-      className={`group flex flex-col justify-between p-7 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
+      className={`group flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:shadow-xl hover:border-emerald-500/50 dark:hover:border-emerald-500/50 transition-all duration-200 ${className}`}
     >
       <div>
         {/* Icon */}
-        <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/70 dark:border-emerald-800/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+        <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/70 dark:border-emerald-800/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-all">
           <DynamicIcon name={service.icon} className="w-5 h-5" />
         </div>
 
@@ -34,19 +34,11 @@ export const SupportCard: React.FC<SupportCardProps> = ({ service, className = '
           {service.description}
         </p>
 
-        {/* Features Checklist */}
-        <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/80 space-y-2">
-          {service.features.slice(0, 4).map((feat, index) => (
-            <div key={index} className="flex items-start gap-2.5 text-xs text-slate-600 dark:text-slate-300">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-              <span>{feat}</span>
-            </div>
-          ))}
-        </div>
+
       </div>
 
       {/* Action Footer */}
-      <div className="mt-7 pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
+      <div className="mt-5 pt-3 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-3">
         <Link
           to={detailUrl}
           className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all"

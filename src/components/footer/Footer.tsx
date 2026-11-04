@@ -93,18 +93,9 @@ export const Footer: React.FC = () => {
               <Logo size="md" variant="dark" />
             </div>
 
-            <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Orion Software &amp; Trading delivers custom software engineering, commercial IT hardware, professional on-site installation, and dependable after-sales technical support.
+            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Integrated technology partner providing custom software engineering, enterprise IT hardware procurement, and certified technical support.
             </p>
-
-            <div className="pt-2">
-              <p className="text-xs text-emerald-400 font-semibold tracking-wide uppercase">
-                Our Core Value:
-              </p>
-              <p className="text-xs text-slate-300 mt-1 italic">
-                &ldquo;We don&apos;t just supply technology. We help you install it, configure it, integrate it, and keep it running.&rdquo;
-              </p>
-            </div>
 
             {/* Direct Contact Highlights */}
             <div className="pt-3 space-y-2 text-xs text-slate-400">

@@ -43,26 +43,22 @@ export const TechnicalSupportPage: React.FC = () => {
   const supportPillars = [
     {
       title: 'Hardware & OS Deployment',
-      description:
-        'Workstation setup, server rack mounting, clean OS installs, and hardware burn-in validation.',
+      description: 'Workstation deployment, server rack mounting, clean OS installs, and burn-in testing.',
       icon: Laptop,
     },
     {
       title: 'Infrastructure & Network Setup',
-      description:
-        'VLANs, firewalls, managed switches, Wi-Fi access points, and secure VPN tunnels.',
+      description: 'VLANs, firewalls, managed switches, Wi-Fi access points, and VPN tunnels.',
       icon: Layers,
     },
     {
       title: 'On-Site Technical Assistance',
-      description:
-        'Hands-on field engineers for physical cabling, equipment mounting, and system integration.',
+      description: 'Field engineers for physical cabling, hardware mounting, and system integration.',
       icon: Wrench,
     },
     {
-      title: 'Remote Diagnostics & Troubleshooting',
-      description:
-        'Rapid remote support for software glitches, driver updates, and configuration issues.',
+      title: 'Remote Diagnostics',
+      description: 'Rapid remote support for software fixes, driver updates, and configuration.',
       icon: Headphones,
     },
   ];
@@ -193,23 +189,20 @@ export const TechnicalSupportPage: React.FC = () => {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
             {supportPillars.map((pillar, idx) => {
               const IconComp = pillar.icon;
               return (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/80 shadow-xs"
+                  className="p-5 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/80 shadow-xs flex items-center gap-3.5 group hover:border-emerald-500/40 transition-all"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
                     <IconComp className="w-5 h-5" />
                   </div>
-                  <h4 className="text-base font-bold text-slate-900 dark:text-white">
+                  <h4 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
                     {pillar.title}
                   </h4>
-                  <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                    {pillar.description}
-                  </p>
                 </div>
               );
             })}
@@ -227,9 +220,6 @@ export const TechnicalSupportPage: React.FC = () => {
             <h3 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white">
               End-to-End Installation &amp; Maintenance Catalog
             </h3>
-            <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm">
-              Every service is delivered by certified technical specialists equipped with proper testing and configuration tools.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
