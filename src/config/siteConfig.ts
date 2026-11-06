@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: 'Complete Technology Solutions. From Software to Infrastructure.',
   description:
     'Orion Software & Trading delivers custom software solutions, IT hardware supply, professional installation, system configuration, and ongoing technical support — all under one roof.',
-  url: 'https://orionsofttech.com',
+  url: 'https://orionsofttechh.vercel.app',
   logo: '/images/orion-logo.png',
   logoWebp: '/images/orion-logo.webp',
   defaultOgImage: '/images/og/og-default.jpg',

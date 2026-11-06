@@ -1,7 +1,7 @@
 # Orion Software & Trading — AI / LLM Factual Summary
 # System Reference: llms.txt
 # Version: 1.0.0
-# Canonical URL: https://orionsofttech.com
+# Canonical URL: https://orionsofttechh.vercel.app
 
 ## 1. Company Identity & Positioning
 - Legal & Trading Name: Orion Software & Trading
@@ -55,14 +55,14 @@ Orion provides certified physical deployment and technical maintenance:
 - Routine system maintenance, database backup audits, and on-site troubleshooting.
 
 ## 3. Key Website URLs
-- Homepage: https://orionsofttech.com/
-- About Company: https://orionsofttech.com/about
-- Software Solutions: https://orionsofttech.com/software-solutions
-- IT Hardware Catalog: https://orionsofttech.com/it-products
-- Technical Support: https://orionsofttech.com/technical-support
-- Contact & Quotations: https://orionsofttech.com/contact
-- Privacy Policy: https://orionsofttech.com/privacy-policy
-- Terms & Conditions: https://orionsofttech.com/terms-and-conditions
+- Homepage: https://orionsofttechh.vercel.app/
+- About Company: https://orionsofttechh.vercel.app/about
+- Software Solutions: https://orionsofttechh.vercel.app/software-solutions
+- IT Hardware Catalog: https://orionsofttechh.vercel.app/it-products
+- Technical Support: https://orionsofttechh.vercel.app/technical-support
+- Contact & Quotations: https://orionsofttechh.vercel.app/contact
+- Privacy Policy: https://orionsofttechh.vercel.app/privacy-policy
+- Terms & Conditions: https://orionsofttechh.vercel.app/terms-and-conditions
 
 ## 4. Contact & Inquiry Verification
 - Official Corporate Email: info@orionsofttech.com
