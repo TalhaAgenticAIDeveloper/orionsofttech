@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
 const today = new Date().toISOString().split('T')[0];
-const domain = 'https://orionsofttechh.vercel.app';
+const domain = 'https://orionsoftwaretrading.vercel.app';
 
 const corePages = [
   { path: '/', priority: '1.0', freq: 'weekly' },

@@ -15,7 +15,7 @@ import {
 
 describe('Technical & On-Page SEO Verification', () => {
   it('has verified primary production domain configured', () => {
-    expect(siteConfig.url).toBe('https://orionsofttechh.vercel.app');
+    expect(siteConfig.url).toBe('https://orionsoftwaretrading.vercel.app');
     expect(siteConfig.url.startsWith('https://')).toBe(true);
     expect(siteConfig.url.includes('placeholder')).toBe(false);
   });

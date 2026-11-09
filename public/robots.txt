@@ -1,5 +1,5 @@
 # Robots.txt for Orion Software & Trading
-# https://orionsofttechh.vercel.app
+# https://orionsoftwaretrading.vercel.app
 
 User-agent: *
 Allow: /
@@ -25,4 +25,4 @@ User-agent: Applebot-Extended
 Allow: /
 
 # XML Sitemaps
-Sitemap: https://orionsofttechh.vercel.app/sitemap.xml
+Sitemap: https://orionsoftwaretrading.vercel.app/sitemap.xml

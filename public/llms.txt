@@ -1,7 +1,7 @@
 # Orion Software & Trading — AI / LLM Factual Summary
 # System Reference: llms.txt
 # Version: 1.0.0
-# Canonical URL: https://orionsofttechh.vercel.app
+# Canonical URL: https://orionsoftwaretrading.vercel.app
 
 ## 1. Company Identity & Positioning
 - Legal & Trading Name: Orion Software & Trading
