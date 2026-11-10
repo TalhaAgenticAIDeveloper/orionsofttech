@@ -87,6 +87,14 @@ export function generateLocalBusinessSchema() {
     ],
     areaServed: [
       {
+        '@type': 'City',
+        name: 'Lahore',
+      },
+      {
+        '@type': 'AdministrativeArea',
+        name: 'Punjab',
+      },
+      {
         '@type': 'Country',
         name: 'Pakistan',
       },
@@ -109,6 +117,12 @@ export function generateWebSiteSchema() {
     '@type': 'WebSite',
     '@id': `${siteConfig.url}/#website`,
     name: siteConfig.companyName,
+    alternateName: [
+      'Orion Software and Trading',
+      'Orion Software Trading',
+      'Orion Soft Tech',
+      'Orion SoftTech',
+    ],
     url: siteConfig.url,
     description: siteConfig.description,
     publisher: {

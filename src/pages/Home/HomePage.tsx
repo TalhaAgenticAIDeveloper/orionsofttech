@@ -132,8 +132,8 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Complete Technology Solutions | Software & Hardware | Orion"
-        description="Orion Software & Trading provides custom software development, enterprise IT hardware supply, professional installation, and ongoing technical support."
+        title="Orion Software & Trading | Complete Technology Solutions"
+        description="Orion Software & Trading provides custom software development, enterprise IT hardware supply, professional installation, and ongoing technical support in Lahore and across Pakistan."
         canonicalPath="/"
         ogImage="/images/og/og-home.jpg"
         schema={structuredSchema}
@@ -151,7 +151,7 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-7 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300 text-[11px] sm:text-xs font-semibold tracking-wide uppercase mb-2.5 sm:mb-3 shadow-2xs">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Integrated Technology Partner
+                Orion Software &amp; Trading • Technology Solutions
               </div>
 
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[2.5rem] xl:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.15]">
@@ -162,7 +162,7 @@ export const HomePage: React.FC = () => {
               </h1>
 
               <p className="mt-2.5 sm:mt-3 text-xs sm:text-sm lg:text-base text-slate-600 dark:text-slate-300 leading-normal sm:leading-relaxed max-w-xl mx-auto lg:mx-0">
-                Custom software development, commercial IT hardware supply, professional on-site installation, and ongoing technical support — all from one trusted partner.
+                At Orion Software &amp; Trading, we deliver custom software development, commercial IT hardware supply, professional on-site installation, and ongoing technical support — all from one trusted partner.
               </p>
 
               {/* CTAs */}

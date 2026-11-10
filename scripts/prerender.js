@@ -34,8 +34,8 @@ async function runPrerender() {
   const routeConfigs = [
     {
       url: '/',
-      title: 'Complete Technology Solutions | Software & Hardware | Orion',
-      description: 'Orion Software & Trading provides custom software development, enterprise IT hardware supply, professional installation, and ongoing technical support.',
+      title: 'Orion Software & Trading | Complete Technology Solutions',
+      description: 'Orion Software & Trading provides custom software development, enterprise IT hardware supply, professional installation, and ongoing technical support in Lahore and across Pakistan.',
       ogImage: '/images/og/og-home.jpg',
     },
     {

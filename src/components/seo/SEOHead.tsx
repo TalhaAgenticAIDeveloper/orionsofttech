@@ -23,7 +23,9 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
 }) => {
   const fullTitle = title
-    ? siteConfig.seo.titleTemplate.replace('%s', title)
+    ? title.includes(siteConfig.companyName)
+      ? title
+      : siteConfig.seo.titleTemplate.replace('%s', title)
     : siteConfig.seo.defaultTitle;
 
   const metaDescription = description || siteConfig.seo.defaultDescription;
