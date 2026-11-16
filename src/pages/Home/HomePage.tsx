@@ -23,10 +23,10 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/buttons/Button';
 import { ServiceCard } from '@/components/cards/ServiceCard';
-import { ProductCard } from '@/components/cards/ProductCard';
+import { HardwareCategoryCard } from '@/components/cards/HardwareCategoryCard';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { softwareServices } from '@/data/services/softwareServices';
-import { products } from '@/data/products/products';
+import { hardwareCategories } from '@/data/products/hardwareCategories';
 import { industries } from '@/data/industries';
 import {
   generateOrganizationSchema,
@@ -37,7 +37,7 @@ import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/what
 
 export const HomePage: React.FC = () => {
   const featuredServices = softwareServices.slice(0, 6);
-  const featuredProducts = products.slice(0, 6);
+  const featuredCategories = hardwareCategories.slice(0, 6);
   const whatsappUrl = generateWhatsAppUrl(generateGeneralInquiryMessage());
 
   const structuredSchema = [generateOrganizationSchema(), generateWebSiteSchema(), generateLocalBusinessSchema()];
@@ -242,7 +242,7 @@ export const HomePage: React.FC = () => {
                     <div className="absolute top-2.5 right-3">
                       <span className="text-[10px] text-white/90 backdrop-blur-md bg-slate-900/70 border border-slate-700/80 px-2 py-0.5 rounded-full font-mono flex items-center gap-1 shadow-sm">
                         <Sparkles className="w-2.5 h-2.5 text-emerald-400" />
-                        orion-tech-stack
+                        orion-solutions
                       </span>
                     </div>
 
@@ -447,41 +447,44 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* ─── SECTION 6: IT PRODUCTS PREVIEW ─────────────────────────────────── */}
+      {/* ─── SECTION 6: IT HARDWARE SOLUTIONS ───────────────────────────────── */}
       <section className="py-10 md:py-14 bg-slate-50 dark:bg-[#0E1526] border-y border-slate-200/80 dark:border-slate-800/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
             <div>
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                IT Hardware &amp; Equipment
+                Commercial IT Hardware Supply
               </span>
               <h2 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                Enterprise Hardware at Competitive Rates
+                Enterprise Hardware &amp; Infrastructure
               </h2>
+              <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 max-w-2xl">
+                We supply tier-one commercial IT equipment across all major categories — with full on-site installation, structured cabling, and warranty support.
+              </p>
             </div>
             <div className="mt-4 md:mt-0">
               <Button to="/it-products" variant="outline" size="md">
-                Browse Full Catalog &rarr;
+                Browse All Categories &rarr;
               </Button>
             </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {featuredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
+            {featuredCategories.map((category) => (
+              <HardwareCategoryCard key={category.id} category={category} />
             ))}
           </div>
 
           {/* Catalog Quotation Notice Banner */}
-          <div className="mt-8 p-6 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 text-center max-w-2xl mx-auto shadow-sm">
+          <div className="mt-10 p-6 rounded-3xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 text-center max-w-2xl mx-auto shadow-sm">
             <h3 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">
-              Need a specific hardware component or bulk quotation?
+              Need a Custom Bill of Quantities (BOQ) Quotation?
             </h3>
             <p className="mt-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
-              Share your bill of quantities (BOQ) for immediate stock availability and wholesale corporate pricing.
+              Share your project requirements or tender list for immediate stock verification and wholesale rates.
             </p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-              <Button to="/contact" variant="primary" size="sm">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+              <Button to="/contact?type=it-hardware" variant="primary" size="sm">
                 Request Hardware Quotation
               </Button>
               <Button href={whatsappUrl} variant="whatsapp" size="sm" icon={<MessageSquare className="w-3.5 h-3.5" />}>

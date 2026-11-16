@@ -203,11 +203,11 @@ export const Footer: React.FC = () => {
               ))}
               <li className="pt-1">
                 <Link
-                  to="/it-products#catalog"
-                  onClick={() => handleLinkClick('/it-products#catalog')}
+                  to="/it-products"
+                  onClick={() => handleLinkClick('/it-products')}
                   className="text-emerald-400 hover:text-emerald-300 font-medium inline-flex items-center gap-1"
                 >
-                  Browse Full Hardware Catalog &rarr;
+                  Explore All Hardware Divisions &rarr;
                 </Link>
               </li>
             </ul>
@@ -256,20 +256,6 @@ export const Footer: React.FC = () => {
           </p>
 
           <div className="flex items-center gap-6 text-slate-400">
-            <Link
-              to="/privacy-policy"
-              onClick={() => handleLinkClick('/privacy-policy')}
-              className="hover:text-emerald-400 transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-and-conditions"
-              onClick={() => handleLinkClick('/terms-and-conditions')}
-              className="hover:text-emerald-400 transition-colors"
-            >
-              Terms &amp; Conditions
-            </Link>
             <Link
               to="/contact#contact-form"
               onClick={() => handleLinkClick('/contact#contact-form')}

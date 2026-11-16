@@ -69,18 +69,6 @@ async function runPrerender() {
       ogImage: '/images/og/og-default.jpg',
     },
     {
-      url: '/privacy-policy',
-      title: 'Privacy Policy | Orion Software & Trading',
-      description: 'Privacy policy for Orion Software & Trading. Learn how customer inquiry data, hardware procurement specifications, and project privacy are protected.',
-      ogImage: '/images/og/og-default.jpg',
-    },
-    {
-      url: '/terms-and-conditions',
-      title: 'Terms & Conditions | Orion Software & Trading',
-      description: 'Terms and conditions governing quotations, hardware procurement, software engineering, and technical installation services at Orion Software & Trading.',
-      ogImage: '/images/og/og-default.jpg',
-    },
-    {
       url: '/404',
       title: '404 - Page Not Found | Orion Software & Trading',
       description: 'The page you are looking for does not exist or has been moved. Explore Orion Software & Trading solutions.',

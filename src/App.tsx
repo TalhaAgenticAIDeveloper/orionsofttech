@@ -44,14 +44,6 @@ const SupportServiceDetailPage = lazy(() =>
 const ContactPage = lazy(() =>
   import('@/pages/Contact/ContactPage').then((m) => ({ default: m.ContactPage }))
 );
-const PrivacyPolicyPage = lazy(() =>
-  import('@/pages/PrivacyPolicy/PrivacyPolicyPage').then((m) => ({
-    default: m.PrivacyPolicyPage,
-  }))
-);
-const TermsPage = lazy(() =>
-  import('@/pages/Terms/TermsPage').then((m) => ({ default: m.TermsPage }))
-);
 const NotFoundPage = lazy(() =>
   import('@/pages/NotFound/NotFoundPage').then((m) => ({ default: m.NotFoundPage }))
 );
@@ -96,8 +88,6 @@ export const App: React.FC = () => {
                 element={<SupportServiceDetailPage />}
               />
               <Route path="contact" element={<ContactPage />} />
-              <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
-              <Route path="terms-and-conditions" element={<TermsPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Route>
           </Routes>

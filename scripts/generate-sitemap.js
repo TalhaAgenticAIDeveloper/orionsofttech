@@ -16,8 +16,6 @@ const corePages = [
   { path: '/it-products', priority: '0.9', freq: 'daily' },
   { path: '/technical-support', priority: '0.8', freq: 'monthly' },
   { path: '/contact', priority: '0.8', freq: 'monthly' },
-  { path: '/privacy-policy', priority: '0.3', freq: 'yearly' },
-  { path: '/terms-and-conditions', priority: '0.3', freq: 'yearly' },
 ];
 
 const swText = fs.readFileSync(path.join(rootDir, 'src/data/services/softwareServices.ts'), 'utf-8');

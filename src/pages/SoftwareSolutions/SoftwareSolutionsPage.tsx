@@ -26,8 +26,7 @@ export const SoftwareSolutionsPage: React.FC = () => {
       const matchesSearch =
         service.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         service.shortDescription.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        service.problems.some((p) => p.toLowerCase().includes(searchQuery.toLowerCase())) ||
-        service.technologies?.some((t) => t.toLowerCase().includes(searchQuery.toLowerCase()));
+        service.problems.some((p) => p.toLowerCase().includes(searchQuery.toLowerCase()));
 
       if (!matchesSearch) return false;
 
@@ -238,7 +237,7 @@ export const SoftwareSolutionsPage: React.FC = () => {
             Need a Custom Architecture for Your Unique Workflow?
           </h2>
           <p className="mt-4 text-sm sm:text-base text-slate-300 max-w-xl mx-auto leading-relaxed">
-            Schedule a discovery call with our software architects to review your project scope, tech stack, and timeline.
+            Schedule a discovery call with our software architects to review your project scope, operational requirements, and timeline.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button

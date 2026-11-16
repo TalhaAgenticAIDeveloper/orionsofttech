@@ -343,31 +343,6 @@ export const SoftwareServiceDetailPage: React.FC = () => {
           </div>
         </section>
 
-        {/* Technologies Involved */}
-        {service.technologies && service.technologies.length > 0 && (
-          <section>
-            <div className="max-w-3xl mb-6">
-              <span className="block text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-2">
-                Tech Stack
-              </span>
-              <h2 className="text-xl font-bold text-slate-900 dark:text-white">
-                Technologies &amp; Frameworks Involved
-              </h2>
-            </div>
-
-            <div className="flex flex-wrap gap-2.5">
-              {service.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 shadow-2xs"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </section>
-        )}
-
         {/* Frequently Asked Questions */}
         <section>
           <div className="max-w-3xl mb-6">

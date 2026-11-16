@@ -317,11 +317,6 @@ export const ContactPage: React.FC = () => {
                     &bull; On-Site Server, Network &amp; CCTV Installation &rarr;
                   </Link>
                 </li>
-                <li>
-                  <Link to="/privacy-policy" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
-                    &bull; Client Confidentiality &amp; Privacy Policy &rarr;
-                  </Link>
-                </li>
               </ul>
             </div>
           </aside>

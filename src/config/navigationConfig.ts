@@ -16,8 +16,6 @@ export const footerQuickLinks: NavItem[] = [
   { label: 'IT Products', path: '/it-products' },
   { label: 'Technical Support', path: '/technical-support' },
   { label: 'Contact Us', path: '/contact' },
-  { label: 'Privacy Policy', path: '/privacy-policy' },
-  { label: 'Terms & Conditions', path: '/terms-and-conditions' },
 ];
 
 export const footerServiceLinks: NavItem[] = [
@@ -33,12 +31,12 @@ export const footerServiceLinks: NavItem[] = [
 ];
 
 export const footerProductLinks: NavItem[] = [
-  { label: 'Laptops & Notebooks', path: '/it-products?category=laptops' },
+  { label: 'Networking & Infrastructure', path: '/it-products?category=networking-equipment' },
+  { label: 'Computers & Laptops', path: '/it-products?category=laptops' },
   {
-    label: 'Servers & Components',
+    label: 'Servers & Storage',
     path: '/it-products?category=servers-and-server-components',
   },
-  { label: 'Networking Equipment', path: '/it-products?category=networking-equipment' },
   { label: 'CCTV & Surveillance', path: '/it-products?category=cctv-and-surveillance' },
   { label: 'UPS & Power Systems', path: '/it-products?category=power-backup-solutions' },
   { label: 'POS & Retail Systems', path: '/it-products?category=pos-and-retail-solutions' },

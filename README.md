@@ -107,12 +107,10 @@ D:\Orion Website\
 │   │   ├── Home/                      # High-conversion homepage
 │   │   ├── ITProducts/                # Searchable & filterable product catalog
 │   │   ├── NotFound/                  # Custom 404 page
-│   │   ├── PrivacyPolicy/             # Privacy Policy page
 │   │   ├── ProductDetail/             # Dynamic product specifications page
 │   │   ├── SoftwareServiceDetail/     # Dedicated software service detail pages
 │   │   ├── SoftwareSolutions/         # Software solutions landing page
-│   │   ├── TechnicalSupport/          # Technical support & installation page
-│   │   └── Terms/                     # Terms & Conditions page
+│   │   └── TechnicalSupport/          # Technical support & installation page
 │   ├── schemas/
 │   │   └── contactSchema.ts           # Zod contact form validation schema
 │   ├── services/

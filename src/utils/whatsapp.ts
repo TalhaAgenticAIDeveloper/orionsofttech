@@ -20,6 +20,10 @@ export function generateServiceInquiryMessage(serviceName: string): string {
   return `Hello Orion Software & Trading, I am interested in your ${serviceName} services. I would like to discuss my requirements and get a quotation.`;
 }
 
+export function generateCategoryInquiryMessage(categoryName: string): string {
+  return `Hello Orion Software & Trading, I am interested in your ${categoryName} hardware solutions. Please share the available equipment list and pricing.`;
+}
+
 export function generateGeneralInquiryMessage(): string {
   return `Hello Orion Software & Trading, I would like to inquire about your services. Please share more details.`;
 }

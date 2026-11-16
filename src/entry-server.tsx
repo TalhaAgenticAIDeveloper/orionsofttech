@@ -13,8 +13,6 @@ import { ProductDetailPage } from '@/pages/ProductDetail/ProductDetailPage';
 import { TechnicalSupportPage } from '@/pages/TechnicalSupport/TechnicalSupportPage';
 import { SupportServiceDetailPage } from '@/pages/SupportServiceDetail/SupportServiceDetailPage';
 import { ContactPage } from '@/pages/Contact/ContactPage';
-import { PrivacyPolicyPage } from '@/pages/PrivacyPolicy/PrivacyPolicyPage';
-import { TermsPage } from '@/pages/Terms/TermsPage';
 import { NotFoundPage } from '@/pages/NotFound/NotFoundPage';
 
 export function render(url: string) {
@@ -35,8 +33,6 @@ export function render(url: string) {
             <Route path="technical-support" element={<TechnicalSupportPage />} />
             <Route path="technical-support/:slug" element={<SupportServiceDetailPage />} />
             <Route path="contact" element={<ContactPage />} />
-            <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
-            <Route path="terms-and-conditions" element={<TermsPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

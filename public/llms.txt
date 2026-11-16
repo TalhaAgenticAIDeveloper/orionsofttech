@@ -61,8 +61,6 @@ Orion provides certified physical deployment and technical maintenance:
 - IT Hardware Catalog: https://orionsofttechh.vercel.app/it-products
 - Technical Support: https://orionsofttechh.vercel.app/technical-support
 - Contact & Quotations: https://orionsofttechh.vercel.app/contact
-- Privacy Policy: https://orionsofttechh.vercel.app/privacy-policy
-- Terms & Conditions: https://orionsofttechh.vercel.app/terms-and-conditions
 
 ## 4. Contact & Inquiry Verification
 - Official Corporate Email: info@orionsofttech.com
