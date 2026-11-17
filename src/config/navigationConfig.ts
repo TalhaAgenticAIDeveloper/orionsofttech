@@ -2,20 +2,18 @@ import type { NavItem } from '@/types';
 
 export const mainNavItems: NavItem[] = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
   { label: 'Software Solutions', path: '/software-solutions' },
   { label: 'IT Products', path: '/it-products' },
   { label: 'Technical Support', path: '/technical-support' },
-  { label: 'Contact', path: '/contact' },
+  { label: 'About & Contact', path: '/contact' },
 ];
 
 export const footerQuickLinks: NavItem[] = [
   { label: 'Home', path: '/' },
-  { label: 'About Us', path: '/about' },
   { label: 'Software Solutions', path: '/software-solutions' },
   { label: 'IT Products', path: '/it-products' },
   { label: 'Technical Support', path: '/technical-support' },
-  { label: 'Contact Us', path: '/contact' },
+  { label: 'About & Contact', path: '/contact' },
 ];
 
 export const footerServiceLinks: NavItem[] = [

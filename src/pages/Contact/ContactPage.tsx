@@ -1,5 +1,5 @@
-import React from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useSearchParams, useLocation } from 'react-router-dom';
 import {
   Phone,
   Mail,
@@ -7,42 +7,107 @@ import {
   MessageSquare,
   Clock,
   ShieldCheck,
-  Send,
+  Code2,
+  Server,
+  Wrench,
+  RefreshCw,
+  Sparkles,
+  CheckCircle2,
 } from 'lucide-react';
 import { ContactForm } from '@/components/forms/ContactForm';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SEOHead } from '@/components/seo/SEOHead';
 import { Button } from '@/components/buttons/Button';
 import { siteConfig } from '@/config/siteConfig';
-import { generateContactPageSchema, generateBreadcrumbSchema } from '@/utils/seo';
+import {
+  generateContactPageSchema,
+  generateBreadcrumbSchema,
+  generateWebPageSchema,
+  generateOrganizationSchema,
+} from '@/utils/seo';
 import { generateWhatsAppUrl, generateGeneralInquiryMessage } from '@/utils/whatsapp';
 
-export const ContactPage: React.FC = () => {
+interface ContactPageProps {
+  isAboutEntry?: boolean;
+}
+
+export const ContactPage: React.FC<ContactPageProps> = ({ isAboutEntry = false }) => {
   const [searchParams] = useSearchParams();
+  const location = useLocation();
   const defaultType = searchParams.get('type') || 'general-inquiry';
   const defaultSubject = searchParams.get('subject') || '';
 
-  const breadcrumbItems = [{ label: 'Contact Us' }];
+  const isAbout = isAboutEntry || location.pathname.startsWith('/about');
+  const breadcrumbItems = [{ label: isAbout ? 'About Us' : 'About & Contact' }];
   const whatsappUrl = generateWhatsAppUrl(generateGeneralInquiryMessage());
-  const contactSchema = generateContactPageSchema();
+
+  // Handle smooth scroll to #contact-form if requested in hash
+  useEffect(() => {
+    if (location.hash === '#contact-form') {
+      const el = document.getElementById('contact-form');
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
+
+  const pageSchema = isAbout
+    ? generateWebPageSchema({
+        name: 'About Orion Software & Trading | Technology Solutions & Enterprise Care',
+        description:
+          'Learn about Orion Software & Trading. Comprehensive technology partner delivering custom software engineering, commercial IT hardware, on-site deployment, and guaranteed post-sale backup.',
+        url: '/about',
+      })
+    : generateContactPageSchema();
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
-    { name: 'Contact Us', url: '/contact' },
+    { name: isAbout ? 'About Us' : 'About & Contact', url: isAbout ? '/about' : '/contact' },
   ]);
+
+  const organizationSchema = generateOrganizationSchema();
+
+  const backupHighlights = [
+    {
+      icon: RefreshCw,
+      title: 'Local Standby Hardware Backup',
+      description: 'Emergency standby units and swift warranty processing in Lahore so your operations never stop.',
+    },
+    {
+      icon: Code2,
+      title: 'In-House Software Maintenance',
+      description: 'Direct developer support for bug fixes, database health, and updates — no outsourced delays.',
+    },
+    {
+      icon: Wrench,
+      title: 'Certified On-Site Technicians',
+      description: 'Physical deployment, server rack mounting, and network cabling at your facility.',
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Single-Point Accountability',
+      description: 'Zero finger-pointing between software and hardware — we own the entire loop from code to cable.',
+    },
+  ];
 
   return (
     <>
       <SEOHead
-        title="Contact Us | Request IT Hardware Quotation & Consultation"
-        description="Contact Orion Software & Trading for software development inquiries, IT hardware quotations, network installation, and technical support consultation."
-        canonicalPath="/contact"
-        ogImage="/images/og/og-default.jpg"
-        schema={[contactSchema, breadcrumbSchema]}
+        title={
+          isAbout
+            ? 'About Us & Contact | Technology Solutions & IT Hardware Supplier | Orion'
+            : 'About & Contact Us | Orion Software & Trading'
+        }
+        description="Learn about Orion Software & Trading and get in touch with our engineering and procurement team for custom software, commercial IT hardware, on-site installation, and dependable after-sales backup."
+        canonicalPath={isAbout ? '/about' : '/contact'}
+        ogImage="/images/og/og-home.jpg"
+        schema={[pageSchema, breadcrumbSchema, organizationSchema]}
       />
 
-      {/* Header Banner */}
-      <section className="bg-slate-50 dark:bg-slate-950/60 border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 lg:py-12 relative overflow-hidden">
-        {/* Subtle Ambient Glow */}
+      {/* ─── SECTION 1: COMPACT COMPANY PROFILE & BACKUP PROMISE ────────── */}
+      <section className="bg-slate-50 dark:bg-[#0B0F19] border-b border-slate-200/80 dark:border-slate-800 py-8 sm:py-10 relative overflow-hidden">
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -51,296 +116,274 @@ export const ContactPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mt-4 sm:mt-5">
             {/* Left Content */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
-                <Send className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
-                Direct Communication Channel
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold uppercase tracking-wider mb-3">
+                <Sparkles className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                Corporate Profile &amp; Direct Consultation
               </div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 dark:text-white tracking-tight leading-tight">
-                Get in Touch with <span className="text-emerald-600 dark:text-emerald-400">Orion</span>
+
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                About <span className="text-emerald-600 dark:text-emerald-400">Orion Software &amp; Trading</span>
               </h1>
-              <p className="mt-3.5 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
-                Connect with our engineering and procurement team for custom software scopes, commercial IT hardware pricing, or on-site technical support.
+              <p className="text-xs sm:text-sm font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mt-1.5">
+                Software Solutions &bull; IT Hardware &bull; Technical Support
               </p>
 
-              {/* Quick Communication Highlights */}
-              <div className="mt-5 flex flex-wrap items-center gap-2.5 text-xs">
-                {['Direct WhatsApp Desk', 'Transparent Quotations', 'Strict Confidentiality', 'Rapid Scoping'].map((item) => (
-                  <span
-                    key={item}
-                    className="inline-flex items-center gap-1 px-3 py-1 rounded-full font-medium bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 shadow-2xs"
+              <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                We unify custom software engineering, commercial IT hardware procurement, and certified on-site technical deployment under one roof — backed by guaranteed post-deployment backup and single-point accountability.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="mt-5 flex flex-wrap items-center gap-3">
+                <a
+                  href="#contact-form"
+                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-600/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                >
+                  <span>Submit Inquiry</span>
+                </a>
+
+                {siteConfig.contact.whatsapp && (
+                  <Button
+                    href={whatsappUrl}
+                    variant="whatsapp"
+                    size="sm"
+                    className="font-bold text-xs"
+                    icon={<MessageSquare className="w-3.5 h-3.5" />}
                   >
-                    <ShieldCheck className="w-3 h-3 text-emerald-500" />
-                    {item}
-                  </span>
-                ))}
+                    WhatsApp Desk
+                  </Button>
+                )}
               </div>
             </div>
 
-            {/* Right Visual Image Card */}
+            {/* Right Visual Hero Image */}
             <div className="lg:col-span-5">
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-xl group">
                 <img
-                  src="/images/heroes/contact-hero.jpg"
-                  alt="Corporate Consultation and Customer Support Workspace"
-                  className="w-full h-56 sm:h-64 lg:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  src="/images/heroes/about-hero.jpg"
+                  alt="Orion Technology Team Delivering Enterprise Solutions and Support"
+                  className="w-full h-52 sm:h-60 lg:h-64 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   loading="eager"
                 />
-                <div className="absolute inset-0 bg-linear-to-t from-slate-950/85 via-slate-950/30 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-slate-950/80 via-slate-950/25 to-transparent" />
 
-                {/* Floating Top Badge */}
-                <div className="absolute top-3.5 right-3.5 backdrop-blur-md bg-slate-900/80 px-3 py-1 rounded-full border border-slate-700 text-xs font-semibold text-white flex items-center gap-2 shadow-lg">
+                {/* Floating Top Status Badge */}
+                <div className="absolute top-3 right-3 backdrop-blur-md bg-slate-900/85 px-3 py-1 rounded-full border border-slate-700 text-[11px] font-semibold text-white flex items-center gap-2 shadow-md">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
                   <span>Corporate Desk Active</span>
                 </div>
 
                 {/* Floating Bottom Card */}
-                <div className="absolute bottom-3.5 left-3.5 right-3.5 backdrop-blur-md bg-slate-900/90 p-3 rounded-2xl border border-slate-700/80 text-white flex items-center justify-between">
+                <div className="absolute bottom-3 left-3 right-3 backdrop-blur-md bg-slate-900/90 p-3 rounded-2xl border border-slate-700/80 text-white flex items-center justify-between">
                   <div>
-                    <p className="text-xs font-bold text-white">Prompt Project Evaluations</p>
-                    <p className="text-[11px] text-slate-400 mt-0.5">Software &bull; Hardware Quotations &bull; AMC</p>
+                    <p className="text-xs font-bold text-white">Full-Lifecycle Technology Care</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">Software &bull; Hardware &bull; Dedicated Backup</p>
                   </div>
-                  <div className="p-2 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                    <MessageSquare className="w-4 h-4" />
+                  <div className="p-1.5 rounded-xl bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                    <ShieldCheck className="w-4 h-4" />
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Backup & Support Highlights (Compact Grid) */}
+          <div className="mt-6 pt-6 border-t border-slate-200/80 dark:border-slate-800">
+            <div className="flex items-center gap-2 mb-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                Our After-Sales Backup Promise
+              </span>
+              <span className="text-xs text-slate-400">&bull; We don&apos;t just supply; we stand behind every deployment</span>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {backupHighlights.map((item, index) => {
+                const IconComp = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs hover:border-emerald-500/40 transition-colors"
+                  >
+                    <div className="w-9 h-9 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-3 border border-emerald-200/60 dark:border-emerald-800/60">
+                      <IconComp className="w-4 h-4" />
+                    </div>
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p className="mt-1 text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Main Content Area */}
-      <div id="contact-form" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10 scroll-mt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Contact Form */}
-          <div className="lg:col-span-7">
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                Submit an Inquiry
-              </h2>
-              <p className="mt-1.5 text-sm text-slate-600 dark:text-slate-400">
-                Fill in the details below and our technical team will review your project and respond promptly.
-              </p>
+      {/* ─── SECTION 2: INQUIRY FORM & DIRECT CONTACT DETAILS ────────────── */}
+      <section id="contact-form" className="py-8 sm:py-10 bg-white dark:bg-[#070A11] scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
+            {/* Left: Contact Form */}
+            <div className="lg:col-span-7 bg-slate-50 dark:bg-[#111827] p-6 sm:p-8 rounded-3xl border border-slate-200/80 dark:border-slate-800 shadow-sm">
+              <div className="mb-5 pb-4 border-b border-slate-200/80 dark:border-slate-800">
+                <h2 className="text-xl font-bold text-slate-900 dark:text-white">
+                  Submit an Inquiry
+                </h2>
+                <p className="mt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+                  Fill in the details below. Our technical specialists review submissions promptly.
+                </p>
+              </div>
+
+              <ContactForm
+                defaultInquiryType={defaultType}
+                defaultSubject={defaultSubject}
+              />
             </div>
 
-            <ContactForm
-              defaultInquiryType={defaultType}
-              defaultSubject={defaultSubject}
-            />
-          </div>
-
-          {/* Right Column: Contact Information & WhatsApp */}
-          <aside className="lg:col-span-5 space-y-6">
-            {/* Quick WhatsApp Inquiry Box */}
-            <div className="p-6 rounded-2xl bg-emerald-950 text-white border border-emerald-800 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="p-2.5 rounded-xl bg-[#25D366] text-white">
-                  <MessageSquare className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-base font-bold text-white">
-                    Instant WhatsApp Inquiry
-                  </h3>
-                  <p className="text-xs text-emerald-200">
-                    Direct chat with our corporate sales desk
-                  </p>
-                </div>
-              </div>
-
-              <p className="text-xs sm:text-sm text-emerald-100 leading-relaxed mt-3">
-                Connect with our sales and technical desk on WhatsApp for instant hardware quotes and project inquiries.
-              </p>
-              <p className="text-xs font-semibold text-emerald-300 mt-2">
-                WhatsApp: {siteConfig.contact.whatsapp}
-              </p>
-
-              <div className="mt-5">
-                <Button
-                  href={whatsappUrl}
-                  variant="whatsapp"
-                  size="md"
-                  className="w-full justify-center font-bold"
-                  icon={<MessageSquare className="w-4 h-4" />}
-                >
-                  Start WhatsApp Chat
-                </Button>
-              </div>
-            </div>
-
-            {/* Official Information Details */}
-            <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-2xs space-y-5 text-sm">
-              <h3 className="text-base font-bold text-slate-900 dark:text-white pb-3 border-b border-slate-100 dark:border-slate-700">
-                Official Channels
-              </h3>
-
-              {/* Phone */}
-              <div className="flex items-start gap-3.5">
-                <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
-                    Phone Inquiries
-                  </span>
-                  {siteConfig.contact.phone ? (
-                    <a
-                      href={`tel:${(siteConfig.contact.phoneIntl || siteConfig.contact.phone).replace(/\s+/g, '')}`}
-                      className="font-medium text-slate-900 dark:text-white hover:text-emerald-600 transition-colors mt-0.5 block"
-                    >
-                      {siteConfig.contact.phone}{' '}
-                      {siteConfig.contact.phoneIntl && (
-                        <span className="text-xs text-slate-500 dark:text-slate-400 font-normal">
-                          ({siteConfig.contact.phoneIntl})
-                        </span>
-                      )}
-                    </a>
-                  ) : (
-                    <span className="text-xs text-slate-500 italic mt-0.5 block">
-                      Configurable phone placeholder (Available upon inquiry)
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* Direct WhatsApp Channel */}
+            {/* Right: Direct Channels & WhatsApp */}
+            <aside className="lg:col-span-5 space-y-4">
+              {/* WhatsApp Card */}
               {siteConfig.contact.whatsapp && (
-                <div className="flex items-start gap-3.5">
-                  <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-[#25D366] shrink-0">
-                    <MessageSquare className="w-4 h-4" />
+                <div className="p-5 sm:p-6 rounded-2xl bg-emerald-950 text-white border border-emerald-800 shadow-sm">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 rounded-xl bg-[#25D366] text-white">
+                      <MessageSquare className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h3 className="text-sm sm:text-base font-bold text-white">
+                        Instant WhatsApp Chat
+                      </h3>
+                      <p className="text-xs text-emerald-200">
+                        {siteConfig.contact.whatsapp}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
-                      WhatsApp Business
-                    </span>
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium text-slate-900 dark:text-white hover:text-[#25D366] transition-colors mt-0.5 block"
-                    >
-                      {siteConfig.contact.whatsapp}
-                    </a>
-                  </div>
+                  <p className="text-xs text-emerald-100 mt-2 mb-4 leading-relaxed">
+                    Direct chat with our corporate sales and technical procurement desk.
+                  </p>
+                  <Button
+                    href={whatsappUrl}
+                    variant="whatsapp"
+                    size="sm"
+                    className="w-full justify-center font-bold"
+                    icon={<MessageSquare className="w-4 h-4" />}
+                  >
+                    Chat on WhatsApp
+                  </Button>
                 </div>
               )}
 
-              {/* Email */}
-              <div className="flex items-start gap-3.5">
-                <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
-                    Corporate Email
-                  </span>
-                  {siteConfig.contact.email ? (
-                    <a
-                      href={`mailto:${siteConfig.contact.email}`}
-                      className="font-medium text-slate-900 dark:text-white hover:text-emerald-600 transition-colors mt-0.5 block"
-                    >
-                      {siteConfig.contact.email}
-                    </a>
-                  ) : (
-                    <span className="text-xs text-slate-500 italic mt-0.5 block">
-                      info@orionsofttech.com
-                    </span>
-                  )}
-                </div>
-              </div>
+              {/* Contact Information Details */}
+              <div className="p-5 sm:p-6 rounded-2xl bg-slate-50 dark:bg-[#111827] border border-slate-200/80 dark:border-slate-800 shadow-2xs space-y-3.5 text-xs sm:text-sm">
+                <h3 className="text-sm font-bold text-slate-900 dark:text-white pb-2.5 border-b border-slate-200/80 dark:border-slate-800">
+                  Official Channels
+                </h3>
 
-              {/* Physical Office Address */}
-              <div className="flex items-start gap-3.5">
-                <div className="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
-                    Office Location
-                  </span>
-                  {siteConfig.contact.address ? (
-                    <p className="font-medium text-slate-900 dark:text-white mt-0.5 leading-snug">
-                      {siteConfig.contact.address}, {siteConfig.contact.city}, {siteConfig.contact.country}
+                {/* Phone */}
+                {siteConfig.contact.phone && (
+                  <div className="flex items-start gap-3">
+                    <div className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5">
+                      <Phone className="w-3.5 h-3.5" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
+                        Phone / Landline
+                      </span>
+                      <a
+                        href={`tel:${(siteConfig.contact.phoneIntl || siteConfig.contact.phone).replace(/\s+/g, '')}`}
+                        className="font-medium text-slate-900 dark:text-white hover:text-emerald-600 transition-colors"
+                      >
+                        {siteConfig.contact.phone}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {/* Email */}
+                {siteConfig.contact.email && (
+                  <div className="flex items-start gap-3">
+                    <div className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5">
+                      <Mail className="w-3.5 h-3.5" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
+                        Email Address
+                      </span>
+                      <a
+                        href={`mailto:${siteConfig.contact.email}`}
+                        className="font-medium text-slate-900 dark:text-white hover:text-emerald-600 transition-colors"
+                      >
+                        {siteConfig.contact.email}
+                      </a>
+                    </div>
+                  </div>
+                )}
+
+                {/* Office Address */}
+                {siteConfig.contact.address && (
+                  <div className="flex items-start gap-3">
+                    <div className="p-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5">
+                      <MapPin className="w-3.5 h-3.5" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
+                        Office Location
+                      </span>
+                      <p className="font-medium text-slate-900 dark:text-white leading-snug">
+                        {siteConfig.contact.address}, {siteConfig.contact.city}, {siteConfig.contact.country}
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Operating Hours */}
+                <div className="flex items-start gap-3 pt-2.5 border-t border-slate-200/80 dark:border-slate-800">
+                  <div className="p-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 shrink-0 mt-0.5">
+                    <Clock className="w-3.5 h-3.5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
+                      Operating Hours
+                    </span>
+                    <p className="text-slate-700 dark:text-slate-300">
+                      Mon &ndash; Sat: 9:00 AM &ndash; 6:00 PM (PKT)
                     </p>
-                  ) : (
-                    <span className="text-xs text-slate-500 italic mt-0.5 block">
-                      Corporate office location details configured upon deployment
-                    </span>
-                  )}
+                  </div>
                 </div>
               </div>
 
-              {/* Business Hours */}
-              <div className="flex items-start gap-3.5 pt-2 border-t border-slate-100 dark:border-slate-700">
-                <div className="p-2 rounded-lg bg-slate-100 dark:bg-slate-700/60 text-slate-600 dark:text-slate-300 shrink-0">
-                  <Clock className="w-4 h-4" />
-                </div>
-                <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 block">
-                    Operating Hours
-                  </span>
-                  <p className="text-xs text-slate-700 dark:text-slate-300 mt-0.5">
-                    Monday &ndash; Saturday: 9:00 AM &ndash; 6:00 PM
-                  </p>
-                  <p className="text-[11px] text-slate-500 mt-0.5">
-                    Emergency technical support available for AMC contract clients.
-                  </p>
-                </div>
+              {/* Confidentiality Notice */}
+              <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-[#111827] border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 flex items-start gap-2.5">
+                <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                <span>
+                  <strong>Confidentiality Guaranteed</strong>: Inquiries and technical specifications are handled with strict privacy.
+                </span>
               </div>
-            </div>
-
-            {/* Privacy Trust Card */}
-            <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-700/80 text-xs text-slate-600 dark:text-slate-400 flex items-start gap-2.5">
-              <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-              <span>
-                We respect your data privacy. Customer inquiries and project details are kept strictly confidential.
-              </span>
-            </div>
-
-            {/* Direct Quick Internal Links */}
-            <div className="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/80 shadow-2xs space-y-3 text-xs">
-              <h3 className="text-sm font-bold text-slate-900 dark:text-white pb-2 border-b border-slate-100 dark:border-slate-700">
-                Explore Our Technology Divisions
-              </h3>
-              <ul className="space-y-2 text-slate-600 dark:text-slate-300">
-                <li>
-                  <Link to="/software-solutions" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
-                    &bull; Custom Software Engineering &amp; ERP Solutions &rarr;
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/it-products" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
-                    &bull; Commercial IT Hardware Catalog &amp; Quotations &rarr;
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/technical-support" className="hover:text-emerald-600 dark:hover:text-emerald-400 font-medium inline-flex items-center gap-1.5 transition-colors">
-                    &bull; On-Site Server, Network &amp; CCTV Installation &rarr;
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </aside>
+            </aside>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Corporate Location Map Embed */}
+      {/* ─── SECTION 3: COMPACT LOCATION MAP ─────────────────────────────── */}
       {siteConfig.contact.mapUrl && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-          <div className="rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-md h-80 sm:h-96 w-full">
-            <iframe
-              src={siteConfig.contact.mapUrl}
-              title="Orion Software & Trading Corporate Office Location"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+        <section className="bg-white dark:bg-[#070A11] pb-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm h-64 sm:h-72 w-full">
+              <iframe
+                src={siteConfig.contact.mapUrl}
+                title="Orion Software & Trading Corporate Office Location"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </section>
       )}
     </>
   );
 };
-
